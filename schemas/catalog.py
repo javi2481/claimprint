@@ -18,7 +18,6 @@ class Recipe:
     description: str
     extract: bool
     schema_path: str | None
-    threshold: float
     page_select_keywords: tuple[str, ...]
     gold: dict[str, dict[str, str]]
 
@@ -40,7 +39,6 @@ def _load_file(path: Path) -> Recipe:
         description=str(raw["description"]).strip(),
         extract=bool(raw.get("extract", False)),
         schema_path=raw.get("schema") or None,
-        threshold=float(raw.get("threshold", 0.85)),
         page_select_keywords=tuple(raw.get("page_select_keywords") or ()),
         gold={str(k): dict(v) for k, v in (raw.get("gold") or {}).items()},
     )

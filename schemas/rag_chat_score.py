@@ -32,13 +32,13 @@ def looks_abstained(answer: str, flagged: bool) -> bool:
 def score_chat_case(case: dict, run: dict) -> dict:
     """Per-case scores for the small chat pilot.
 
-    - ``answer``: **exact-value containment** (not semantic accuracy). For
+    - ``answer_value_match``: **exact-value containment** (not semantic accuracy). For
       identity/comparison, pass if ``expected_value`` appears in the answer
       digits/compact text, no ``forbid_values`` leak, and the model did not
       abstain. Narrative has no gold number (retrieval + no abstain + no leak).
-    - ``abstention``: 1 iff the model did what gold requires on abstain vs
+    - ``abstention_correct``: 1 iff the model did what gold requires on abstain vs
       answer (abstain when ``expected_abstain``, otherwise must not abstain).
-    - ``retrieval`` / ``citation``: scored only when the case expects docs;
+    - ``evidence_doc_match`` / ``citation_doc_match``: scored only when the case expects docs;
       abstain-only cases return ``None`` so they do not inflate averages.
     """
     partition = str(case.get("partition") or "")
@@ -56,10 +56,10 @@ def score_chat_case(case: dict, run: dict) -> dict:
     if want_abstain:
         ok = abstained and not leaked
         return {
-            "retrieval": None,
-            "answer": 1.0 if ok else 0.0,
-            "citation": None,
-            "abstention": 1.0 if ok else 0.0,
+            "evidence_doc_match": None,
+            "answer_value_match": 1.0 if ok else 0.0,
+            "citation_doc_match": None,
+            "abstention_correct": 1.0 if ok else 0.0,
         }
 
     retrieval = cited_ok(cited, expected_docs)
@@ -74,20 +74,20 @@ def score_chat_case(case: dict, run: dict) -> dict:
     if partition == "narrative":
         ok = (not abstained) and not leaked and retrieval
         return {
-            "retrieval": 1.0 if retrieval else 0.0,
-            "answer": 1.0 if ok else 0.0,
-            "citation": 1.0 if citation else 0.0,
-            "abstention": abstention,
+            "evidence_doc_match": 1.0 if retrieval else 0.0,
+            "answer_value_match": 1.0 if ok else 0.0,
+            "citation_doc_match": 1.0 if citation else 0.0,
+            "abstention_correct": abstention,
         }
 
     # Exact-value containment (pilot-sized; not full-answer accuracy).
     value_ok = expected_value is None or str(expected_value) in compact or str(expected_value) in digit_blob
     ok = value_ok and not leaked and not abstained
     return {
-        "retrieval": 1.0 if retrieval else 0.0,
-        "answer": 1.0 if ok else 0.0,
-        "citation": 1.0 if citation else 0.0,
-        "abstention": abstention,
+        "evidence_doc_match": 1.0 if retrieval else 0.0,
+        "answer_value_match": 1.0 if ok else 0.0,
+        "citation_doc_match": 1.0 if citation else 0.0,
+        "abstention_correct": abstention,
     }
 
 
@@ -100,11 +100,11 @@ def _mean(values: Sequence[float | None]) -> float:
 
 def summarize_chat(scores: Sequence[dict]) -> dict:
     if not scores:
-        return {"retrieval": 0.0, "answer": 0.0, "citation": 0.0, "abstention": 0.0, "n": 0}
+        return {"evidence_doc_match": 0.0, "answer_value_match": 0.0, "citation_doc_match": 0.0, "abstention_correct": 0.0, "n": 0}
     return {
-        "retrieval": _mean([s.get("retrieval") for s in scores]),
-        "answer": _mean([s.get("answer") for s in scores]),
-        "citation": _mean([s.get("citation") for s in scores]),
-        "abstention": _mean([s.get("abstention") for s in scores]),
+        "evidence_doc_match": _mean([s.get("evidence_doc_match") for s in scores]),
+        "answer_value_match": _mean([s.get("answer_value_match") for s in scores]),
+        "citation_doc_match": _mean([s.get("citation_doc_match") for s in scores]),
+        "abstention_correct": _mean([s.get("abstention_correct") for s in scores]),
         "n": len(scores),
     }

@@ -2,7 +2,6 @@
   "id": "press_release",
   "extract": true,
   "schema": "schemas.press_release.PressRelease",
-  "threshold": 0.85,
   "page_select_keywords": [
     "comunicado de prensa",
     "anuncia resultados",

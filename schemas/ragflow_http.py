@@ -127,4 +127,6 @@ def chunk_to_hit(chunk: dict) -> dict | None:
             page = first
     if not name:
         return None
-    return {"doc": name, "page": page if page is not None else 1}
+    if page is None:
+        return None
+    return {"doc": name, "page": page}

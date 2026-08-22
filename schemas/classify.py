@@ -45,11 +45,11 @@ def classify_pdf(pdf: Path, recipe_ids: tuple[str, ...] | None = None) -> str:
     artifact = load_parse(pdf)
     if artifact is None:
         return UNKNOWN
-    return classify_text(artifact.cover, recipe_ids)
+    return classify_text(artifact.front_matter, recipe_ids)
 
 
 def classify_artifact(artifact: ParseArtifact, recipe_ids: tuple[str, ...] | None = None) -> str:
-    return classify_text(artifact.cover, recipe_ids)
+    return classify_text(artifact.front_matter, recipe_ids)
 
 
 # Kept for tests that still name the old porter; delegates to content when a parse exists.

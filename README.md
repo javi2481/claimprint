@@ -32,9 +32,9 @@ Claimprint is a **claims intelligence kernel**, not a RAG wrapper. A document en
 
 The pilot compares retrieval-only search (PDF+page, **no claim inject**) against **claims-first** grounded chat (**after** `push_claims` injects IDP figures).
 
-Retrieval (n=20): keyword, vector, and hybrid **tie** at Recall@5 **0.35** and MRR **0.1792**. The pilot does **not** show hybrid winning. The underlying issue is the **identity trap**: retrieval can return evidence for a correct number attached to the wrong figure—consolidado vs controlante in the table above.
+Retrieval (n=20): keyword, vector, and hybrid **tie** at Recall@5 **0.35** and MRR **0.2042**. The pilot does **not** show hybrid winning. The underlying issue is the **identity trap**: retrieval can return evidence for a correct number attached to the wrong figure—consolidado vs controlante in the table above.
 
-Claims-first chat (n=10, post-`push_claims`): answer / citation / retrieval / abstention **1.0**. **answer** is exact-value **containment** (expected digits appear in the reply; not full semantic accuracy). **abstention** is correct behavior (abstain when gold says so; do not abstain when an answer is required). Retrieval/citation averages skip abstain-only cases. Task-specific scores on a small corpus (`demo_4` 10/10); knobs: Mistral `mistral-small-latest`, Voyage, similarity threshold **0.2**, rerank on, IDP inject. Not a general IR paper.
+Claims-first chat (n=10, post-`push_claims`): answer_value_match / citation_doc_match / evidence_doc_match / abstention_correct **1.0**. **answer_value_match** is exact-value **containment** (expected digits appear in the reply; not full semantic accuracy). **abstention_correct** is correct behavior (abstain when gold says so; do not abstain when an answer is required). evidence_doc_match/citation_doc_match averages skip abstain-only cases. Task-specific scores on a small corpus (`demo_4` 10/10); knobs: Mistral `mistral-small-latest`, Voyage, similarity threshold **0.2**, rerank on, IDP inject. Not a general IR paper. Gate-3 remeasure (post page-hit fix + renamed chat keys): retrieval MRR **0.2042**; chat still **1.0**/n=10. Hits without a resolvable page are dropped (no invented page 1).
 
 ![Retrieval-only vs claims-first — identity trap](docs/assets/claimprint-retrieval-vs-chat.svg)
 
@@ -141,6 +141,40 @@ Evaluation catalog: four layers (files → identity → inject mock → live RAG
 
 ---
 
+
+## Two pilots (not one "RAG accuracy")
+
+**Experiment 1 — Retrieval (no claims).** Can the stack recover the right PDF+page?
+Metrics: Recall@5 / Recall@10 / MRR. Small pilot, not a general IR benchmark.
+
+**Experiment 2 — Claim-grounded generation (after `push_claims`).** Can chat answer
+when verified claims are injected? Metrics: `answer_value_match`, `citation_doc_match`,
+`evidence_doc_match`, `abstention_correct` on n=10 task-specific cases (`demo_4`).
+Never reported as "RAG accuracy 100%".
+
+**Evidence chain (gold ≠ source of truth):**
+
+```text
+PDF → MinerU fixture → recipe → eval gold → Claim → RAG chunk → chat
+```
+
+| Artifact | Role |
+|----------|------|
+| PDF | primary evidence |
+| MinerU fixture | parsed representation |
+| Recipe | extraction contract |
+| Eval gold | test expectation |
+| Claim | operational kernel truth |
+| RAG chunk | derived inject for chat |
+| Chat | consumer |
+
+Identity vs provenance (v1.0): identity = issuer · period · scope · metric;
+provenance = source_page · source_text. Future (not in v1.0): document_id · source_hash · bbox.
+
+`scripts/up.sh` starts the optional stack. `python scripts/push_claims.py` is a **separate**
+post-setup step and mutates only dataset `demo_4` and chat `chat_demo_4`.
+Chat gains also depend on the controlled IDP instruction block (claims + prompt rules).
+
 ## Optional RAGFlow UI
 
 This stack is not required for identity lookup. It is a grounded-chat demo over the same corpus. It needs Docker Compose, **x86_64**, **≥16 GB RAM**, and local API keys (Mistral + Voyage). The clone does not include an indexed `demo_4`.
@@ -159,16 +193,16 @@ Pilot evaluation (n=20 retrieval; n=10 chat; corpus `demo_4` 10/10):
 
 | Arm | Recall@5 | Recall@10 | MRR |
 |-------|----------|-----------|-----|
-| keyword | 0.35 | 0.35 | 0.1792 |
-| vector | 0.35 | 0.35 | 0.1792 |
-| hybrid | 0.35 | 0.35 | 0.1792 |
+| keyword | 0.35 | 0.35 | 0.2042 |
+| vector | 0.35 | 0.35 | 0.2042 |
+| hybrid | 0.35 | 0.35 | 0.2042 |
 
 The three arms tie: this pilot does **not** show hybrid winning. That tie is evidence for claims-first: page-level retrieval alone does not clear the consolidado / controlante trap.
 
 | Layer | What it measures | Score |
 |-------|------------------|-------|
 | Retrieval only | PDF+page, no claim inject | Recall@5 **0.35** (n=20) |
-| Chat after `push_claims` | IDP inject; answer = value containment; abstention = correct abstain / no false abstain | answer / citation / retrieval / abstention **1.0** (n=10) |
+| Chat after `push_claims` | IDP inject; answer = value containment; abstention = correct abstain / no false abstain | answer_value_match / citation_doc_match / evidence_doc_match / abstention_correct **1.0** (n=10) |
 
 The gap between retrieval-only and claims-first chat is the argument, not a number to hide. Small-n pilot — honest, not a paper IR claim. Dumps live in `outputs/` (gitignored).
 

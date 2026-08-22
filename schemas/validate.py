@@ -11,7 +11,7 @@ def reject_financial_statement(row: FinancialStatement) -> str | None:
         return "missing period"
     cons = row.net_income_consolidated
     ctrl = row.net_income_attributable_to_parent
-    if not cons or not ctrl:
+    if cons is None or ctrl is None or str(cons).strip() == "" or str(ctrl).strip() == "":
         return "missing consolidado or controlante"
     if cons == ctrl:
         return "consolidado equals controlante"

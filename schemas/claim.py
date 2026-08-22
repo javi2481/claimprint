@@ -25,6 +25,23 @@ METRIC_PRESENTATION_EBITDA = "presentation_ebitda"
 METRIC_PRESENTATION_EBITDA_MARGIN_LTM = "presentation_ebitda_margin_ltm"
 
 
+class ClaimError(ValueError):
+    """Claim failed integrity checks."""
+
+
+def validate_claim(claim: "Claim") -> None:
+    if not (claim.value or "").strip():
+        raise ClaimError("empty value")
+    if not (claim.period or "").strip():
+        raise ClaimError("empty period")
+    if claim.source_page is not None and claim.source_page <= 0:
+        raise ClaimError("source_page must be > 0 when set")
+    if claim.issuer and claim.scope and claim.metric:
+        expected = identity_key(claim.issuer, claim.period, claim.scope, claim.metric)
+        if claim.identity_key != expected:
+            raise ClaimError("identity_key inconsistent with issuer|period|scope|metric")
+
+
 def identity_key(issuer: str, period: str, scope: str, metric: str) -> str:
     return f"{issuer}|{period}|{scope}|{metric}"
 
@@ -39,6 +56,20 @@ class Claim:
     issuer: str | None = None
     scope: str | None = None
     metric: str | None = None
+
+    def __post_init__(self) -> None:
+        if self.source_page is not None and self.source_page <= 0:
+            raise ClaimError("source_page must be > 0 when set")
+        if (
+            (self.value or "").strip()
+            and (self.period or "").strip()
+            and self.issuer
+            and self.scope
+            and self.metric
+        ):
+            expected = identity_key(self.issuer, self.period, self.scope, self.metric)
+            if self.identity_key != expected:
+                raise ClaimError("identity_key inconsistent with issuer|period|scope|metric")
 
 
 def claims_from_financial_statement(row: object) -> tuple[Claim, ...]:

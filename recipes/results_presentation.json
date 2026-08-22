@@ -2,7 +2,6 @@
   "id": "results_presentation",
   "extract": true,
   "schema": "schemas.results_presentation.ResultsPresentation",
-  "threshold": 0.85,
   "page_select_keywords": [
     "Alcanzamos un EBITDA",
     "margen EBITDA de los últimos 12 meses"

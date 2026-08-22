@@ -65,4 +65,4 @@ Chain strategy: size-exception
 ## Phase 8: Mistral live default (2026-08-22)
 
 - [x] 8.1 Align README, `.env.example`, `scripts/check.sh` / `up.sh`, `vendor/PIN.md`, and OpenSpec local-stack/portfolio-local to Mistral `mistral-small-latest` (instance `demo_4`, chat thr **0.2**). Do not document Groq, Gemini flash-lite, or OpenRouter Nano `:free` as the running default.
-- [x] 8.2 Confirm live SoT metrics stay in README: retrieval Recall@5 **0.35** / MRR **0.1792**; claims-first chat **1.0** (n=20 / n=10).
+- [x] 8.2 Confirm live SoT metrics stay in README: retrieval Recall@5 **0.35** / MRR **0.2042**; claims-first chat **1.0** (n=20 / n=10).

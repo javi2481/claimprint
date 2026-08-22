@@ -2,7 +2,6 @@
   "id": "annual_report",
   "extract": false,
   "schema": null,
-  "threshold": 0.85,
   "page_select_keywords": [],
   "description": "Memoria anual o informe integrado (cientos de páginas). Puede incluir EEFF al final pero no es un filing de EEFF dedicado. No extraer P&L automático (riesgo de página equivocada y OOM)."
 }

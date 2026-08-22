@@ -101,3 +101,69 @@ def test_push_claims_posts_only_eeff_chunk() -> None:
     assert not any("pr1" in path and method == "POST" for method, path in fake.calls)
     assert any(method == "DELETE" and "eeff1/chunks" in path for method, path in fake.calls)
     assert any(method == "PUT" and path == "/chats/chat1" for method, path in fake.calls)
+
+
+
+class MultiFakeApi:
+    def __init__(self) -> None:
+        self.calls: list[tuple[str, str]] = []
+        self.posted: list[str] = []
+        self.put_chats: list[str] = []
+
+    def __call__(self, method: str, path: str, token: str, data: bytes | None = None) -> dict:
+        self.calls.append((method, path))
+        if method == "GET" and path.startswith("/datasets?"):
+            return {
+                "data": [
+                    {"id": "ds1", "name": "demo_4"},
+                    {"id": "ds2", "name": "legal_demo"},
+                ]
+            }
+        if method == "GET" and path.startswith("/datasets/ds1/documents?"):
+            return {
+                "data": [
+                    {"id": "eeff1", "name": EEFF},
+                    {"id": "pr1", "name": PRESS},
+                ]
+            }
+        if method == "GET" and path.startswith("/datasets/ds2/"):
+            raise AssertionError(f"must not read other dataset: {path}")
+        if method == "GET" and "/chunks" in path:
+            return {"data": {"chunks": []}}
+        if method == "GET" and path.startswith("/chats"):
+            return {
+                "data": [
+                    {"id": "chat1", "name": "chat_demo_4", "prompt_config": {"system": "hola {knowledge}"}},
+                    {"id": "chat2", "name": "other_chat", "prompt_config": {"system": "x"}},
+                ]
+            }
+        if method == "POST" and path.endswith("/chunks"):
+            payload = json.loads(data.decode()) if data else {}
+            self.posted.append(path)
+            assert 'Ficha IDP' in payload.get("content", "")
+            return {"code": 0}
+        if method in {"DELETE", "PUT"}:
+            if method == "PUT" and path.startswith("/chats/"):
+                self.put_chats.append(path)
+            if path.startswith("/datasets/ds2"):
+                raise AssertionError(f"must not mutate other dataset: {method} {path}")
+            return {"code": 0}
+        return {"data": []}
+
+
+def test_push_claims_ignores_other_datasets_and_chats() -> None:
+    fake = MultiFakeApi()
+    assert _run_inject("tok", _claims(), fake) == 0
+    assert fake.posted == ["/datasets/ds1/documents/eeff1/chunks"]
+    assert fake.put_chats == ["/chats/chat1"]
+    assert not any(method != "GET" and path.startswith("/datasets/ds2") for method, path in fake.calls)
+
+
+def test_push_claims_fails_if_dataset_missing() -> None:
+    class Missing(FakeApi):
+        def __call__(self, method: str, path: str, token: str, data: bytes | None = None) -> dict:
+            if method == "GET" and path.startswith("/datasets?"):
+                return {"data": [{"id": "x", "name": "other"}]}
+            return super().__call__(method, path, token, data)
+
+    assert _run_inject("tok", _claims(), Missing()) == 1

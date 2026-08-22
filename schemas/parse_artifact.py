@@ -27,7 +27,7 @@ class ParseArtifact:
     pages: tuple[tuple[int, str], ...]
 
     @property
-    def cover(self) -> str:
+    def front_matter(self) -> str:
         if not self.pages:
             return self.text[:16000]
         chunks: list[str] = []
@@ -37,6 +37,11 @@ class ParseArtifact:
             chunks.append(body)
         blob = "\n".join(chunks)
         return blob[:16000] if blob.strip() else self.text[:16000]
+
+    @property
+    def cover(self) -> str:
+        """Deprecated alias of front_matter."""
+        return self.front_matter
 
 
 def artifact_path(pdf: Path, fixtures: Path | None = None) -> Path:

@@ -2,7 +2,6 @@
   "id": "financial_statement",
   "extract": true,
   "schema": "schemas.financial_statement.FinancialStatement",
-  "threshold": 0.85,
   "page_select_keywords": [
     "RESULTADO NETO DEL PERÍODO",
     "RESULTADO NETO DEL PERIODO",
@@ -11,7 +10,7 @@
     "atribuible a la controlante"
   ],
   "description": "Estados financieros (EEFF) con estado de resultados: balance, resultado, flujo de efectivo o notas. Incluye RESULTADO NETO DEL PERÍODO consolidado y, aparte, resultado atribuible a la participación controlante. No es comunicado de prensa, presentación de slides, transcripción ni memoria anual.",
-    "gold": {
+  "gold": {
     "BYMA_-_EEFF_31-03-2026_VF.pdf": {
       "period": "2026-03-31",
       "net_income_consolidated": "21262335",

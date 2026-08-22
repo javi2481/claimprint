@@ -50,6 +50,7 @@ def _period_from_text_and_name(text: str, filename: str) -> str | None:
     return None
 
 
+
 def fill_results_presentation(text: str, *, source_page: int, filename: str) -> ResultsPresentation | None:
     period = _period_from_text_and_name(text, filename)
     if period is None:
