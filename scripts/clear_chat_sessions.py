@@ -27,6 +27,8 @@ from schemas.ragflow_http import (  # noqa: E402
 )
 
 DEFAULT_CHAT = os.environ.get("CLAIMPRINT_CHAT", "chat_demo_4")
+# RAGFlow returns an empty list when page_size is too large (e.g. 500).
+SESSION_PAGE = 50
 
 
 def _chat_id(token: str, wanted: str) -> str | None:
@@ -39,8 +41,33 @@ def _chat_id(token: str, wanted: str) -> str | None:
     return None
 
 
-def _session_count(token: str, chat_id: str) -> int:
-    return len(rows_of(api("GET", f"/chats/{chat_id}/sessions?page_size=500", token)))
+def _session_ids(token: str, chat_id: str) -> list[str]:
+    ids: list[str] = []
+    page = 1
+    while True:
+        rows = rows_of(
+            api(
+                "GET",
+                f"/chats/{chat_id}/sessions?page={page}&page_size={SESSION_PAGE}",
+                token,
+            )
+        )
+        ids.extend(str(row["id"]) for row in rows)
+        if len(rows) < SESSION_PAGE:
+            break
+        page += 1
+    return ids
+
+
+def _delete_sessions(token: str, chat_id: str, ids: list[str]) -> None:
+    for i in range(0, len(ids), SESSION_PAGE):
+        batch = ids[i : i + SESSION_PAGE]
+        api(
+            "DELETE",
+            f"/chats/{chat_id}/sessions",
+            token,
+            json.dumps({"ids": batch}).encode(),
+        )
 
 
 def main() -> int:
@@ -93,7 +120,8 @@ def main() -> int:
         sys.stdout.write(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
         return 1
 
-    count = _session_count(token, chat_id)
+    ids = _session_ids(token, chat_id)
+    count = len(ids)
     if args.dry_run:
         report = {
             "skipped": False,
@@ -107,9 +135,12 @@ def main() -> int:
         return 0
 
     deleted = 0
-    if count:
-        api("DELETE", f"/chats/{chat_id}/sessions", token)
+    if not args.dry_run and count:
+        _delete_sessions(token, chat_id, ids)
         deleted = count
+        remaining = len(_session_ids(token, chat_id))
+        if remaining:
+            sys.stderr.write(f"warning: {remaining} sessions remain after delete\n")
 
     report = {
         "skipped": False,
