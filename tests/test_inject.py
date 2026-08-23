@@ -125,3 +125,7 @@ def test_idp_rules_cover_press_deck_memoria_and_ltm() -> None:
     assert "no hay evidencia" in low
     assert "bruto" in low
     assert "no controlante" in low
+    assert "67.821" in blob or "67821" in blob.replace(".", "")
+    assert "abstene" in low or "abstener" in low
+    assert "histórico" in low or "historico" in low
+    assert "ajustado" in low
