@@ -1,3 +1,5 @@
+**English** · [Español](evaluation.es.md) · [README](../README.md) · [README ES](../README.es.md)
+
 # Evaluation
 
 The evaluation harness is **re-runnable** from git clone. **Live scores** require rebuilding the local RAGFlow stack (indexed `demo_4`, API keys, model providers). The clone does not ship a pre-indexed dataset.

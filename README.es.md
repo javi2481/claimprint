@@ -54,7 +54,7 @@ Claimprint es una **capa IDP claims-first**, no un wrapper de RAG. Un documento 
 
 **Conceptos clave:** un **claim tipado** es la cifra verificada (identidad compuesta + valor + provenance). Una **recipe** es el contrato de extracción para una clase de documento (ej. [`recipes/financial_statement.json`](recipes/financial_statement.json)). Un **projector** mapea filas extraídas al schema — resolviendo **scope** (consolidado vs controlante) en el camino.
 
-Detalle: [`docs/architecture.md`](docs/architecture.md)
+Detalle: [`docs/architecture.es.md`](docs/architecture.es.md)
 
 ## Qué demuestra el piloto
 
@@ -66,7 +66,7 @@ Si retrieval solo — keyword, vector o híbrido — pudiera resolver la trampa 
 
 Con claims inyectados (`push_claims`), el chat claims-first puntúa **1.0** en `answer_value_match`, `citation_doc_match`, `evidence_doc_match` y `abstention_correct` sobre n=10 casos task-specific. El salto no es "mejor retrieval" — es identidad resuelta antes de generar.
 
-Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=10 — piloto chico, no benchmark IR general). CI (`./scripts/check.sh` + pytest) valida contratos y lógica de scoring; no reproduce estos scores. La ablación Gate 4 en [`docs/evaluation.md`](docs/evaluation.md) muestra cómo se mueven los scores según modo de inject.
+Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=10 — piloto chico, no benchmark IR general). CI (`./scripts/check.sh` + pytest) valida contratos y lógica de scoring; no reproduce estos scores. La ablación Gate 4 en [`docs/evaluation.es.md`](docs/evaluation.es.md) muestra cómo se mueven los scores según modo de inject.
 
 ## Qué trae el clone
 
@@ -74,7 +74,7 @@ Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=1
 |------------------------------|-------------------------------|
 | PDFs BYMA + fixtures MinerU en [`fixtures/mineru/`](fixtures/mineru/) | Stack RAGFlow vía [`scripts/up.sh`](scripts/up.sh) |
 | [`scripts/idp_ask.py`](scripts/idp_ask.py) — EEFF, comunicado, presentación | Dataset **`demo_4`** indexado en la UI (no viene en git) |
-| Recipes, [`evals/`](evals/), pytest, [`scripts/check.sh`](scripts/check.sh) | Piloto de chat + métricas congeladas en [`docs/evaluation.md`](docs/evaluation.md) |
+| Recipes, [`evals/`](evals/), pytest, [`scripts/check.sh`](scripts/check.sh) | Piloto de chat + métricas congeladas en [`docs/evaluation.es.md`](docs/evaluation.es.md) |
 | HITL [`scripts/review_pack.py`](scripts/review_pack.py), dossier [`scripts/informe.py`](scripts/informe.py) | API keys en `.env` (Mistral + Voyage; gitignored) |
 
 Si querés el piloto de chat, calculá **x86_64**, **≥16 GB RAM** y tiempo para parsear e indexar `demo_4` vos mismo.
@@ -149,7 +149,7 @@ cp .env.example .env   # agregar keys; .env no está en git
 ./scripts/up.sh        # UI: http://localhost
 ```
 
-Activar Show Quote, respuesta vacía sin evidencia, umbral de similitud **0.2**, luego `python scripts/push_claims.py` y un chat **nuevo**. Ver [`docs/architecture.md`](docs/architecture.md) para ciclo de inject y [`docs/evaluation.md`](docs/evaluation.md) para números del piloto.
+Activar Show Quote, respuesta vacía sin evidencia, umbral de similitud **0.2**, luego `python scripts/push_claims.py` y un chat **nuevo**. Ver [`docs/architecture.es.md`](docs/architecture.es.md) para ciclo de inject y [`docs/evaluation.es.md`](docs/evaluation.es.md) para números del piloto.
 
 ```bash
 docker compose --env-file .env \
@@ -161,9 +161,9 @@ docker compose --env-file .env \
 
 | Doc | Contenido |
 |-----|-----------|
-| [`docs/architecture.md`](docs/architecture.md) | Identidad, provenance, contrato de claim, inject; "kernel" como término técnico |
-| [`docs/evaluation.md`](docs/evaluation.md) | Gate 3, ablación Gate 4, scoring |
-| [`docs/archivos_muestra/README.md`](docs/archivos_muestra/README.md) | PDFs de muestra BYMA |
+| [`docs/architecture.es.md`](docs/architecture.es.md) | Identidad, provenance, contrato de claim, inject; "kernel" como término técnico |
+| [`docs/evaluation.es.md`](docs/evaluation.es.md) | Gate 3, ablación Gate 4, scoring |
+| [`docs/archivos_muestra/README.es.md`](docs/archivos_muestra/README.es.md) | PDFs de muestra BYMA |
 
 ## Qué demuestra esto, qué sigue
 

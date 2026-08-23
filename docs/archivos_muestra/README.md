@@ -1,20 +1,22 @@
-# Archivos de muestra (BYMA)
+**English** · [Español](README.es.md) · [README](../../README.md) · [README ES](../../README.es.md)
 
-PDFs reales de BYMA. **Un parse MinerU**, dos capas: el IDP lee `fixtures/mineru/<stem>.md`; RAGFlow usa el dataset UI **`demo_4`**.
+# Sample files (BYMA)
 
-El clone de git trae los artefactos. Un clone **no** trae volúmenes Docker.
+Real BYMA PDFs. **One MinerU parse**, two layers: IDP reads `fixtures/mineru/<stem>.md`; RAGFlow uses UI dataset **`demo_4`**.
 
-Orden demo: **configurar el dataset** (MinerU, español, KG/RAPTOR off) → **subir** → en cada file **Tamaño de la tarea por página = 128** → **Parse** de a uno → `python scripts/export_mineru.py` para pisar fixtures.
+The git clone ships the artifacts. A clone does **not** ship Docker volumes.
 
-No actives Knowledge graph ni RAPTOR: no son parsers y gastan tokens del chat.
+Demo order: **configure the dataset** (MinerU, Spanish, KG/RAPTOR off) → **upload** → for each file set **Task size per page = 128** → **Parse** one at a time → `python scripts/export_mineru.py` to overwrite fixtures.
 
-Detalle del stack opcional: sección **Optional RAGFlow UI** del README raíz (chat demo: Mistral + Voyage, threshold 0.2, luego `push_claims`).
+Do not enable Knowledge graph or RAPTOR: they are not parsers and consume chat tokens.
 
-## Orden de parseo
+Optional stack details: **Optional RAGFlow UI** section in the root [README](../../README.md) (chat demo: Mistral + Voyage, threshold 0.2, then `push_claims`).
 
-1. Comunicados y transcripción (pocas páginas).
-2. Presentaciones.
-3. EEFF (tablas; tarda en CPU).
-4. Memorias (~190 páginas; al final).
+## Parse order
 
-No reusar `demo_3` ni files ya parseados con DeepDoc/Naive: **dataset nuevo**, subir de nuevo después de poner MinerU en Configuración. Cambiar el dropdown del dataset no reescribe el parser de cada file ni los chunks.
+1. Press releases and transcript (few pages).
+2. Presentations.
+3. Financial statements (tables; slow on CPU).
+4. Annual reports (~190 pages; last).
+
+Do not reuse `demo_3` or files already parsed with DeepDoc/Naive: **new dataset**, re-upload after setting MinerU in Settings. Changing the dataset dropdown does not rewrite each file's parser or chunks.
