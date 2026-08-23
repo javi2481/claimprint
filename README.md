@@ -170,8 +170,9 @@ PDF → MinerU fixture → recipe → eval gold → Claim → RAG chunk → chat
 
 Identity vs provenance (v1.0): identity = issuer · period · scope · metric;
 provenance = source_page · source_text · optional `document_id` (sha256 del PDF) ·
-optional `source_bbox` (normalizado 0–1 desde sidecar MinerU). Press/presentation **period** is content-first
+optional `source_hash` (sha256 del `.md` parse) · optional `source_bbox` (normalizado 0–1 desde sidecar MinerU). Press/presentation **period** is content-first
 (portada / `front_matter`, then filename). Sin match en el sidecar → `source_bbox=null` (no inventar).
+HITL: `python scripts/review_pack.py` → `outputs/review/index.html` con rectángulo bbox sobre la página (requiere `pdftoppm` para miniatura; si no, wireframe).
 
 `scripts/up.sh` starts the optional stack. `python scripts/push_claims.py` is a **separate**
 post-setup step and mutates only dataset `demo_4` and chat `chat_demo_4`.

@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from schemas.review import load_verdicts, render_review_html
+from schemas.review import load_verdicts, write_review_pack
 from schemas.store import load_claims
 
 
@@ -26,16 +26,15 @@ def main() -> int:
     parser.add_argument(
         "--out",
         type=Path,
-        default=ROOT / "outputs" / "review.html",
+        default=ROOT / "outputs" / "review" / "index.html",
+        help="HTML de salida (assets/ queda al lado)",
     )
     parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args()
     claims, _cached = load_claims(force=args.refresh)
     verdicts = load_verdicts(args.verdicts)
-    html = render_review_html(claims, verdicts=verdicts)
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(html, encoding="utf-8")
-    print(args.out)
+    path = write_review_pack(args.out, claims, verdicts=verdicts)
+    print(path)
     return 0
 
 

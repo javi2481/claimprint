@@ -35,4 +35,4 @@
 ## Ship
 
 - [x] Tag `v1.0.0` when WP-1 + Phase 0 done (WP-2 ablation + WP-3 bbox may follow in same minor line)
-- [ ] WP-3 bbox gate before calling v1.0.0 "complete" on provenance — or ship ablation-only tag now
+- [x] WP-3 bbox gate — pytest + review_pack highlight

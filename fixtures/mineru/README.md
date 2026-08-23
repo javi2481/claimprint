@@ -19,13 +19,25 @@ Loader: `schemas/mineru_artifact.py` → `load_content_sidecar(pdf)`.
 python scripts/export_mineru.py
 ```
 
-2. Sidecars bbox **sin tocar** los `.md` commiteados:
+2. Sidecars bbox **sin tocar** los `.md` commiteados (MinerU API primero si está arriba; si no, posiciones RAGFlow):
 
 ```bash
 python scripts/export_mineru.py --with-content --content-only
 ```
 
-3. Opcional: `mineru-api` `content_list` (más fino que positions de chunk):
+Solo MinerU API (sin RAGFlow; no toca `.md`):
+
+```bash
+python scripts/export_mineru.py --mineru-api-only
+```
+
+Forzar solo RAGFlow (offline / CI path commiteado):
+
+```bash
+python scripts/export_mineru.py --with-content --content-only --ragflow-content-only
+```
+
+3. Opcional fino vía `mineru-api` `content_list` explícito:
 
 ```bash
 python scripts/export_mineru.py --with-content --content-only --prefer-mineru-api

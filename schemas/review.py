@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Literal
 
 from schemas.claim import Claim
+from schemas.review_highlight import HIGHLIGHT_CSS, ensure_page_asset, highlight_anchor, highlight_html, pdf_for_claim
 
 Verdict = Literal["accept", "reject", "flag"]
 VALID = frozenset({"accept", "reject", "flag"})
@@ -79,6 +80,7 @@ def render_review_html(
     claims: tuple[Claim, ...] | list[Claim],
     *,
     verdicts: dict[str, Verdict] | None = None,
+    highlight_section: str = "",
 ) -> str:
     table = verdicts or {}
     rows: list[str] = []
@@ -89,7 +91,13 @@ def render_review_html(
         doc_id = claim.document_id or ""
         if len(doc_id) > 12:
             doc_id = doc_id[:12] + "…"
+        src_hash = claim.source_hash or ""
+        if len(src_hash) > 12:
+            src_hash = src_hash[:12] + "…"
         bbox = _format_bbox(claim.source_bbox)
+        hl = ""
+        if claim.source_bbox is not None:
+            hl = f'<a href="#{highlight_anchor(claim.identity_key)}">ver</a>'
         rows.append(
             "<tr>"
             f"<td>{_esc(claim.identity_key)}</td>"
@@ -97,21 +105,71 @@ def render_review_html(
             f"<td>{_esc(page)}</td>"
             f"<td>{_esc(snippet)}</td>"
             f"<td>{_esc(doc_id)}</td>"
+            f"<td>{_esc(src_hash)}</td>"
             f"<td>{_esc(bbox)}</td>"
+            f"<td>{hl}</td>"
             f"<td>{_esc(mark)}</td>"
             "</tr>"
         )
-    body = "\n".join(rows) if rows else "<tr><td colspan='7'>Sin claims</td></tr>"
+    body = "\n".join(rows) if rows else "<tr><td colspan='9'>Sin claims</td></tr>"
+    highlights = (
+        f'<section class="hitl-highlights"><h2>Evidencia visual (bbox)</h2>{highlight_section}</section>'
+        if highlight_section
+        else ""
+    )
     return (
         "<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'>"
         "<title>Revisión HITL Claimprint</title>"
-        "<style>body{font-family:sans-serif;margin:24px}table{border-collapse:collapse;width:100%}"
+        f"<style>body{{font-family:sans-serif;margin:24px}}table{{border-collapse:collapse;width:100%}}"
         "th,td{border:1px solid #ccc;padding:6px;text-align:left;font-size:14px}"
-        "th{background:#f4f4f4}</style></head><body>"
+        f"th{{background:#f4f4f4}}{HIGHLIGHT_CSS}</style></head><body>"
         "<h1>Revisión humana (HITL asistido)</h1>"
         "<p>Marcá accept / reject / flag en el JSON de veredictos. "
-        "Sin archivo, todo cuenta como accept.</p>"
+        "Sin archivo, todo cuenta como accept. "
+        "Rectángulo rojo = <code>source_bbox</code> normalizado sobre la página del PDF.</p>"
         "<table><thead><tr><th>identity_key</th><th>valor</th><th>página</th>"
-        "<th>source_text</th><th>document_id</th><th>source_bbox</th><th>veredicto</th></tr></thead><tbody>"
-        f"{body}</tbody></table></body></html>"
+        "<th>source_text</th><th>document_id</th><th>source_hash</th><th>source_bbox</th>"
+        "<th></th><th>veredicto</th></tr></thead><tbody>"
+        f"{body}</tbody></table>{highlights}</body></html>"
     )
+
+
+def write_review_pack(
+    out_html: Path,
+    claims: tuple[Claim, ...] | list[Claim],
+    *,
+    verdicts: dict[str, Verdict] | None = None,
+    samples: Path | None = None,
+) -> Path:
+    """Write index.html plus optional page PNGs under assets/."""
+    assets_dir = out_html.parent / "assets"
+    assets_dir.mkdir(parents=True, exist_ok=True)
+    figures: list[str] = []
+    rendered_pages: dict[tuple[str, int], str | None] = {}
+    for claim in claims:
+        if claim.source_bbox is None or claim.source_page is None:
+            continue
+        pdf = pdf_for_claim(claim, samples)
+        if pdf is None:
+            figures.append(
+                highlight_html(claim, image_rel=None, pdf_name="(pdf no resuelto)")
+            )
+            continue
+        key = (pdf.name, claim.source_page)
+        if key not in rendered_pages:
+            rendered_pages[key] = ensure_page_asset(pdf, claim.source_page, assets_dir)
+        figures.append(
+            highlight_html(
+                claim,
+                image_rel=rendered_pages[key],
+                pdf_name=pdf.name,
+            )
+        )
+    html = render_review_html(
+        claims,
+        verdicts=verdicts,
+        highlight_section="\n".join(figures),
+    )
+    out_html.parent.mkdir(parents=True, exist_ok=True)
+    out_html.write_text(html, encoding="utf-8")
+    return out_html

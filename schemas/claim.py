@@ -57,6 +57,7 @@ class Claim:
     scope: str | None = None
     metric: str | None = None
     document_id: str | None = None
+    source_hash: str | None = None
     source_bbox: tuple[float, float, float, float] | None = None
 
     def __post_init__(self) -> None:

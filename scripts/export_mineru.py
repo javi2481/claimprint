@@ -228,6 +228,7 @@ def write_content_for_pdf(
     chunks: list[dict] | None,
     *,
     prefer_mineru: bool,
+    fixtures: Path | None = None,
 ) -> Path | None:
     sidecar = None
     if prefer_mineru and mineru_reachable():
@@ -238,8 +239,28 @@ def write_content_for_pdf(
         sidecar = spans_from_ragflow_chunks(chunks, pdf_name=pdf.name)
     if sidecar is None or not sidecar.spans:
         return None
-    dest = write_content_sidecar(pdf, sidecar)
+    dest = write_content_sidecar(pdf, sidecar, fixtures)
     return dest
+
+
+def export_mineru_api_only() -> int:
+    if not mineru_reachable():
+        print("error: mineru-api not reachable (start compose mineru-api sidecar)", file=sys.stderr)
+        return 1
+    written = 0
+    for pdf in sorted(SAMPLES.glob("*.pdf")):
+        blocks = content_list_from_mineru(pdf)
+        if not blocks:
+            print(f"skip: {pdf.name} mineru-api returned no content_list", file=sys.stderr)
+            continue
+        sidecar = spans_from_content_list(blocks, pdf_name=pdf.name)
+        if not sidecar.spans:
+            print(f"skip: {pdf.name} has no spans", file=sys.stderr)
+            continue
+        dest = write_content_sidecar(pdf, sidecar, FIXTURES)
+        print(f"wrote {dest.relative_to(ROOT)} ({sidecar.source})")
+        written += 1
+    return 0 if written else 1
 
 
 def export_demo4(*, with_content: bool, content_only: bool, prefer_mineru: bool) -> int:
@@ -317,7 +338,17 @@ def main() -> int:
     parser.add_argument(
         "--prefer-mineru-api",
         action="store_true",
-        help="When --with-content, try mineru-api content_list before RAGFlow positions",
+        help="With --with-content, try mineru-api content_list before RAGFlow (default when --with-content)",
+    )
+    parser.add_argument(
+        "--ragflow-content-only",
+        action="store_true",
+        help="With --with-content, use only RAGFlow chunk positions (skip mineru-api)",
+    )
+    parser.add_argument(
+        "--mineru-api-only",
+        action="store_true",
+        help="Write *.content.json from mineru-api only (no RAGFlow; does not touch *.md)",
     )
     parser.add_argument(
         "--dataset",
@@ -328,6 +359,8 @@ def main() -> int:
     if args.dataset != "demo_4":
         print("error: only demo_4 is supported", file=sys.stderr)
         return 1
+    if args.mineru_api_only:
+        return export_mineru_api_only()
     if args.bootstrap_layout and (args.with_content or args.content_only):
         print("error: --with-content needs RAGFlow or mineru-api, not --bootstrap-layout", file=sys.stderr)
         return 1
@@ -337,10 +370,17 @@ def main() -> int:
     FIXTURES.mkdir(parents=True, exist_ok=True)
     if args.bootstrap_layout:
         return export_bootstrap()
+    prefer = False
+    if args.with_content and not args.ragflow_content_only:
+        prefer = True
+    if args.prefer_mineru_api:
+        prefer = True
+    if args.ragflow_content_only:
+        prefer = False
     return export_demo4(
         with_content=args.with_content,
         content_only=args.content_only,
-        prefer_mineru=args.prefer_mineru_api,
+        prefer_mineru=prefer,
     )
 
 

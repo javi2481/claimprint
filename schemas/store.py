@@ -13,7 +13,7 @@ from schemas.parse_artifact import parse_sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STORE = ROOT / "outputs" / "claims.json"
-STORE_VERSION = 3
+STORE_VERSION = 4
 
 ExtractFn = Callable[[Path], tuple[Claim, ...]]
 
@@ -60,6 +60,7 @@ def _claims_from_payload(raw: list[object]) -> tuple[Claim, ...] | None:
                     scope=row.get("scope"),
                     metric=row.get("metric"),
                     document_id=row.get("document_id"),
+                    source_hash=row.get("source_hash"),
                     source_bbox=_bbox_from_row(row.get("source_bbox")),
                 )
             )

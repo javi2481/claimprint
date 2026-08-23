@@ -11,6 +11,7 @@ from pathlib import Path
 from schemas.claim import Claim
 from schemas.extract import fold
 from schemas.mineru_artifact import ContentSidecar, load_content_sidecar
+from schemas.parse_artifact import parse_sha256
 from schemas.money import digits_ars, format_display_ars
 
 Bbox = tuple[float, float, float, float]
@@ -124,8 +125,13 @@ def match_bbox(
     return best_bbox
 
 
-def enrich_claim_provenance(claim: Claim, pdf: Path, fixtures: Path | None = None) -> Claim:
+def enrich_claim_provenance(
+    claim: Claim,
+    pdf: Path,
+    fixtures: Path | None = None,
+) -> Claim:
     doc_id = pdf_document_id(pdf)
+    src_hash = parse_sha256(pdf, fixtures)
     sidecar = load_content_sidecar(pdf, fixtures)
     bbox = (
         match_bbox(
@@ -137,4 +143,9 @@ def enrich_claim_provenance(claim: Claim, pdf: Path, fixtures: Path | None = Non
         if sidecar is not None
         else None
     )
-    return replace(claim, document_id=doc_id, source_bbox=bbox)
+    return replace(
+        claim,
+        document_id=doc_id,
+        source_hash=src_hash,
+        source_bbox=bbox,
+    )
