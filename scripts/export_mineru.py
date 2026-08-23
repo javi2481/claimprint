@@ -3,7 +3,8 @@
 
 Default: export RAGFlow demo_4 chunks (dataset already parsed; no /file_parse).
 `--bootstrap-layout`: write page-marked text from poppler when the demo is down.
-The kernel never calls this; it only reads fixtures/mineru/*.md.
+`--with-content`: also write fixtures/mineru/<stem>.content.json (bbox spans).
+The kernel never calls this; it only reads fixtures/mineru/*.md (+ optional *.content.json).
 """
 
 from __future__ import annotations
@@ -14,23 +15,29 @@ import os
 import re
 import subprocess
 import sys
+import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SAMPLES = ROOT / "docs" / "archivos_muestra"
 sys.path.insert(0, str(ROOT))
 
+from schemas.mineru_artifact import (  # noqa: E402
+    spans_from_content_list,
+    spans_from_ragflow_chunks,
+    write_content_sidecar,
+)
 from schemas.parse_artifact import FIXTURES, artifact_path  # noqa: E402
 from schemas.ragflow_http import load_env, token_from_mysql  # noqa: E402
 
 API = os.environ.get("RAGFLOW_URL", "http://127.0.0.1/api/v1").rstrip("/")
+MINERU_API = os.environ.get("MINERU_APISERVER", "http://127.0.0.1:8000").rstrip("/")
 PAGE_POS = re.compile(r"page[^\d]{0,8}(\d+)", re.IGNORECASE)
 
 
 def api(method: str, path: str, token: str) -> dict:
-    import urllib.error
-    import urllib.request
-
     req = urllib.request.Request(
         f"{API}{path}",
         method=method,
@@ -155,7 +162,87 @@ def write_artifact(pdf: Path, markdown: str) -> Path:
     return dest
 
 
-def export_demo4() -> int:
+def mineru_reachable() -> bool:
+    try:
+        with urllib.request.urlopen(f"{MINERU_API}/health", timeout=2) as resp:
+            return resp.status == 200
+    except (urllib.error.URLError, TimeoutError, OSError):
+        return False
+
+
+def content_list_from_mineru(pdf: Path) -> list[dict] | None:
+    boundary = "----claimprintexport"
+    body = b"".join(
+        [
+            f"--{boundary}\r\n".encode(),
+            f'Content-Disposition: form-data; name="files"; filename="{pdf.name}"\r\n'.encode(),
+            b"Content-Type: application/pdf\r\n\r\n",
+            pdf.read_bytes(),
+            b"\r\n",
+            f"--{boundary}\r\n".encode(),
+            b'Content-Disposition: form-data; name="backend"\r\n\r\n',
+            b"pipeline\r\n",
+            f"--{boundary}\r\n".encode(),
+            b'Content-Disposition: form-data; name="return_content_list"\r\n\r\n',
+            b"true\r\n",
+            f"--{boundary}--\r\n".encode(),
+        ]
+    )
+    req = urllib.request.Request(
+        f"{MINERU_API}/file_parse",
+        data=body,
+        method="POST",
+        headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            task = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+        print(f"skip: mineru-api {pdf.name} -> {exc}", file=sys.stderr)
+        return None
+
+    result_url = task.get("result_url")
+    if not result_url:
+        return None
+    for _ in range(120):
+        with urllib.request.urlopen(result_url, timeout=120) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        if payload.get("status") == "completed" and payload.get("results"):
+            file_payload = payload["results"].get(pdf.stem) or next(iter(payload["results"].values()))
+            raw = file_payload.get("content_list")
+            if isinstance(raw, str):
+                raw = json.loads(raw)
+            if isinstance(raw, list):
+                return [row for row in raw if isinstance(row, dict)]
+            return None
+        if payload.get("error"):
+            print(f"skip: mineru-api {pdf.name} -> {payload['error']}", file=sys.stderr)
+            return None
+        time.sleep(2)
+    print(f"skip: mineru-api {pdf.name} timed out", file=sys.stderr)
+    return None
+
+
+def write_content_for_pdf(
+    pdf: Path,
+    chunks: list[dict] | None,
+    *,
+    prefer_mineru: bool,
+) -> Path | None:
+    sidecar = None
+    if prefer_mineru and mineru_reachable():
+        blocks = content_list_from_mineru(pdf)
+        if blocks:
+            sidecar = spans_from_content_list(blocks, pdf_name=pdf.name)
+    if sidecar is None and chunks:
+        sidecar = spans_from_ragflow_chunks(chunks, pdf_name=pdf.name)
+    if sidecar is None or not sidecar.spans:
+        return None
+    dest = write_content_sidecar(pdf, sidecar)
+    return dest
+
+
+def export_demo4(*, with_content: bool, content_only: bool, prefer_mineru: bool) -> int:
     load_env(ROOT / ".env")
     token = os.environ.get("RAGFLOW_API_KEY") or token_from_mysql()
     datasets = rows_of(api("GET", "/datasets?page_size=100", token), "datasets", "kbs")
@@ -176,12 +263,25 @@ def export_demo4() -> int:
         if row is None:
             print(f"skip: {pdf.name} not in demo_4", file=sys.stderr)
             continue
-        markdown = markdown_from_chunks(list_chunks(ds_id, row["id"], token))
-        if not markdown.strip():
-            print(f"skip: {pdf.name} has no chunks", file=sys.stderr)
-            continue
-        dest = write_artifact(pdf, markdown)
-        print(f"wrote {dest.relative_to(ROOT)}")
+        chunks = list_chunks(ds_id, row["id"], token)
+        if not content_only:
+            markdown = markdown_from_chunks(chunks)
+            if not markdown.strip():
+                print(f"skip: {pdf.name} has no chunks", file=sys.stderr)
+                continue
+            dest = write_artifact(pdf, markdown)
+            print(f"wrote {dest.relative_to(ROOT)}")
+        elif with_content:
+            if not chunks:
+                print(f"skip: {pdf.name} has no chunks", file=sys.stderr)
+                continue
+        if with_content:
+            content_dest = write_content_for_pdf(pdf, chunks, prefer_mineru=prefer_mineru)
+            if content_dest:
+                print(f"wrote {content_dest.relative_to(ROOT)}")
+            else:
+                print(f"skip: {pdf.name} has no content spans", file=sys.stderr)
+                continue
         written += 1
     if written == 0:
         return 1
@@ -205,6 +305,21 @@ def main() -> int:
         help="Write page-marked poppler text when demo_4 is not reachable",
     )
     parser.add_argument(
+        "--with-content",
+        action="store_true",
+        help="Also write fixtures/mineru/<stem>.content.json span sidecars",
+    )
+    parser.add_argument(
+        "--content-only",
+        action="store_true",
+        help="With --with-content, write only *.content.json (do not overwrite *.md)",
+    )
+    parser.add_argument(
+        "--prefer-mineru-api",
+        action="store_true",
+        help="When --with-content, try mineru-api content_list before RAGFlow positions",
+    )
+    parser.add_argument(
         "--dataset",
         default="demo_4",
         help="RAGFlow dataset name (export path only)",
@@ -213,10 +328,20 @@ def main() -> int:
     if args.dataset != "demo_4":
         print("error: only demo_4 is supported", file=sys.stderr)
         return 1
+    if args.bootstrap_layout and (args.with_content or args.content_only):
+        print("error: --with-content needs RAGFlow or mineru-api, not --bootstrap-layout", file=sys.stderr)
+        return 1
+    if args.content_only and not args.with_content:
+        print("error: --content-only requires --with-content", file=sys.stderr)
+        return 1
     FIXTURES.mkdir(parents=True, exist_ok=True)
     if args.bootstrap_layout:
         return export_bootstrap()
-    return export_demo4()
+    return export_demo4(
+        with_content=args.with_content,
+        content_only=args.content_only,
+        prefer_mineru=args.prefer_mineru_api,
+    )
 
 
 if __name__ == "__main__":

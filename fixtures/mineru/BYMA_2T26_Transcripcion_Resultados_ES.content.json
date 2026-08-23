@@ -1,0 +1,1249 @@
+{
+  "version": "content_v1",
+  "source": "ragflow_chunks",
+  "pdf_name": "BYMA_2T26_Transcripcion_Resultados_ES.pdf",
+  "spans": [
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        145.0,
+        71.0,
+        620.0,
+        114.0
+      ],
+      "bbox_norm": [
+        0.23387096774193547,
+        0.09874826147426982,
+        1.0,
+        0.15855354659248957
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        153.0,
+        543.0,
+        168.0
+      ],
+      "bbox_norm": [
+        0.10967741935483871,
+        0.21279554937413073,
+        0.8758064516129033,
+        0.2336578581363004
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        173.0,
+        542.0,
+        228.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.24061196105702365,
+        0.8741935483870967,
+        0.31710709318497915
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        231.0,
+        542.0,
+        301.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.32127955493741306,
+        0.8741935483870967,
+        0.41863699582753827
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        303.0,
+        542.0,
+        359.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.42141863699582754,
+        0.8741935483870967,
+        0.4993045897079277
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        362.0,
+        542.0,
+        444.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.5034770514603616,
+        0.8741935483870967,
+        0.6175243393602226
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        447.0,
+        543.0,
+        476.0
+      ],
+      "bbox_norm": [
+        0.10967741935483871,
+        0.6216968011126565,
+        0.8758064516129033,
+        0.6620305980528511
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Bolsas y Mercados Argentinos 2T26 Presentación de Resultados\nPRESENTACIÓN\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nBuenos días, y gracias a todos por acompañarnos. Mi nombre es Alejandro Berney, gerente de Relaciones con Inversores de BYMA. Hoy vamos a repasar los resultados del segundo trimestre. Les pedimos que guarden sus preguntas hasta el final de la presentación, momento en el que abriremos la ronda de preguntas y respuestas.\nFue un trimestre sólido en términos de crecimiento del negocio. Al igual que en el trimestre anterior, el Depositario Central de Valores (CSD), operado por Caja de Valores, está impulsando el crecimiento. A diferencia de la tendencia de los últimos dos o tres años, el CSD está creciendo hoy más rápido que el negocio bursátil — profundizaremos esto durante la presentación.\nLos ingresos combinados de ambos negocios crecieron 60% en términos históricos y 25% en términos reales. Esta es la única página de la presentación donde mostramos las cifras ajustadas por inflación (a la derecha); las cifras históricas, en el centro de la página, son las que habitualmente utilizamos como referencia.\nLos gastos crecieron levemente por encima de la inflación — 68% en términos históricos y 31% en términos reales — pero el margen bruto igualmente creció 21% en términos reales. Otros ingresos operativos se mantuvieron prácticamente estables en términos reales, es decir, crecieron en línea con la inflación. Consideramos que este es un muy buen resultado dado el contexto actual de tasas de interés en Argentina, y ampliaremos el detalle más adelante.\nEl resultado neto creció 22% en términos históricos —algo por debajo de la inflación por un mayor impuesto a las ganancias— y cayó 9% en términos reales.\nYendo al detalle del negocio: el CSD continúa creciendo con fuerza. Incorporamos a nuestro sitio de Relaciones con Inversores las cifras mensuales de activos bajo custodia (AUC), junto con un nuevo diseño que debería facilitar la búsqueda de la información. El AUC ahora está desagregado por clase de activo.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        480.0,
+        542.0,
+        535.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.6675938803894298,
+        0.8741935483870967,
+        0.7440890125173852
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Fue un trimestre interesante, ya que vimos crecimiento en todas las clases de activos. Desde fines del año pasado hasta el primer trimestre, la mayor parte del crecimiento había sido impulsada por Letras del Tesoro Nacional. Este trimestre, el crecimiento fue generalizado; en términos porcentuales, las obligaciones negociables fueron las que más crecieron, aunque los títulos públicos siguen siendo el componente más grande en términos de valor de mercado y, por lo tanto, los que más aportaron al crecimiento en términos absolutos.\nLos activos de CEDEARs bajo custodia crecieron 18% trimestre contra trimestre, impulsados más por volumen que por precio — aproximadamente dos tercios de ese crecimiento provino de un aumento en la tenencia de CEDEARs y no de la apreciación de precios. Esto indica que tanto los inversores minoristas como los institucionales locales están demandando más CEDEARs, lo que lleva a los market makers a convertir más acciones y así impulsar el crecimiento del AUC.\nComo resultado, el CSD mostró resultados muy sólidos: los ingresos se duplicaron interanualmente, impulsados tanto por los servicios core del CSD como por los servicios adicionales. Como recordatorio, los \"servicios adicionales\" están relacionados con la custodia internacional —tanto flujos salientes (instituciones locales que compran activos en el exterior) como entrantes (inversores extranjeros que compran activos locales)— así como los instrumentos PyME, que también contribuyeron al crecimiento del AUC y de los ingresos.\nEl crecimiento se aceleró respecto del primer trimestre, y esperamos que esta tendencia continúe. Está siendo impulsado por el Tesoro Nacional: el Banco Central viene comprando importantes reservas en dólares, y los pesos emitidos para esas compras están siendo absorbidos por el Tesoro mediante la emisión de títulos — títulos que terminan en custodia, beneficiando al segmento de CSD.\nEn cuanto al negocio bursátil, el crecimiento fue más moderado, similar al del trimestre anterior — 41% en términos históricos. Las acciones siguen siendo el segmento más grande, seguidas por las cauciones bursátiles y la renta fija.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        538.0,
+        542.0,
+        633.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.7482614742698191,
+        0.8741935483870967,
+        0.8803894297635605
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Fue un trimestre interesante, ya que vimos crecimiento en todas las clases de activos. Desde fines del año pasado hasta el primer trimestre, la mayor parte del crecimiento había sido impulsada por Letras del Tesoro Nacional. Este trimestre, el crecimiento fue generalizado; en términos porcentuales, las obligaciones negociables fueron las que más crecieron, aunque los títulos públicos siguen siendo el componente más grande en términos de valor de mercado y, por lo tanto, los que más aportaron al crecimiento en términos absolutos.\nLos activos de CEDEARs bajo custodia crecieron 18% trimestre contra trimestre, impulsados más por volumen que por precio — aproximadamente dos tercios de ese crecimiento provino de un aumento en la tenencia de CEDEARs y no de la apreciación de precios. Esto indica que tanto los inversores minoristas como los institucionales locales están demandando más CEDEARs, lo que lleva a los market makers a convertir más acciones y así impulsar el crecimiento del AUC.\nComo resultado, el CSD mostró resultados muy sólidos: los ingresos se duplicaron interanualmente, impulsados tanto por los servicios core del CSD como por los servicios adicionales. Como recordatorio, los \"servicios adicionales\" están relacionados con la custodia internacional —tanto flujos salientes (instituciones locales que compran activos en el exterior) como entrantes (inversores extranjeros que compran activos locales)— así como los instrumentos PyME, que también contribuyeron al crecimiento del AUC y de los ingresos.\nEl crecimiento se aceleró respecto del primer trimestre, y esperamos que esta tendencia continúe. Está siendo impulsado por el Tesoro Nacional: el Banco Central viene comprando importantes reservas en dólares, y los pesos emitidos para esas compras están siendo absorbidos por el Tesoro mediante la emisión de títulos — títulos que terminan en custodia, beneficiando al segmento de CSD.\nEn cuanto al negocio bursátil, el crecimiento fue más moderado, similar al del trimestre anterior — 41% en términos históricos. Las acciones siguen siendo el segmento más grande, seguidas por las cauciones bursátiles y la renta fija.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        637.0,
+        542.0,
+        719.0
+      ],
+      "bbox_norm": [
+        0.10806451612903226,
+        0.885952712100139,
+        0.8741935483870967,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "Fue un trimestre interesante, ya que vimos crecimiento en todas las clases de activos. Desde fines del año pasado hasta el primer trimestre, la mayor parte del crecimiento había sido impulsada por Letras del Tesoro Nacional. Este trimestre, el crecimiento fue generalizado; en términos porcentuales, las obligaciones negociables fueron las que más crecieron, aunque los títulos públicos siguen siendo el componente más grande en términos de valor de mercado y, por lo tanto, los que más aportaron al crecimiento en términos absolutos.\nLos activos de CEDEARs bajo custodia crecieron 18% trimestre contra trimestre, impulsados más por volumen que por precio — aproximadamente dos tercios de ese crecimiento provino de un aumento en la tenencia de CEDEARs y no de la apreciación de precios. Esto indica que tanto los inversores minoristas como los institucionales locales están demandando más CEDEARs, lo que lleva a los market makers a convertir más acciones y así impulsar el crecimiento del AUC.\nComo resultado, el CSD mostró resultados muy sólidos: los ingresos se duplicaron interanualmente, impulsados tanto por los servicios core del CSD como por los servicios adicionales. Como recordatorio, los \"servicios adicionales\" están relacionados con la custodia internacional —tanto flujos salientes (instituciones locales que compran activos en el exterior) como entrantes (inversores extranjeros que compran activos locales)— así como los instrumentos PyME, que también contribuyeron al crecimiento del AUC y de los ingresos.\nEl crecimiento se aceleró respecto del primer trimestre, y esperamos que esta tendencia continúe. Está siendo impulsado por el Tesoro Nacional: el Banco Central viene comprando importantes reservas en dólares, y los pesos emitidos para esas compras están siendo absorbidos por el Tesoro mediante la emisión de títulos — títulos que terminan en custodia, beneficiando al segmento de CSD.\nEn cuanto al negocio bursátil, el crecimiento fue más moderado, similar al del trimestre anterior — 41% en términos históricos. Las acciones siguen siendo el segmento más grande, seguidas por las cauciones bursátiles y la renta fija.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        71.0,
+        542.0,
+        166.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.10099573257467995,
+        0.9963235294117647,
+        0.2361308677098151
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "Fue un trimestre interesante, ya que vimos crecimiento en todas las clases de activos. Desde fines del año pasado hasta el primer trimestre, la mayor parte del crecimiento había sido impulsada por Letras del Tesoro Nacional. Este trimestre, el crecimiento fue generalizado; en términos porcentuales, las obligaciones negociables fueron las que más crecieron, aunque los títulos públicos siguen siendo el componente más grande en términos de valor de mercado y, por lo tanto, los que más aportaron al crecimiento en términos absolutos.\nLos activos de CEDEARs bajo custodia crecieron 18% trimestre contra trimestre, impulsados más por volumen que por precio — aproximadamente dos tercios de ese crecimiento provino de un aumento en la tenencia de CEDEARs y no de la apreciación de precios. Esto indica que tanto los inversores minoristas como los institucionales locales están demandando más CEDEARs, lo que lleva a los market makers a convertir más acciones y así impulsar el crecimiento del AUC.\nComo resultado, el CSD mostró resultados muy sólidos: los ingresos se duplicaron interanualmente, impulsados tanto por los servicios core del CSD como por los servicios adicionales. Como recordatorio, los \"servicios adicionales\" están relacionados con la custodia internacional —tanto flujos salientes (instituciones locales que compran activos en el exterior) como entrantes (inversores extranjeros que compran activos locales)— así como los instrumentos PyME, que también contribuyeron al crecimiento del AUC y de los ingresos.\nEl crecimiento se aceleró respecto del primer trimestre, y esperamos que esta tendencia continúe. Está siendo impulsado por el Tesoro Nacional: el Banco Central viene comprando importantes reservas en dólares, y los pesos emitidos para esas compras están siendo absorbidos por el Tesoro mediante la emisión de títulos — títulos que terminan en custodia, beneficiando al segmento de CSD.\nEn cuanto al negocio bursátil, el crecimiento fue más moderado, similar al del trimestre anterior — 41% en términos históricos. Las acciones siguen siendo el segmento más grande, seguidas por las cauciones bursátiles y la renta fija.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        170.0,
+        542.0,
+        238.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.24182076813655762,
+        0.9963235294117647,
+        0.3385490753911807
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "Fue un trimestre interesante, ya que vimos crecimiento en todas las clases de activos. Desde fines del año pasado hasta el primer trimestre, la mayor parte del crecimiento había sido impulsada por Letras del Tesoro Nacional. Este trimestre, el crecimiento fue generalizado; en términos porcentuales, las obligaciones negociables fueron las que más crecieron, aunque los títulos públicos siguen siendo el componente más grande en términos de valor de mercado y, por lo tanto, los que más aportaron al crecimiento en términos absolutos.\nLos activos de CEDEARs bajo custodia crecieron 18% trimestre contra trimestre, impulsados más por volumen que por precio — aproximadamente dos tercios de ese crecimiento provino de un aumento en la tenencia de CEDEARs y no de la apreciación de precios. Esto indica que tanto los inversores minoristas como los institucionales locales están demandando más CEDEARs, lo que lleva a los market makers a convertir más acciones y así impulsar el crecimiento del AUC.\nComo resultado, el CSD mostró resultados muy sólidos: los ingresos se duplicaron interanualmente, impulsados tanto por los servicios core del CSD como por los servicios adicionales. Como recordatorio, los \"servicios adicionales\" están relacionados con la custodia internacional —tanto flujos salientes (instituciones locales que compran activos en el exterior) como entrantes (inversores extranjeros que compran activos locales)— así como los instrumentos PyME, que también contribuyeron al crecimiento del AUC y de los ingresos.\nEl crecimiento se aceleró respecto del primer trimestre, y esperamos que esta tendencia continúe. Está siendo impulsado por el Tesoro Nacional: el Banco Central viene comprando importantes reservas en dólares, y los pesos emitidos para esas compras están siendo absorbidos por el Tesoro mediante la emisión de títulos — títulos que terminan en custodia, beneficiando al segmento de CSD.\nEn cuanto al negocio bursátil, el crecimiento fue más moderado, similar al del trimestre anterior — 41% en términos históricos. Las acciones siguen siendo el segmento más grande, seguidas por las cauciones bursátiles y la renta fija.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        242.0,
+        542.0,
+        283.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.3442389758179232,
+        0.9963235294117647,
+        0.40256045519203415
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        287.0,
+        544.0,
+        369.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.40825035561877665,
+        1.0,
+        0.5248933143669986
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        372.0,
+        544.0,
+        428.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.5291607396870555,
+        1.0,
+        0.6088193456614509
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        431.0,
+        544.0,
+        459.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.6130867709815079,
+        1.0,
+        0.6529160739687055
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        463.0,
+        544.0,
+        545.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.6586059743954481,
+        1.0,
+        0.7752489331436699
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        548.0,
+        544.0,
+        603.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.7795163584637269,
+        1.0,
+        0.8577524893314367
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "En acciones, el volumen operado diario promedio (ADTV) creció 92% interanual. Parte de esta comparación refleja un cambio de arancel: actualmente cobramos 5 puntos básicos sobre acciones, frente a una reducción de 8 a 7 puntos básicos en mayo del año pasado — por lo que, aproximadamente, la mitad del trimestre comparable del año pasado se facturó al arancel más alto de 8 pb, lo que explica parte de la brecha entre el crecimiento del volumen y el de los ingresos.\nVale destacar que todo el crecimiento del ADTV provino de CEDEARs. La negociación de acciones locales, en cambio, se mantuvo bastante estable trimestre a trimestre — entre ARS 90.000 y 100.000 millones— con la excepción del cuarto trimestre del año pasado, cuando el mercado repuntó tras las elecciones de fines de octubre.\nTenemos dos iniciativas en marcha para cambiar esta dinámica: un programa de market maker local y un ETF local.\nBYMA ya seleccionó a un broker-dealer para actuar como market maker de las acciones de BYMA a nivel local; se espera que esté operativo en octubre. Dado que este market maker operará desde el exterior, todavía resta resolver cierta conectividad. También estamos conversando con otros emisores locales sobre la posibilidad de contratar un market maker local, lo que debería ayudar a impulsar el crecimiento de los volúmenes de renta variable local en general.\nUn banco local confirmó que lanzará el primer ETF local que replica el índice S&P Merval, también hacia octubre. Esto generará oportunidades de arbitraje —tanto entre el ETF y sus acciones subyacentes, como entre el ETF y el futuro del índice— lo que debería impulsar aún más los volúmenes de renta variable local.\nLa negociación de renta fija se recuperó este trimestre. El primer trimestre había sido débil por la fuerte intervención del Banco Central durante el tercer y cuarto trimestre del año pasado. A medida que las tasas de interés bajaron —favorecidas por la liquidez que el Banco Central inyectó mientras acumulaba reservas en dólares— los volúmenes operados diarios promedio se recuperaron tanto en el segmento garantizado como en el bilateral este trimestre, junto con el correspondiente crecimiento de ingresos frente al año pasado y al primer trimestre.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        66.0,
+        607.0,
+        542.0,
+        703.0
+      ],
+      "bbox_norm": [
+        0.1213235294117647,
+        0.8634423897581792,
+        0.9963235294117647,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "También tenemos una iniciativa en marcha en este segmento: la reciente adquisición de Quantex, una plataforma OTC que utiliza un mecanismo de negociación por solicitud de cotización (RFQ). Esta plataforma se está implementando en conjunto con Tradeweb, lo que facilitará el acceso de los inversores extranjeros a la renta fija local. BYMA actuará como único intermediario para todo el mercado, de modo que los broker-dealers extranjeros no necesitarán establecer una línea de crédito con las contrapartes locales. Creemos que esto incrementará los volúmenes operados por inversores extranjeros interesados en instrumentos locales.\nLas cauciones bursátiles cayeron por primera vez, luego de que el regulador local introdujera un límite al apalancamiento (relación deuda-patrimonio) que pueden utilizar los brokers locales —un límite relativo, atado al patrimonio neto de cada broker y no a un monto fijo—. A medida que crezca el patrimonio de los brokers, este límite debería crecer junto con él, aunque esperamos un ritmo de crecimiento más moderado que antes. Consideramos que la caída de este trimestre es un ajuste puntual: los volúmenes diarios muestran una recuperación del crecimiento en el segundo trimestre, aunque todavía no vuelven a los niveles máximos anteriores.\nLos datos de mercado siguen representando una porción pequeña de los ingresos totales. Esperamos que esta línea crezca a medida que se lancen los ETFs locales y más de ellos comiencen a utilizar nuestros índices.\nLos gastos crecieron por encima de la inflación este trimestre, y aproximadamente la mitad de ese incremento está relacionado con el lanzamiento de BYMA Clearing — incluyendo honorarios de consultoría pagados a proveedores tecnológicos, bonos vinculados al lanzamiento y horas extra. Tanto la línea de compensaciones como la de consultoría reflejan este impacto puntual, que debería atenuarse a partir del próximo trimestre.\nLa otra mitad del incremento en compensaciones refleja el crecimiento de la dotación de personal, en la medida en que seguimos ajustando el perfil de nuestros equipos en determinadas áreas —aunque, nuevamente, esperamos que esto se normalice en los próximos trimestres.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        66.0,
+        71.0,
+        542.0,
+        179.0
+      ],
+      "bbox_norm": [
+        0.1213235294117647,
+        0.09916201117318436,
+        0.9963235294117647,
+        0.25
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "También tenemos una iniciativa en marcha en este segmento: la reciente adquisición de Quantex, una plataforma OTC que utiliza un mecanismo de negociación por solicitud de cotización (RFQ). Esta plataforma se está implementando en conjunto con Tradeweb, lo que facilitará el acceso de los inversores extranjeros a la renta fija local. BYMA actuará como único intermediario para todo el mercado, de modo que los broker-dealers extranjeros no necesitarán establecer una línea de crédito con las contrapartes locales. Creemos que esto incrementará los volúmenes operados por inversores extranjeros interesados en instrumentos locales.\nLas cauciones bursátiles cayeron por primera vez, luego de que el regulador local introdujera un límite al apalancamiento (relación deuda-patrimonio) que pueden utilizar los brokers locales —un límite relativo, atado al patrimonio neto de cada broker y no a un monto fijo—. A medida que crezca el patrimonio de los brokers, este límite debería crecer junto con él, aunque esperamos un ritmo de crecimiento más moderado que antes. Consideramos que la caída de este trimestre es un ajuste puntual: los volúmenes diarios muestran una recuperación del crecimiento en el segundo trimestre, aunque todavía no vuelven a los niveles máximos anteriores.\nLos datos de mercado siguen representando una porción pequeña de los ingresos totales. Esperamos que esta línea crezca a medida que se lancen los ETFs locales y más de ellos comiencen a utilizar nuestros índices.\nLos gastos crecieron por encima de la inflación este trimestre, y aproximadamente la mitad de ese incremento está relacionado con el lanzamiento de BYMA Clearing — incluyendo honorarios de consultoría pagados a proveedores tecnológicos, bonos vinculados al lanzamiento y horas extra. Tanto la línea de compensaciones como la de consultoría reflejan este impacto puntual, que debería atenuarse a partir del próximo trimestre.\nLa otra mitad del incremento en compensaciones refleja el crecimiento de la dotación de personal, en la medida en que seguimos ajustando el perfil de nuestros equipos en determinadas áreas —aunque, nuevamente, esperamos que esto se normalice en los próximos trimestres.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        183.0,
+        544.0,
+        292.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.25558659217877094,
+        1.0,
+        0.40782122905027934
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "También tenemos una iniciativa en marcha en este segmento: la reciente adquisición de Quantex, una plataforma OTC que utiliza un mecanismo de negociación por solicitud de cotización (RFQ). Esta plataforma se está implementando en conjunto con Tradeweb, lo que facilitará el acceso de los inversores extranjeros a la renta fija local. BYMA actuará como único intermediario para todo el mercado, de modo que los broker-dealers extranjeros no necesitarán establecer una línea de crédito con las contrapartes locales. Creemos que esto incrementará los volúmenes operados por inversores extranjeros interesados en instrumentos locales.\nLas cauciones bursátiles cayeron por primera vez, luego de que el regulador local introdujera un límite al apalancamiento (relación deuda-patrimonio) que pueden utilizar los brokers locales —un límite relativo, atado al patrimonio neto de cada broker y no a un monto fijo—. A medida que crezca el patrimonio de los brokers, este límite debería crecer junto con él, aunque esperamos un ritmo de crecimiento más moderado que antes. Consideramos que la caída de este trimestre es un ajuste puntual: los volúmenes diarios muestran una recuperación del crecimiento en el segundo trimestre, aunque todavía no vuelven a los niveles máximos anteriores.\nLos datos de mercado siguen representando una porción pequeña de los ingresos totales. Esperamos que esta línea crezca a medida que se lancen los ETFs locales y más de ellos comiencen a utilizar nuestros índices.\nLos gastos crecieron por encima de la inflación este trimestre, y aproximadamente la mitad de ese incremento está relacionado con el lanzamiento de BYMA Clearing — incluyendo honorarios de consultoría pagados a proveedores tecnológicos, bonos vinculados al lanzamiento y horas extra. Tanto la línea de compensaciones como la de consultoría reflejan este impacto puntual, que debería atenuarse a partir del próximo trimestre.\nLa otra mitad del incremento en compensaciones refleja el crecimiento de la dotación de personal, en la medida en que seguimos ajustando el perfil de nuestros equipos en determinadas áreas —aunque, nuevamente, esperamos que esto se normalice en los próximos trimestres.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        297.0,
+        544.0,
+        337.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.41480446927374304,
+        1.0,
+        0.47067039106145253
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "También tenemos una iniciativa en marcha en este segmento: la reciente adquisición de Quantex, una plataforma OTC que utiliza un mecanismo de negociación por solicitud de cotización (RFQ). Esta plataforma se está implementando en conjunto con Tradeweb, lo que facilitará el acceso de los inversores extranjeros a la renta fija local. BYMA actuará como único intermediario para todo el mercado, de modo que los broker-dealers extranjeros no necesitarán establecer una línea de crédito con las contrapartes locales. Creemos que esto incrementará los volúmenes operados por inversores extranjeros interesados en instrumentos locales.\nLas cauciones bursátiles cayeron por primera vez, luego de que el regulador local introdujera un límite al apalancamiento (relación deuda-patrimonio) que pueden utilizar los brokers locales —un límite relativo, atado al patrimonio neto de cada broker y no a un monto fijo—. A medida que crezca el patrimonio de los brokers, este límite debería crecer junto con él, aunque esperamos un ritmo de crecimiento más moderado que antes. Consideramos que la caída de este trimestre es un ajuste puntual: los volúmenes diarios muestran una recuperación del crecimiento en el segundo trimestre, aunque todavía no vuelven a los niveles máximos anteriores.\nLos datos de mercado siguen representando una porción pequeña de los ingresos totales. Esperamos que esta línea crezca a medida que se lancen los ETFs locales y más de ellos comiencen a utilizar nuestros índices.\nLos gastos crecieron por encima de la inflación este trimestre, y aproximadamente la mitad de ese incremento está relacionado con el lanzamiento de BYMA Clearing — incluyendo honorarios de consultoría pagados a proveedores tecnológicos, bonos vinculados al lanzamiento y horas extra. Tanto la línea de compensaciones como la de consultoría reflejan este impacto puntual, que debería atenuarse a partir del próximo trimestre.\nLa otra mitad del incremento en compensaciones refleja el crecimiento de la dotación de personal, en la medida en que seguimos ajustando el perfil de nuestros equipos en determinadas áreas —aunque, nuevamente, esperamos que esto se normalice en los próximos trimestres.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        341.0,
+        544.0,
+        422.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.4762569832402235,
+        1.0,
+        0.5893854748603352
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "También tenemos una iniciativa en marcha en este segmento: la reciente adquisición de Quantex, una plataforma OTC que utiliza un mecanismo de negociación por solicitud de cotización (RFQ). Esta plataforma se está implementando en conjunto con Tradeweb, lo que facilitará el acceso de los inversores extranjeros a la renta fija local. BYMA actuará como único intermediario para todo el mercado, de modo que los broker-dealers extranjeros no necesitarán establecer una línea de crédito con las contrapartes locales. Creemos que esto incrementará los volúmenes operados por inversores extranjeros interesados en instrumentos locales.\nLas cauciones bursátiles cayeron por primera vez, luego de que el regulador local introdujera un límite al apalancamiento (relación deuda-patrimonio) que pueden utilizar los brokers locales —un límite relativo, atado al patrimonio neto de cada broker y no a un monto fijo—. A medida que crezca el patrimonio de los brokers, este límite debería crecer junto con él, aunque esperamos un ritmo de crecimiento más moderado que antes. Consideramos que la caída de este trimestre es un ajuste puntual: los volúmenes diarios muestran una recuperación del crecimiento en el segundo trimestre, aunque todavía no vuelven a los niveles máximos anteriores.\nLos datos de mercado siguen representando una porción pequeña de los ingresos totales. Esperamos que esta línea crezca a medida que se lancen los ETFs locales y más de ellos comiencen a utilizar nuestros índices.\nLos gastos crecieron por encima de la inflación este trimestre, y aproximadamente la mitad de ese incremento está relacionado con el lanzamiento de BYMA Clearing — incluyendo honorarios de consultoría pagados a proveedores tecnológicos, bonos vinculados al lanzamiento y horas extra. Tanto la línea de compensaciones como la de consultoría reflejan este impacto puntual, que debería atenuarse a partir del próximo trimestre.\nLa otra mitad del incremento en compensaciones refleja el crecimiento de la dotación de personal, en la medida en que seguimos ajustando el perfil de nuestros equipos en determinadas áreas —aunque, nuevamente, esperamos que esto se normalice en los próximos trimestres.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        426.0,
+        544.0,
+        481.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.5949720670391061,
+        1.0,
+        0.6717877094972067
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        485.0,
+        542.0,
+        553.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.6773743016759777,
+        0.9963235294117647,
+        0.7723463687150838
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        557.0,
+        542.0,
+        612.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.7779329608938548,
+        0.9963235294117647,
+        0.8547486033519553
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        617.0,
+        542.0,
+        670.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.861731843575419,
+        0.9963235294117647,
+        0.9357541899441341
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        674.0,
+        542.0,
+        716.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.9413407821229051,
+        0.9963235294117647,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        103.0,
+        542.0,
+        171.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.1512481644640235,
+        0.998158379373849,
+        0.2511013215859031
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        174.0,
+        542.0,
+        229.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.2555066079295154,
+        0.998158379373849,
+        0.33627019089574156
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        233.0,
+        543.0,
+        248.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.342143906020558,
+        1.0,
+        0.3641703377386197
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        270.0,
+        542.0,
+        283.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.3964757709251101,
+        0.998158379373849,
+        0.4155653450807636
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Por último, nuestra línea de Ingresos Brutos creció por debajo de la inflación, reflejando los primeros resultados de nuestras iniciativas de eficiencia fiscal. Esperamos un crecimiento aún menor en esta línea durante los próximos trimestres, a medida que estas iniciativas —algunas implementadas hacia fines del primer trimestre, otras durante el segundo— alcancen su efecto pleno.\nLas ganancias vinculadas al tipo de cambio (por la devaluación de la moneda) volvieron a ser positivas este trimestre, tras una pérdida en el primer trimestre debido a la apreciación del peso. El peso volvió a devaluarse en el segundo trimestre, generando ganancias en términos de pesos.\nLos resultados por intereses y por valuación a mercado fueron similares a los del primer trimestre —un buen resultado considerando las tasas de interés reales negativas durante buena parte del trimestre, algo que interpretamos positivamente dado el contexto de mercado.\nComo resultado, los indicadores de eficiencia se mantienen sólidos. Los márgenes bajaron levemente respecto de los máximos históricos de EBITDA y margen operativo, pero se mantienen cerca de esos picos. Dado que aproximadamente la mitad del incremento en gastos estuvo asociado al lanzamiento puntual de BYMA Clearing, esperamos que la eficiencia vuelva a mejorar en lo que resta del año.\nDejamos las cifras históricas como referencia. Una corrección: los porcentajes de la primera línea del documento enviado por correo electrónico contenían un error, que ya fue corregido en esta presentación —solo esa página se vio afectada; la página anterior era correcta—. Vamos a subir la versión corregida a nuestro sitio de Relaciones con Inversores, así que les pedimos descartar la versión enviada por correo.\nRepasamos el lanzamiento de BYMA Clearing y nuestros principales proyectos. También quiero mencionar que relanzamos nuestro sitio de Relaciones con Inversores, lo que debería facilitar la búsqueda de información —cualquier comentario es bienvenido.\nDicho esto, abrimos la ronda de preguntas.\nPREGUNTAS Y RESPUESTAS\n[Pedro Offenhenden]:",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        289.0,
+        543.0,
+        303.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.4243759177679883,
+        1.0,
+        0.44493392070484583
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        308.0,
+        542.0,
+        362.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.4522760646108664,
+        0.998158379373849,
+        0.5315712187958884
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        366.0,
+        543.0,
+        381.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.5374449339207048,
+        1.0,
+        0.5594713656387665
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        385.0,
+        543.0,
+        398.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.5653450807635829,
+        1.0,
+        0.5844346549192364
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        403.0,
+        543.0,
+        419.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.591776798825257,
+        1.0,
+        0.6152716593245228
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        422.0,
+        543.0,
+        449.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.6196769456681351,
+        1.0,
+        0.6593245227606461
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        453.0,
+        543.0,
+        468.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.6651982378854625,
+        1.0,
+        0.6872246696035242
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        472.0,
+        543.0,
+        486.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.6930983847283406,
+        1.0,
+        0.7136563876651982
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        509.0,
+        542.0,
+        577.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.7474302496328928,
+        0.998158379373849,
+        0.8472834067547724
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        581.0,
+        543.0,
+        595.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.8531571218795888,
+        1.0,
+        0.8737151248164464
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        599.0,
+        542.0,
+        681.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.8795888399412628,
+        0.998158379373849,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "Gracias por tomarse el tiempo para esta llamada. Una pregunta sobre gastos — mencionaron gastos puntuales relacionados con el lanzamiento de BYMA Clearing este trimestre. ¿Deberíamos esperar gastos extraordinarios adicionales en el segundo semestre, o ya se reconoció todo este trimestre?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSe reconoció todo este trimestre.\n[Pedro Offenhenden]:\nEntendido —¿entonces deberíamos esperar gastos normalizados, similares a los de fin de año pasado?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nExacto —más cercanos a los del primer trimestre de este año.\n[William Barranjard]:\nGracias por la presentación, y felicitaciones por el nuevo sitio de Relaciones con Inversores —fue fácil de usar. Tengo dos preguntas. Primero, sobre los ingresos del CSD: noté que cayeron levemente a pesar de que el AUC creció cerca de 11%. ¿Podrían ayudarme a entender esa disociación —es un cambio de mix, o algo que podría afectar los rendimientos hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSiempre comparamos contra el mismo trimestre del año anterior porque parte del mix de ingresos es estacional. En el primer y el tercer trimestre cobramos comisiones sobre los pagos de cupones relacionados con la deuda externa del gobierno nacional, que son montos relativamente grandes. Habitualmente vemos un aumento correspondiente en las comisiones por acciones corporativas en enero y julio —esa estacionalidad explica la mayor parte de la diferencia.\n[William Barranjard]:\nEntendido, gracias. Mi segunda pregunta es sobre la dinámica entre los CEDEARs y las acciones locales —mencionaron que los volúmenes de renta variable local estuvieron planos, y que planean lanzar un market maker local para ayudar. ¿Existe una correlación en la que el crecimiento de los CEDEARs esté quitando capital a las acciones locales? ¿Y este crecimiento está vinculado a alguna tendencia particular — por ejemplo, acciones de memoria/semiconductores— y, si es así, existe el riesgo de que el crecimiento de los CEDEARs se desacelere si esa tendencia se enfría?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        71.0,
+        542.0,
+        166.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.10028248587570622,
+        0.998158379373849,
+        0.2344632768361582
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        169.0,
+        543.0,
+        184.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.2387005649717514,
+        1.0,
+        0.2598870056497175
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        188.0,
+        542.0,
+        256.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.2655367231638418,
+        0.998158379373849,
+        0.3615819209039548
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        260.0,
+        542.0,
+        369.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.3672316384180791,
+        0.998158379373849,
+        0.5211864406779662
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        372.0,
+        542.0,
+        387.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.5254237288135594,
+        0.998158379373849,
+        0.5466101694915254
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        391.0,
+        543.0,
+        405.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.5522598870056498,
+        1.0,
+        0.5720338983050848
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        409.0,
+        542.0,
+        464.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.577683615819209,
+        0.998158379373849,
+        0.655367231638418
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        468.0,
+        543.0,
+        482.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.6610169491525424,
+        1.0,
+        0.6807909604519774
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEs un buen punto. Listamos el CEDEAR de SpaceX el mismo día en que se concretó su IPO en Estados Unidos —estuvo disponible para operar localmente en dos o tres horas. Fue el CEDEAR más operado durante una semana, incluso por encima de SPY, que habitualmente es nuestro CEDEAR más operado. Claramente hay mucho interés en nombres como NVIDIA y otras hyperscalers.\nNuestra conclusión es que los inversores minoristas locales están invirtiendo genuinamente —no solo usando los CEDEARs para dolarizar sus carteras. En cierto sentido, sí, los CEDEARs compiten con las acciones locales, pero en definitiva es decisión del inversor en qué invertir; ellos no distinguen entre tipos de instrumentos de la misma manera en que lo hacemos internamente. Un buen ejemplo es Mercado Libre —la gran mayoría de los inversores asume que cotiza directamente en nuestra bolsa, cuando en realidad opera como CEDEAR. Los inversores se enfocan en la empresa, no en el tipo de instrumento.\nWilliam Barranjard: Entendido, gracias. Ricardo, adelante —yo retomo después.\n[Ricardo Buchpiguel]:\nGracias por la oportunidad. Una repregunta rápida sobre lo de William —¿podrían darnos una idea de la diferencia de rendimiento o margen entre los CEDEARs y las acciones locales? Y por otro lado, ¿podrían ampliar sobre las medidas impositivas que mencionaron, y qué deberíamos esperar para la tasa impositiva del año completo?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nEn cuanto a los márgenes —el margen bruto es prácticamente el mismo para CEDEARs y para acciones locales. Los CEDEARs tienen un margen levemente menor debido a un programa de liquidez mediante el cual ofrecemos descuentos en aranceles a los brokers que proveen liquidez en pantalla. También existen descuentos por day trading que aplican independientemente del tipo de instrumento. Entonces, si bien el arancel nominal es de 5 puntos básicos, la tasa efectiva/implícita es más cercana a 4,5 pb para acciones y 4 pb para CEDEARs.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        486.0,
+        542.0,
+        582.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.6864406779661016,
+        0.998158379373849,
+        0.8220338983050848
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        66.0,
+        585.0,
+        542.0,
+        708.0
+      ],
+      "bbox_norm": [
+        0.12154696132596685,
+        0.826271186440678,
+        0.998158379373849,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        116.0,
+        544.0,
+        157.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.16269284712482468,
+        1.0,
+        0.22019635343618513
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        161.0,
+        544.0,
+        175.0
+      ],
+      "bbox_norm": [
+        0.125,
+        0.22580645161290322,
+        1.0,
+        0.24544179523141654
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        179.0,
+        544.0,
+        248.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.25105189340813466,
+        1.0,
+        0.34782608695652173
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        251.0,
+        544.0,
+        266.0
+      ],
+      "bbox_norm": [
+        0.125,
+        0.3520336605890603,
+        1.0,
+        0.37307152875175315
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "En cuanto a los impuestos —esto se refiere específicamente a Ingresos Brutos, no al impuesto a las ganancias. Tomamos algunas medidas. Dos de nuestras subsidiarias, Tecval y Caja de Valores, trasladaron sus oficinas centrales a Parque Patricio, una zona de la Ciudad de Buenos Aires donde el gobierno local ofrece alícuotas reducidas para fomentar el desarrollo. Hacia fines del primer trimestre, la reducción de alícuota de Tecval ya había sido reconocida por la autoridad fiscal local; la de Caja de Valores llegó en el segundo trimestre, una vez completadas las aprobaciones necesarias. Por separado, BYMA abrió una nueva oficina en Córdoba con alrededor de 50 empleados, que también calificó para una alícuota reducida de Ingresos Brutos. Las provincias efectivamente compiten por la radicación de empresas y fijan sus alícuotas en función de la presencia combinada de la compañía en las distintas jurisdicciones, por lo que esto también ayudó a reducir la alícuota consolidada de Ingresos Brutos de BYMA.\nRicardo Buchpiguel: Muy claro. Pero solo para confirmar —también vimos una caída en la línea de impuesto a las ganancias. ¿Podrían ampliar sobre eso y qué esperar hacia adelante?\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nLa línea de impuesto a las ganancias es volátil principalmente por el resultado financiero, que fluctúa según el mix entre activos locales y en el exterior —ese es el principal driver de la volatilidad trimestre a trimestre, no el negocio core. La alícuota nominal es del 35%; con los mecanismos de eficiencia fiscal disponibles, proyectaríamos una tasa efectiva más cercana al 30% para el año.\n[Ricardo Buchpiguel]:\nMuy claro, gracias.\n[Carlos Gomez-Lopez]:\nHola, gracias por tomar mi pregunta, y felicitaciones. Mi pregunta habitual: ¿hay algún avance en la reducción o eliminación de los controles cambiarios, o alguna visibilidad de que eso ocurra más adelante este año? Y segundo —después de un período de tasas de interés muy bajas, ¿cómo afectarían tasas más altas al negocio, positiva o negativamente, en los distintos segmentos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        307.0,
+        544.0,
+        375.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.4305750350631136,
+        1.0,
+        0.5259467040673211
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSobre los controles cambiarios —nuestra visión, que se fue reforzando a lo largo del año, es que no esperamos cambios antes de las elecciones. Las autoridades del Banco Central y del Ministerio de Economía se han vuelto más claras al respecto. Curiosamente, envían señales algo contradictorias: por un lado, dicen que no les preocupa la volatilidad cambiaria del año que viene porque están construyendo reservas sólidas; por otro, dicen que quieren evitar una repetición de la volatilidad del año pasado, por lo que se mantienen cautelosos respecto de modificar los controles cambiarios. De hecho, este año se agregó un nuevo control —un plazo mínimo de 90 días entre el envío de fondos al exterior y su reingreso a través del mercado, apuntado a inversores minoristas—. Eso refuerza nuestra visión de que los controles, si algo, se están endureciendo en lugar de flexibilizarse.\nSobre las tasas de interés —dejando de lado la relación entre tasas y precios de los activos, tasas más altas beneficiarían a nuestros otros ingresos operativos (rendimiento de la cartera), por lo que el hecho de que los resultados de este trimestre hayan sido similares a los del primer trimestre, a pesar del contexto de tasas bajas, es un buen resultado desde el punto de vista de la gestión de la cartera. También solemos ver más actividad de arbitraje —por ejemplo, entre cauciones bursátiles y letras de corto plazo— en contextos de mayor inflación y tasas más altas; esa actividad de arbitraje viene siendo algo menor a medida que las tasas bajaron.\n[Carlos Gomez-Lopez]:\nGracias.\n[Ignacio Sniechowski]:\nHola Alejandro, gracias por tomar mi pregunta. ¿Podrían darnos una actualización de la posición de caja de BYMA? Segundo, ¿podrían desglosar ese 68% en pesos —son letras y bonos del Tesoro Nacional, ajustados por CER, o dólar linked? Y por último, ¿esperan que esa proporción en pesos se desplace hacia dólares hacia adelante, o es un nivel con el que se sienten cómodos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        379.0,
+        542.0,
+        393.0
+      ],
+      "bbox_norm": [
+        0.125,
+        0.5315568022440392,
+        0.9963235294117647,
+        0.5511921458625526
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSobre los controles cambiarios —nuestra visión, que se fue reforzando a lo largo del año, es que no esperamos cambios antes de las elecciones. Las autoridades del Banco Central y del Ministerio de Economía se han vuelto más claras al respecto. Curiosamente, envían señales algo contradictorias: por un lado, dicen que no les preocupa la volatilidad cambiaria del año que viene porque están construyendo reservas sólidas; por otro, dicen que quieren evitar una repetición de la volatilidad del año pasado, por lo que se mantienen cautelosos respecto de modificar los controles cambiarios. De hecho, este año se agregó un nuevo control —un plazo mínimo de 90 días entre el envío de fondos al exterior y su reingreso a través del mercado, apuntado a inversores minoristas—. Eso refuerza nuestra visión de que los controles, si algo, se están endureciendo en lugar de flexibilizarse.\nSobre las tasas de interés —dejando de lado la relación entre tasas y precios de los activos, tasas más altas beneficiarían a nuestros otros ingresos operativos (rendimiento de la cartera), por lo que el hecho de que los resultados de este trimestre hayan sido similares a los del primer trimestre, a pesar del contexto de tasas bajas, es un buen resultado desde el punto de vista de la gestión de la cartera. También solemos ver más actividad de arbitraje —por ejemplo, entre cauciones bursátiles y letras de corto plazo— en contextos de mayor inflación y tasas más altas; esa actividad de arbitraje viene siendo algo menor a medida que las tasas bajaron.\n[Carlos Gomez-Lopez]:\nGracias.\n[Ignacio Sniechowski]:\nHola Alejandro, gracias por tomar mi pregunta. ¿Podrían darnos una actualización de la posición de caja de BYMA? Segundo, ¿podrían desglosar ese 68% en pesos —son letras y bonos del Tesoro Nacional, ajustados por CER, o dólar linked? Y por último, ¿esperan que esa proporción en pesos se desplace hacia dólares hacia adelante, o es un nivel con el que se sienten cómodos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        397.0,
+        541.0,
+        546.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.5568022440392707,
+        0.9944852941176471,
+        0.7657784011220197
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSobre los controles cambiarios —nuestra visión, que se fue reforzando a lo largo del año, es que no esperamos cambios antes de las elecciones. Las autoridades del Banco Central y del Ministerio de Economía se han vuelto más claras al respecto. Curiosamente, envían señales algo contradictorias: por un lado, dicen que no les preocupa la volatilidad cambiaria del año que viene porque están construyendo reservas sólidas; por otro, dicen que quieren evitar una repetición de la volatilidad del año pasado, por lo que se mantienen cautelosos respecto de modificar los controles cambiarios. De hecho, este año se agregó un nuevo control —un plazo mínimo de 90 días entre el envío de fondos al exterior y su reingreso a través del mercado, apuntado a inversores minoristas—. Eso refuerza nuestra visión de que los controles, si algo, se están endureciendo en lugar de flexibilizarse.\nSobre las tasas de interés —dejando de lado la relación entre tasas y precios de los activos, tasas más altas beneficiarían a nuestros otros ingresos operativos (rendimiento de la cartera), por lo que el hecho de que los resultados de este trimestre hayan sido similares a los del primer trimestre, a pesar del contexto de tasas bajas, es un buen resultado desde el punto de vista de la gestión de la cartera. También solemos ver más actividad de arbitraje —por ejemplo, entre cauciones bursátiles y letras de corto plazo— en contextos de mayor inflación y tasas más altas; esa actividad de arbitraje viene siendo algo menor a medida que las tasas bajaron.\n[Carlos Gomez-Lopez]:\nGracias.\n[Ignacio Sniechowski]:\nHola Alejandro, gracias por tomar mi pregunta. ¿Podrían darnos una actualización de la posición de caja de BYMA? Segundo, ¿podrían desglosar ese 68% en pesos —son letras y bonos del Tesoro Nacional, ajustados por CER, o dólar linked? Y por último, ¿esperan que esa proporción en pesos se desplace hacia dólares hacia adelante, o es un nivel con el que se sienten cómodos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        550.0,
+        541.0,
+        659.0
+      ],
+      "bbox_norm": [
+        0.12316176470588236,
+        0.7713884992987378,
+        0.9944852941176471,
+        0.9242636746143057
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSobre los controles cambiarios —nuestra visión, que se fue reforzando a lo largo del año, es que no esperamos cambios antes de las elecciones. Las autoridades del Banco Central y del Ministerio de Economía se han vuelto más claras al respecto. Curiosamente, envían señales algo contradictorias: por un lado, dicen que no les preocupa la volatilidad cambiaria del año que viene porque están construyendo reservas sólidas; por otro, dicen que quieren evitar una repetición de la volatilidad del año pasado, por lo que se mantienen cautelosos respecto de modificar los controles cambiarios. De hecho, este año se agregó un nuevo control —un plazo mínimo de 90 días entre el envío de fondos al exterior y su reingreso a través del mercado, apuntado a inversores minoristas—. Eso refuerza nuestra visión de que los controles, si algo, se están endureciendo en lugar de flexibilizarse.\nSobre las tasas de interés —dejando de lado la relación entre tasas y precios de los activos, tasas más altas beneficiarían a nuestros otros ingresos operativos (rendimiento de la cartera), por lo que el hecho de que los resultados de este trimestre hayan sido similares a los del primer trimestre, a pesar del contexto de tasas bajas, es un buen resultado desde el punto de vista de la gestión de la cartera. También solemos ver más actividad de arbitraje —por ejemplo, entre cauciones bursátiles y letras de corto plazo— en contextos de mayor inflación y tasas más altas; esa actividad de arbitraje viene siendo algo menor a medida que las tasas bajaron.\n[Carlos Gomez-Lopez]:\nGracias.\n[Ignacio Sniechowski]:\nHola Alejandro, gracias por tomar mi pregunta. ¿Podrían darnos una actualización de la posición de caja de BYMA? Segundo, ¿podrían desglosar ese 68% en pesos —son letras y bonos del Tesoro Nacional, ajustados por CER, o dólar linked? Y por último, ¿esperan que esa proporción en pesos se desplace hacia dólares hacia adelante, o es un nivel con el que se sienten cómodos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        699.0,
+        542.0,
+        713.0
+      ],
+      "bbox_norm": [
+        0.125,
+        0.9803646563814866,
+        0.9963235294117647,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nSobre los controles cambiarios —nuestra visión, que se fue reforzando a lo largo del año, es que no esperamos cambios antes de las elecciones. Las autoridades del Banco Central y del Ministerio de Economía se han vuelto más claras al respecto. Curiosamente, envían señales algo contradictorias: por un lado, dicen que no les preocupa la volatilidad cambiaria del año que viene porque están construyendo reservas sólidas; por otro, dicen que quieren evitar una repetición de la volatilidad del año pasado, por lo que se mantienen cautelosos respecto de modificar los controles cambiarios. De hecho, este año se agregó un nuevo control —un plazo mínimo de 90 días entre el envío de fondos al exterior y su reingreso a través del mercado, apuntado a inversores minoristas—. Eso refuerza nuestra visión de que los controles, si algo, se están endureciendo en lugar de flexibilizarse.\nSobre las tasas de interés —dejando de lado la relación entre tasas y precios de los activos, tasas más altas beneficiarían a nuestros otros ingresos operativos (rendimiento de la cartera), por lo que el hecho de que los resultados de este trimestre hayan sido similares a los del primer trimestre, a pesar del contexto de tasas bajas, es un buen resultado desde el punto de vista de la gestión de la cartera. También solemos ver más actividad de arbitraje —por ejemplo, entre cauciones bursátiles y letras de corto plazo— en contextos de mayor inflación y tasas más altas; esa actividad de arbitraje viene siendo algo menor a medida que las tasas bajaron.\n[Carlos Gomez-Lopez]:\nGracias.\n[Ignacio Sniechowski]:\nHola Alejandro, gracias por tomar mi pregunta. ¿Podrían darnos una actualización de la posición de caja de BYMA? Segundo, ¿podrían desglosar ese 68% en pesos —son letras y bonos del Tesoro Nacional, ajustados por CER, o dólar linked? Y por último, ¿esperan que esa proporción en pesos se desplace hacia dólares hacia adelante, o es un nivel con el que se sienten cómodos?",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        71.0,
+        541.0,
+        139.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.12633451957295375,
+        0.996316758747698,
+        0.24733096085409254
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        143.0,
+        543.0,
+        157.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.25444839857651247,
+        1.0,
+        0.2793594306049822
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        161.0,
+        542.0,
+        256.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.28647686832740216,
+        0.998158379373849,
+        0.4555160142348754
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        260.0,
+        542.0,
+        368.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.4626334519572954,
+        0.998158379373849,
+        0.6548042704626335
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        372.0,
+        543.0,
+        387.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.6619217081850534,
+        1.0,
+        0.6886120996441281
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        68.0,
+        447.0,
+        543.0,
+        461.0
+      ],
+      "bbox_norm": [
+        0.1252302025782689,
+        0.7953736654804271,
+        1.0,
+        0.8202846975088968
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nAl comienzo del año, nuestra cartera estaba más cerca del 30% en dólares, reflejando nuestro posicionamiento de cara al pago de un dividendo importante —alrededor de USD 125 millones— que pagamos en dólares. Después de ese pago, pasamos a estar cerca del 60% en pesos, y nuestro comité de inversiones desde entonces permitió que la posición en pesos creciera de manera orgánica, ya que cobramos y pagamos la mayor parte de nuestros flujos de caja en pesos —dolarizar implica, en la práctica, vender pesos para comprar dólares.\nDe cara a lo que viene, dado el fuerte flujo exportador —y de no haber continuado las compras de dólares por parte del Banco Central, el peso probablemente se habría depreciado aún más este año— esperamos algo menos de generación de dólares en el segundo semestre por estacionalidad, por lo que la depreciación del peso debería acercarse más a la inflación, que también esperamos que continúe moderándose. Estas decisiones las revisa mensualmente nuestro comité de inversiones, en lugar de fijarse para todo el año, dada la rapidez con la que pueden cambiar las condiciones en Argentina.\n[Ignacio Sniechowski]:\nMuchas gracias, Ale.\nCOMENTARIOS FINALES\n[Alejandro Berney — Oficial de Relación con Inversores, BYMA]:\nGracias a todos por acompañarnos. Como recordatorio, pueden enviarnos sus consultas a ir@byma.com.ar. También quiero presentar a Mora, una nueva incorporación a nuestro equipo de Relaciones con Inversores, a quien muchos de ustedes tal vez todavía no conocen —ella también colabora respondiendo consultas de inversores y, de hecho, lideró el rediseño de nuestro sitio de Relaciones con Inversores. Vamos a subir la grabación de esta llamada en breve. Gracias nuevamente, y que tengan un buen fin de semana.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        67.0,
+        466.0,
+        542.0,
+        562.0
+      ],
+      "bbox_norm": [
+        0.12338858195211787,
+        0.8291814946619217,
+        0.998158379373849,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    }
+  ]
+}

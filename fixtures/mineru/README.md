@@ -2,12 +2,39 @@
 
 Texto durable del parse MinerU (un archivo por PDF de `docs/archivos_muestra/`). El kernel clasifica y extrae **solo** desde acá.
 
+## Files per PDF
+
+| File | Role |
+|------|------|
+| `{stem}.md` | Page-marked text (`<!-- page: N -->`). IDP extractors read this. |
+| `{stem}.content.json` | Span sidecar: text + bbox + page (Phase 0+). |
+
+Loader: `schemas/mineru_artifact.py` → `load_content_sidecar(pdf)`.
+
 ## Quick path
 
-1. Con `demo_4` ya parseado: `python scripts/export_mineru.py`
-2. Sin RAGFlow (host de docs): `python scripts/export_mineru.py --bootstrap-layout`
-3. `./scripts/check.sh`
+1. Texto (no pisa si ya existe el sidecar):
 
-`--bootstrap-layout` materializa el mismo formato `<!-- page: N -->` con poppler. El kernel **no** llama `pdftotext`. En la PC del demo, re-exportar desde chunks MinerU pisa estos archivos.
+```bash
+python scripts/export_mineru.py
+```
+
+2. Sidecars bbox **sin tocar** los `.md` commiteados:
+
+```bash
+python scripts/export_mineru.py --with-content --content-only
+```
+
+3. Opcional: `mineru-api` `content_list` (más fino que positions de chunk):
+
+```bash
+python scripts/export_mineru.py --with-content --content-only --prefer-mineru-api
+```
+
+4. Sin RAGFlow: `python scripts/export_mineru.py --bootstrap-layout` (solo `.md`, sin bbox).
+
+5. `./scripts/check.sh`
+
+**Importante:** no re-exportar `.md` desde RAGFlow si cambió el chunking — rompe page markers y evals. Usar `--content-only` para refrescar bbox.
 
 No recortar memorias: un parse completo.

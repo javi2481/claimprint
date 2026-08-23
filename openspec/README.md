@@ -7,8 +7,8 @@ Claimprint usa SDD **hybrid**: archivos en `openspec/` + observaciones Engram (`
 
 ## Quick path
 
-1. Change **activo:** [`claimprint-v1-close`](changes/claimprint-v1-close/).
-2. Shipped: [`claimprint-idp-kernel`](changes/claimprint-idp-kernel/), [`claimprint-finance-pnl-claims`](changes/claimprint-finance-pnl-claims/), [`claimprint-claim-store`](changes/claimprint-claim-store/), [`claimprint-press-release`](changes/claimprint-press-release/), [`claimprint-mineru-parse`](changes/claimprint-mineru-parse/), [`claimprint-product-shape`](changes/claimprint-product-shape/), [`claimprint-claims-to-rag`](changes/claimprint-claims-to-rag/), [`claimprint-results-presentation`](changes/claimprint-results-presentation/), [`claimprint-academic-close`](changes/claimprint-academic-close/), [`claimprint-press-ltm`](changes/claimprint-press-ltm/). Pin UI/stack: [`claimprint-ragflow`](changes/claimprint-ragflow/) — no inflar.
+1. Change **activo:** [`claimprint-v1.1-three-wp`](changes/claimprint-v1.1-three-wp/) (post-v1: período, ablation, MinerU bbox).
+2. Cerrado: [`claimprint-v1-close`](changes/claimprint-v1-close/) (v1.0.0 release gate).
 3. IDP en cualquier PC: `./scripts/check.sh`. Compose en ≥16 GB. Tras merge en la UI: `python scripts/push_claims.py` y chat nuevo.
 
 ## Details
@@ -22,7 +22,7 @@ Claimprint usa SDD **hybrid**: archivos en `openspec/` + observaciones Engram (`
 
 ## Checklist
 
-- [ ] Este archivo nombra el change activo (`claimprint-v1-close`)
+- [ ] Este archivo nombra el change activo (`claimprint-v1.1-three-wp`)
 - [ ] `claimprint-ragflow` sigue siendo el pin de UI/stack (sin trabajo IDP adentro)
 - [ ] `.env` y API keys **no** están en git
 

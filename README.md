@@ -169,7 +169,8 @@ PDF → MinerU fixture → recipe → eval gold → Claim → RAG chunk → chat
 | Chat | consumer |
 
 Identity vs provenance (v1.0): identity = issuer · period · scope · metric;
-provenance = source_page · source_text. Future (not in v1.0): document_id · source_hash · bbox.
+provenance = source_page · source_text. Press/presentation **period** is content-first
+(portada / `front_matter`, then filename). Future (not in v1.0): document_id · source_hash · bbox.
 
 `scripts/up.sh` starts the optional stack. `python scripts/push_claims.py` is a **separate**
 post-setup step and mutates only dataset `demo_4` and chat `chat_demo_4`.

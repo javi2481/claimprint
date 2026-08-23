@@ -85,6 +85,7 @@ fi
 [[ -f fixtures/mineru/README.md ]] || fail "missing fixtures/mineru/README.md"
 [[ -f fixtures/mineru/BYMA_-_EEFF_31-03-2026_VF.md ]] || fail "missing MinerU fixture for EEFF 1T26"
 [[ -f schemas/parse_artifact.py ]] || fail "missing schemas/parse_artifact.py"
+[[ -f schemas/mineru_artifact.py ]] || fail "missing schemas/mineru_artifact.py"
 [[ -f scripts/export_mineru.py ]] || fail "missing scripts/export_mineru.py"
 pass "file contracts"
 
@@ -93,11 +94,14 @@ mapfile -t pdfs < <(ls docs/archivos_muestra/*.pdf 2>/dev/null || true)
 [[ ${#pdfs[@]} -ge 6 ]] || fail "expected ≥6 PDFs in docs/archivos_muestra/, got ${#pdfs[@]}"
 
 missing_parse=0
+missing_content=0
 for f in docs/archivos_muestra/*.pdf; do
   stem="$(basename "$f" .pdf)"
   [[ -f "fixtures/mineru/${stem}.md" ]] || missing_parse=$((missing_parse + 1))
+  [[ -f "fixtures/mineru/${stem}.content.json" ]] || missing_content=$((missing_content + 1))
 done
 [[ "$missing_parse" -eq 0 ]] || fail "every sample PDF needs fixtures/mineru/<stem>.md (run scripts/export_mineru.py)"
+[[ "$missing_content" -eq 0 ]] || fail "every sample PDF needs fixtures/mineru/<stem>.content.json (run scripts/export_mineru.py --with-content --content-only)"
 
 comunicado_md=""
 for f in fixtures/mineru/*.md; do

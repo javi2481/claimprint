@@ -1,0 +1,925 @@
+{
+  "version": "content_v1",
+  "source": "ragflow_chunks",
+  "pdf_name": "Presentacion_de_resultados_BYMA-2T26.pdf",
+  "spans": [
+    {
+      "page": 1,
+      "text": "Presentación de Resultados 2° TRIMESTRE 2026 (2T26)\n7 de agosto de 2026\nRESULTADO TRIMESTRAL\n<table><tr><td rowspan=\"2\">Millones de ARS</td><td colspan=\"3\">Histórico</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>Depositaria</td><td>14.705</td><td>29.882</td><td>103%</td></tr><tr><td>Mercado</td><td>32.934</td><td>46.567</td><td>41%</td></tr><tr><td>Ingresos</td><td>47.639</td><td>76.449</td><td>60%</td></tr><tr><td>Gastos totales</td><td>-16.886</td><td>-28.323</td><td>68%</td></tr><tr><td>Margen Bruto</td><td>30.752</td><td>48.126</td><td>56%</td></tr><tr><td>Otros ing. Operativos</td><td>17.132</td><td>22.507</td><td>31%</td></tr><tr><td>Resultado operativo</td><td>47.885</td><td>70.633</td><td>48%</td></tr><tr><td>Impacto ajuste por inflación</td><td></td><td></td><td></td></tr><tr><td>Ingresos financieros</td><td>43.610</td><td>40.678</td><td>-7%</td></tr><tr><td>Otras ganancias/ pérdidas</td><td>-382,3</td><td>375,8</td><td>n/a</td></tr><tr><td>Rdo por part en otras compañías</td><td>1</td><td>1.507</td><td>n/a</td></tr><tr><td>Resultado antes de impuestos</td><td>91.114</td><td>113.195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias (*)</td><td>-12.040</td><td>-16.545</td><td>37%</td></tr><tr><td>Resultado neto</td><td>79.073</td><td>96.650</td><td>22%</td></tr><tr><td>Margen EBITDA (Trimestre)</td><td>74%</td><td>71%</td><td></td></tr><tr><td>Margen Operativo (YTD)</td><td>67%</td><td>69%</td><td></td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        332.0,
+        186.0,
+        792.0,
+        359.0
+      ],
+      "bbox_norm": [
+        0.41919191919191917,
+        0.48186528497409326,
+        1.0,
+        0.9300518134715026
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 1,
+      "text": "Presentación de Resultados 2° TRIMESTRE 2026 (2T26)\n7 de agosto de 2026\nRESULTADO TRIMESTRAL\n<table><tr><td rowspan=\"2\">Millones de ARS</td><td colspan=\"3\">Histórico</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>Depositaria</td><td>14.705</td><td>29.882</td><td>103%</td></tr><tr><td>Mercado</td><td>32.934</td><td>46.567</td><td>41%</td></tr><tr><td>Ingresos</td><td>47.639</td><td>76.449</td><td>60%</td></tr><tr><td>Gastos totales</td><td>-16.886</td><td>-28.323</td><td>68%</td></tr><tr><td>Margen Bruto</td><td>30.752</td><td>48.126</td><td>56%</td></tr><tr><td>Otros ing. Operativos</td><td>17.132</td><td>22.507</td><td>31%</td></tr><tr><td>Resultado operativo</td><td>47.885</td><td>70.633</td><td>48%</td></tr><tr><td>Impacto ajuste por inflación</td><td></td><td></td><td></td></tr><tr><td>Ingresos financieros</td><td>43.610</td><td>40.678</td><td>-7%</td></tr><tr><td>Otras ganancias/ pérdidas</td><td>-382,3</td><td>375,8</td><td>n/a</td></tr><tr><td>Rdo por part en otras compañías</td><td>1</td><td>1.507</td><td>n/a</td></tr><tr><td>Resultado antes de impuestos</td><td>91.114</td><td>113.195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias (*)</td><td>-12.040</td><td>-16.545</td><td>37%</td></tr><tr><td>Resultado neto</td><td>79.073</td><td>96.650</td><td>22%</td></tr><tr><td>Margen EBITDA (Trimestre)</td><td>74%</td><td>71%</td><td></td></tr><tr><td>Margen Operativo (YTD)</td><td>67%</td><td>69%</td><td></td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        333.0,
+        369.0,
+        792.0,
+        386.0
+      ],
+      "bbox_norm": [
+        0.42045454545454547,
+        0.9559585492227979,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "Presentación de Resultados 2° TRIMESTRE 2026 (2T26)\n7 de agosto de 2026\nRESULTADO TRIMESTRAL\n<table><tr><td rowspan=\"2\">Millones de ARS</td><td colspan=\"3\">Histórico</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>Depositaria</td><td>14.705</td><td>29.882</td><td>103%</td></tr><tr><td>Mercado</td><td>32.934</td><td>46.567</td><td>41%</td></tr><tr><td>Ingresos</td><td>47.639</td><td>76.449</td><td>60%</td></tr><tr><td>Gastos totales</td><td>-16.886</td><td>-28.323</td><td>68%</td></tr><tr><td>Margen Bruto</td><td>30.752</td><td>48.126</td><td>56%</td></tr><tr><td>Otros ing. Operativos</td><td>17.132</td><td>22.507</td><td>31%</td></tr><tr><td>Resultado operativo</td><td>47.885</td><td>70.633</td><td>48%</td></tr><tr><td>Impacto ajuste por inflación</td><td></td><td></td><td></td></tr><tr><td>Ingresos financieros</td><td>43.610</td><td>40.678</td><td>-7%</td></tr><tr><td>Otras ganancias/ pérdidas</td><td>-382,3</td><td>375,8</td><td>n/a</td></tr><tr><td>Rdo por part en otras compañías</td><td>1</td><td>1.507</td><td>n/a</td></tr><tr><td>Resultado antes de impuestos</td><td>91.114</td><td>113.195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias (*)</td><td>-12.040</td><td>-16.545</td><td>37%</td></tr><tr><td>Resultado neto</td><td>79.073</td><td>96.650</td><td>22%</td></tr><tr><td>Margen EBITDA (Trimestre)</td><td>74%</td><td>71%</td><td></td></tr><tr><td>Margen Operativo (YTD)</td><td>67%</td><td>69%</td><td></td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        87.0,
+        65.0,
+        547.0,
+        472.0
+      ],
+      "bbox_norm": [
+        0.07585004359197908,
+        0.13771186440677965,
+        0.4768962510897995,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "<table><tr><td colspan=\"3\">Ajustado por Inflación</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>19.965</td><td>30.419</td><td>52%</td></tr><tr><td>43.848</td><td>49.555</td><td>13%</td></tr><tr><td>63.813</td><td>79.974</td><td>25%</td></tr><tr><td>-25.773</td><td>-33.838</td><td>31%</td></tr><tr><td>38.040</td><td>46.136</td><td>21%</td></tr><tr><td>21.916</td><td>22.261</td><td>2%</td></tr><tr><td>59.956</td><td>68.397</td><td>14%</td></tr><tr><td>-35.706</td><td>-34.781</td><td>-3%</td></tr><tr><td>60.715</td><td>42.880</td><td>-29%</td></tr><tr><td>207</td><td>458</td><td>N/A</td></tr><tr><td>-742</td><td>-929</td><td>N/A</td></tr><tr><td>84.431</td><td>76.025</td><td>-10%</td></tr><tr><td>-19.510</td><td>-16.769,0</td><td>-14%</td></tr><tr><td>64.921</td><td>59.256</td><td>-9%</td></tr></table>\nLos resultados del negocio siguen creciendo   \nfuertemente, en   \ncoincidencia con el   \nmargen y a pesar de varios gastos de única vez por la puesta en marcha de   \nBYMA Clearing.\nIngresos Financieros caen YoY debido a menores tasas y menor mark to market pero con crecimiento QoQ.\nDEPOSITARIA ACELERA SU CRECIMIENTO\nContinúa la aceleración de los AUCs. Aumentaron 15% QoQ y 57% YoY versus 7% y 36% respectivamente para 1Q26 vs 4Q25.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        505.0,
+        65.0,
+        950.0,
+        416.0
+      ],
+      "bbox_norm": [
+        0.44027898866608545,
+        0.13771186440677965,
+        0.8282476024411508,
+        0.8813559322033898
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "<table><tr><td colspan=\"3\">Ajustado por Inflación</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>19.965</td><td>30.419</td><td>52%</td></tr><tr><td>43.848</td><td>49.555</td><td>13%</td></tr><tr><td>63.813</td><td>79.974</td><td>25%</td></tr><tr><td>-25.773</td><td>-33.838</td><td>31%</td></tr><tr><td>38.040</td><td>46.136</td><td>21%</td></tr><tr><td>21.916</td><td>22.261</td><td>2%</td></tr><tr><td>59.956</td><td>68.397</td><td>14%</td></tr><tr><td>-35.706</td><td>-34.781</td><td>-3%</td></tr><tr><td>60.715</td><td>42.880</td><td>-29%</td></tr><tr><td>207</td><td>458</td><td>N/A</td></tr><tr><td>-742</td><td>-929</td><td>N/A</td></tr><tr><td>84.431</td><td>76.025</td><td>-10%</td></tr><tr><td>-19.510</td><td>-16.769,0</td><td>-14%</td></tr><tr><td>64.921</td><td>59.256</td><td>-9%</td></tr></table>\nLos resultados del negocio siguen creciendo   \nfuertemente, en   \ncoincidencia con el   \nmargen y a pesar de varios gastos de única vez por la puesta en marcha de   \nBYMA Clearing.\nIngresos Financieros caen YoY debido a menores tasas y menor mark to market pero con crecimiento QoQ.\nDEPOSITARIA ACELERA SU CRECIMIENTO\nContinúa la aceleración de los AUCs. Aumentaron 15% QoQ y 57% YoY versus 7% y 36% respectivamente para 1Q26 vs 4Q25.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        702.0,
+        70.0,
+        1147.0,
+        225.0
+      ],
+      "bbox_norm": [
+        0.6120313862249346,
+        0.1483050847457627,
+        1.0,
+        0.4766949152542373
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 2,
+      "text": "<table><tr><td colspan=\"3\">Ajustado por Inflación</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>19.965</td><td>30.419</td><td>52%</td></tr><tr><td>43.848</td><td>49.555</td><td>13%</td></tr><tr><td>63.813</td><td>79.974</td><td>25%</td></tr><tr><td>-25.773</td><td>-33.838</td><td>31%</td></tr><tr><td>38.040</td><td>46.136</td><td>21%</td></tr><tr><td>21.916</td><td>22.261</td><td>2%</td></tr><tr><td>59.956</td><td>68.397</td><td>14%</td></tr><tr><td>-35.706</td><td>-34.781</td><td>-3%</td></tr><tr><td>60.715</td><td>42.880</td><td>-29%</td></tr><tr><td>207</td><td>458</td><td>N/A</td></tr><tr><td>-742</td><td>-929</td><td>N/A</td></tr><tr><td>84.431</td><td>76.025</td><td>-10%</td></tr><tr><td>-19.510</td><td>-16.769,0</td><td>-14%</td></tr><tr><td>64.921</td><td>59.256</td><td>-9%</td></tr></table>\nLos resultados del negocio siguen creciendo   \nfuertemente, en   \ncoincidencia con el   \nmargen y a pesar de varios gastos de única vez por la puesta en marcha de   \nBYMA Clearing.\nIngresos Financieros caen YoY debido a menores tasas y menor mark to market pero con crecimiento QoQ.\nDEPOSITARIA ACELERA SU CRECIMIENTO\nContinúa la aceleración de los AUCs. Aumentaron 15% QoQ y 57% YoY versus 7% y 36% respectivamente para 1Q26 vs 4Q25.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        702.0,
+        243.0,
+        1147.0,
+        341.0
+      ],
+      "bbox_norm": [
+        0.6120313862249346,
+        0.5148305084745762,
+        1.0,
+        0.722457627118644
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "<table><tr><td colspan=\"3\">Ajustado por Inflación</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>19.965</td><td>30.419</td><td>52%</td></tr><tr><td>43.848</td><td>49.555</td><td>13%</td></tr><tr><td>63.813</td><td>79.974</td><td>25%</td></tr><tr><td>-25.773</td><td>-33.838</td><td>31%</td></tr><tr><td>38.040</td><td>46.136</td><td>21%</td></tr><tr><td>21.916</td><td>22.261</td><td>2%</td></tr><tr><td>59.956</td><td>68.397</td><td>14%</td></tr><tr><td>-35.706</td><td>-34.781</td><td>-3%</td></tr><tr><td>60.715</td><td>42.880</td><td>-29%</td></tr><tr><td>207</td><td>458</td><td>N/A</td></tr><tr><td>-742</td><td>-929</td><td>N/A</td></tr><tr><td>84.431</td><td>76.025</td><td>-10%</td></tr><tr><td>-19.510</td><td>-16.769,0</td><td>-14%</td></tr><tr><td>64.921</td><td>59.256</td><td>-9%</td></tr></table>\nLos resultados del negocio siguen creciendo   \nfuertemente, en   \ncoincidencia con el   \nmargen y a pesar de varios gastos de única vez por la puesta en marcha de   \nBYMA Clearing.\nIngresos Financieros caen YoY debido a menores tasas y menor mark to market pero con crecimiento QoQ.\nDEPOSITARIA ACELERA SU CRECIMIENTO\nContinúa la aceleración de los AUCs. Aumentaron 15% QoQ y 57% YoY versus 7% y 36% respectivamente para 1Q26 vs 4Q25.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        23.0,
+        530.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.09014675052410902,
+        0.06824925816023739,
+        0.5555555555555556,
+        0.13353115727002968
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "<table><tr><td colspan=\"3\">Ajustado por Inflación</td></tr><tr><td>2T25</td><td>2T26</td><td>Var.</td></tr><tr><td>19.965</td><td>30.419</td><td>52%</td></tr><tr><td>43.848</td><td>49.555</td><td>13%</td></tr><tr><td>63.813</td><td>79.974</td><td>25%</td></tr><tr><td>-25.773</td><td>-33.838</td><td>31%</td></tr><tr><td>38.040</td><td>46.136</td><td>21%</td></tr><tr><td>21.916</td><td>22.261</td><td>2%</td></tr><tr><td>59.956</td><td>68.397</td><td>14%</td></tr><tr><td>-35.706</td><td>-34.781</td><td>-3%</td></tr><tr><td>60.715</td><td>42.880</td><td>-29%</td></tr><tr><td>207</td><td>458</td><td>N/A</td></tr><tr><td>-742</td><td>-929</td><td>N/A</td></tr><tr><td>84.431</td><td>76.025</td><td>-10%</td></tr><tr><td>-19.510</td><td>-16.769,0</td><td>-14%</td></tr><tr><td>64.921</td><td>59.256</td><td>-9%</td></tr></table>\nLos resultados del negocio siguen creciendo   \nfuertemente, en   \ncoincidencia con el   \nmargen y a pesar de varios gastos de única vez por la puesta en marcha de   \nBYMA Clearing.\nIngresos Financieros caen YoY debido a menores tasas y menor mark to market pero con crecimiento QoQ.\nDEPOSITARIA ACELERA SU CRECIMIENTO\nContinúa la aceleración de los AUCs. Aumentaron 15% QoQ y 57% YoY versus 7% y 36% respectivamente para 1Q26 vs 4Q25.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        88.0,
+        62.0,
+        532.0,
+        121.0
+      ],
+      "bbox_norm": [
+        0.09224318658280922,
+        0.18397626112759644,
+        0.5576519916142557,
+        0.3590504451038576
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        88.0,
+        139.0,
+        905.0,
+        217.0
+      ],
+      "bbox_norm": [
+        0.09224318658280922,
+        0.4124629080118694,
+        0.9486373165618449,
+        0.6439169139465876
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        88.0,
+        234.0,
+        905.0,
+        294.0
+      ],
+      "bbox_norm": [
+        0.09224318658280922,
+        0.6943620178041543,
+        0.9486373165618449,
+        0.8724035608308606
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 3,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        137.0,
+        308.0,
+        954.0,
+        337.0
+      ],
+      "bbox_norm": [
+        0.14360587002096437,
+        0.913946587537092,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        20.0,
+        903.0,
+        47.0
+      ],
+      "bbox_norm": [
+        0.0688,
+        0.06825938566552901,
+        0.7224,
+        0.16040955631399317
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        100.0,
+        87.0,
+        917.0,
+        186.0
+      ],
+      "bbox_norm": [
+        0.08,
+        0.29692832764505117,
+        0.7336,
+        0.6348122866894198
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        101.0,
+        216.0,
+        918.0,
+        293.0
+      ],
+      "bbox_norm": [
+        0.0808,
+        0.7372013651877133,
+        0.7344,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 4,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        433.0,
+        84.0,
+        1250.0,
+        209.0
+      ],
+      "bbox_norm": [
+        0.3464,
+        0.28668941979522183,
+        1.0,
+        0.7133105802047781
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        23.0,
+        903.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.059474412171507604,
+        0.045454545454545456,
+        0.6244813278008299,
+        0.08893280632411067
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        93.0,
+        63.0,
+        910.0,
+        122.0
+      ],
+      "bbox_norm": [
+        0.06431535269709543,
+        0.12450592885375494,
+        0.6293222683264177,
+        0.24110671936758893
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        280.0,
+        145.0,
+        1097.0,
+        175.0
+      ],
+      "bbox_norm": [
+        0.19363762102351315,
+        0.2865612648221344,
+        0.7586445366528354,
+        0.3458498023715415
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "Este crecimiento fue más parejo a través de todas las clases de activos, cuando en el Q anterior habían sido mayoritariamente Letras.\nONs lideraron crecimiento en 11%. CEDEARs creció el 18% QoQ explicado por cantidades, confirmando mayor demanda.\nActivos Bajo Custodia por Tipo de Activo a Valor de Mercado\nDEPOSITARIA DUPLICA SU FACTURACIÓN AÑO A AÑO\nLa facturación mostró un crecimiento fuerte YoY por el crecimiento de los AUCs y por el efecto en el cambio de arancel para custodia de acciones.\nLos servicios adicionales vieron un impulso por la custodia internacional y por los instrumentos PYME.\n<table><tr><td>DEPOSITARIA</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>14,705</td><td>29,882</td><td>15,177</td><td>103%</td></tr><tr><td>Servicios ADCVN</td><td>10,031</td><td>19,605</td><td>9,574</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>180</td><td>289</td><td>109</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>4,493</td><td>9,988</td><td>5,495</td><td>122%</td></tr></table>Ingresos Depositaria Millones de ARS\nMERCADO CONTINUA CON BUEN CRECIMIENTO\nLa negociación muestra un buen crecimiento año a año, y una recuperación de la caída del trimestre anterior. Renta variable continúa liderando la generación de ingresos, seguido por cauciones y renta fija.\nIngresos de Mercado Millon ARS\n<table><tr><td>MERCADO</td><td>2T 25</td><td>2T 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones ARS)</td><td>32,934</td><td>46,567</td><td>13,633</td><td>41%</td></tr><tr><td>Negociación C&amp;L</td><td>26,507</td><td>39,542</td><td>13,035</td><td>49%</td></tr><tr><td>Datos de Mercado</td><td>1,456</td><td>1,719</td><td>262</td><td>18%</td></tr><tr><td>Otros</td><td>4,970</td><td>5,307</td><td>336</td><td>7%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        97.0,
+        400.0,
+        914.0,
+        506.0
+      ],
+      "bbox_norm": [
+        0.06708160442600276,
+        0.7905138339920948,
+        0.632088520055325,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 5,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        613.0,
+        396.0,
+        1446.0,
+        452.0
+      ],
+      "bbox_norm": [
+        0.4239280774550484,
+        0.782608695652174,
+        1.0,
+        0.8932806324110671
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        85.0,
+        22.0,
+        918.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.0918918918918919,
+        0.11398963730569948,
+        0.9924324324324324,
+        0.23316062176165803
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        91.0,
+        65.0,
+        924.0,
+        103.0
+      ],
+      "bbox_norm": [
+        0.09837837837837837,
+        0.33678756476683935,
+        0.9989189189189189,
+        0.533678756476684
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        91.0,
+        119.0,
+        924.0,
+        158.0
+      ],
+      "bbox_norm": [
+        0.09837837837837837,
+        0.616580310880829,
+        0.9989189189189189,
+        0.8186528497409327
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 6,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        92.0,
+        173.0,
+        925.0,
+        193.0
+      ],
+      "bbox_norm": [
+        0.09945945945945946,
+        0.8963730569948186,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        85.0,
+        22.0,
+        918.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.09199134199134198,
+        0.21568627450980393,
+        0.9935064935064936,
+        0.4411764705882353
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 7,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        91.0,
+        65.0,
+        924.0,
+        102.0
+      ],
+      "bbox_norm": [
+        0.09848484848484848,
+        0.6372549019607843,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 8,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        22.0,
+        919.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.061472480343102216,
+        0.06432748538011696,
+        0.6568977841315226,
+        0.13157894736842105
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 8,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        566.0,
+        69.0,
+        1399.0,
+        197.0
+      ],
+      "bbox_norm": [
+        0.4045746962115797,
+        0.20175438596491227,
+        1.0,
+        0.5760233918128655
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 8,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        566.0,
+        213.0,
+        1399.0,
+        251.0
+      ],
+      "bbox_norm": [
+        0.4045746962115797,
+        0.6228070175438597,
+        1.0,
+        0.7339181286549707
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 8,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        566.0,
+        267.0,
+        1399.0,
+        342.0
+      ],
+      "bbox_norm": [
+        0.4045746962115797,
+        0.7807017543859649,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 9,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        91.0,
+        81.0,
+        924.0,
+        118.0
+      ],
+      "bbox_norm": [
+        0.09837837837837837,
+        0.22070844686648503,
+        0.9989189189189189,
+        0.3215258855585831
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 9,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        92.0,
+        146.0,
+        925.0,
+        166.0
+      ],
+      "bbox_norm": [
+        0.09945945945945946,
+        0.3978201634877384,
+        1.0,
+        0.45231607629427795
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 9,
+      "text": "El trimestre aún muestra el impacto del cambio de arancel de trading de acciones ocurrido en el 3Q2025.\nNEGOCIACIÓN: RENTA VARIABLE CRECE POR CEDEARS\nSe mantienen las tendencias de los últimos trimestres, con CEDEARs liderando el crecimiento y acciones locales en volúmenes de negociación sin crecimiento.\nEn los próximos meses estaremos implementando un programa de market maker para acciones locales, y un ETF Local que creemos puede comenzar a cambiar esta tendencia.\nEl menor crecimiento de la facturación YoY se debe a un mayor arancel en 2025.\nNEGOCIACIÓN: RENTA FIJA RECUPERA EL CRECIMIENTO\nEl ADTV de renta fija volvió a crecer trimestralmente luego de la menor actividad del mercado en el primer trimestre. Mantenemos un share del 75%.\nNEGOCIACIÓN: CAUCION TUVO LEVE AJUSTE\nLa baja del ADTV de caución está relacionado a menor demanda por parte de las ALYCs, en base a una nueva regulación de la Comisión Nacional de Valores que limita la relación de pasivo y patrimonio neto de las mismas.\nA pesar de la caída QoQ, la facturación en el año más que duplicó.\nLa nueva implementación de BYMA Clearing mejoró el control de riesgo, al permitir su cálculo en tiempo real, y al automatizar reemplazos de garantías.\nDATOS DE MERCADO\nLos ingresos de esta línea de negocio subieron 18% interanual por la temporalidad en la facturación de BYMADATA. Muchos clientes pagan de manera semestral.\nEsta línea de negocio debería ver un impacto positivo a partir del lanzamiento del ETF local.\n<table><tr><td>Total Datos de Mercado</td><td>2Q 25</td><td>2Q 26</td><td>YoY$</td><td>YoY %</td></tr><tr><td>(Millones de Pesos)</td><td>1,456.4</td><td>1,718.5</td><td>262.1</td><td>18.0%</td></tr><tr><td>Vendors extranjeros</td><td>410.0</td><td>529.3</td><td>119</td><td>29.1%</td></tr><tr><td>Market Data - ALyCs</td><td>692.6</td><td>901.3</td><td>209</td><td>30.1%</td></tr><tr><td>BYMADATA</td><td>353.8</td><td>287.9</td><td>-66</td><td>-18.6%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        256.0,
+        919.0,
+        367.0
+      ],
+      "bbox_norm": [
+        0.09297297297297297,
+        0.6975476839237057,
+        0.9935135135135135,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 10,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        85.0,
+        48.0,
+        903.0,
+        71.0
+      ],
+      "bbox_norm": [
+        0.09299781181619256,
+        0.09815950920245399,
+        0.9879649890590809,
+        0.14519427402862986
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 10,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        80.0,
+        112.0,
+        898.0,
+        330.0
+      ],
+      "bbox_norm": [
+        0.087527352297593,
+        0.22903885480572597,
+        0.9824945295404814,
+        0.6748466257668712
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 10,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        96.0,
+        355.0,
+        913.0,
+        396.0
+      ],
+      "bbox_norm": [
+        0.1050328227571116,
+        0.7259713701431493,
+        0.9989059080962801,
+        0.8098159509202454
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 10,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        97.0,
+        402.0,
+        914.0,
+        422.0
+      ],
+      "bbox_norm": [
+        0.1061269146608315,
+        0.8220858895705522,
+        1.0,
+        0.8629856850715747
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 10,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        96.0,
+        429.0,
+        913.0,
+        489.0
+      ],
+      "bbox_norm": [
+        0.1050328227571116,
+        0.8773006134969326,
+        0.9989059080962801,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 11,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        85.0,
+        23.0,
+        903.0,
+        45.0
+      ],
+      "bbox_norm": [
+        0.09081196581196581,
+        0.045275590551181105,
+        0.9647435897435898,
+        0.08858267716535433
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 11,
+      "text": "GASTOS: TRIMESTRE CON IMPACTO POR LANZAMIENTO BYMA CLEARING\n<table><tr><td rowspan=\"2\">Millones de pesos Sueldos y Honorarios</td><td>2Q 25</td><td>2Q 26 YoY$ YoY %</td></tr><tr><td>6,685 12,875</td><td>6,190 93%</td></tr><tr><td>Consultoría</td><td>467 1,079</td></tr><tr><td>Gastos de Tecnología</td><td>612 3,953 6,712 2,760</td></tr><tr><td>Gastos Edilicios</td><td>422 768 347</td></tr><tr><td>Conexión con otras depositarias</td><td>669 1,024</td></tr><tr><td>Impuestos</td><td>354.8 53% 3,181 4,063 882 28%</td></tr><tr><td>Depreciaciones</td><td>532</td></tr><tr><td>Otros</td><td>1,064 532 100% 978 737</td></tr><tr><td>TOTAL GASTOS 16,886</td><td>-241 -25% 28,323 11,437 68%</td></tr></table>Composición de gastos\nPara el lanzamiento de BYMA Clearing, se incurrieron en gastos de consultoría y de tecnología asociados a varios proveedores para su puesta en marcha (AWS, Nasdaq, Vor-Tex).\nMenor suba en impuestos está relacionado con las acciones de Ingresos Brutos.\nCasi la mitad del incremento en Sueldos está orientado a bonus y horas extras relacionadas al lanzamiento de BYMA Clearing. El resto es ajuste por inflación e incremento en HC principalmente en Tecnología (Cloud, Datos e IA).\nINGRESOS FINANCIEROS: RECUPERACION DEL TRIMESTRE ANTERIOR\nDólar oficial hace recuperar pérdida del 1erQ, y los intereses más mark-to-market siguen en línea con ese trimestre. La comparación YoY muestra una caída de los ingresos financieros por menores tasas en ARS (23% versus 34,5% y menor mark-to-market de títulos públicos. La cartera terminó junio con 68% pesificada.",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        118.0,
+        423.0,
+        936.0,
+        508.0
+      ],
+      "bbox_norm": [
+        0.12606837606837606,
+        0.8326771653543307,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 12,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        85.0,
+        20.0,
+        913.0,
+        47.0
+      ],
+      "bbox_norm": [
+        0.09239130434782608,
+        0.10752688172043011,
+        0.9923913043478261,
+        0.25268817204301075
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 12,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        91.0,
+        64.0,
+        919.0,
+        85.0
+      ],
+      "bbox_norm": [
+        0.09891304347826087,
+        0.34408602150537637,
+        0.9989130434782608,
+        0.45698924731182794
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 12,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        92.0,
+        114.0,
+        920.0,
+        135.0
+      ],
+      "bbox_norm": [
+        0.1,
+        0.6129032258064516,
+        1.0,
+        0.7258064516129032
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 12,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        92.0,
+        164.0,
+        920.0,
+        186.0
+      ],
+      "bbox_norm": [
+        0.1,
+        0.8817204301075269,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 13,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        86.0,
+        23.0,
+        914.0,
+        44.0
+      ],
+      "bbox_norm": [
+        0.09327548806941431,
+        0.05043859649122807,
+        0.9913232104121475,
+        0.09649122807017543
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 13,
+      "text": "EFICIENCIA: NOS MANTENEMOS EN MÁXIMOS HISTÓRICOS\nAlcanzamos un EBITDA de ARS 71,697 millones, +63% interanual.\nEl margen EBITDA de los últimos 12 meses alcanzó 75%, cerca de los máximos históricos.\nEl margen operativo – que excluye ingresos financieros - quedó en línea con el año anterior.\nPRINCIPALES INDICADORES FINANCIEROS\n<table><tr><td></td><td>2T24</td><td>3T24</td><td>4T24</td><td>1T25</td><td>2T25</td><td>3T25</td><td>4T25</td><td>1T26</td><td>2T26</td><td>YoY %</td></tr><tr><td>Servicios ADCVN</td><td>5,744</td><td>6,101</td><td>7,490</td><td>7,648</td><td>10,031</td><td>9,910</td><td>16,311</td><td>21,190</td><td>19,605</td><td>95%</td></tr><tr><td>Servicios ACRyP</td><td>96</td><td>107</td><td>169</td><td>178</td><td>180</td><td>196</td><td>242</td><td>239</td><td>289</td><td>60%</td></tr><tr><td>Servicios Adicionales</td><td>2,898</td><td>3,775</td><td>4,752</td><td>4,682</td><td>4,493</td><td>5,702</td><td>8,935</td><td>10,116</td><td>9,988</td><td>122%</td></tr><tr><td>Ingresos Depositaria</td><td>8,738</td><td>9,983</td><td>12,411</td><td>12,508</td><td>14,705</td><td>15,808</td><td>25,488</td><td>31,545</td><td>29,882</td><td>103%</td></tr><tr><td>Negociación C&amp;L</td><td>15,034</td><td>18,197</td><td>24,388</td><td>27,676</td><td>26,507</td><td>38,550</td><td>40,790</td><td>35,784</td><td>39,542</td><td>49%</td></tr><tr><td>Otros</td><td>1,780</td><td>2,437</td><td>3,615</td><td>3,733</td><td>4,970</td><td>7,014</td><td>5,891</td><td>5,421</td><td>5,307</td><td>7%</td></tr><tr><td>Datos de Mercado</td><td>931</td><td>1,350</td><td>1,203</td><td>966</td><td>1,456</td><td>1,578</td><td>1,679</td><td>1,702</td><td>1,719</td><td>18%</td></tr><tr><td>Ingresos Mercado</td><td>17,745</td><td>21,984</td><td>29,206</td><td>32,376</td><td>32,934</td><td>47,142</td><td>48,360</td><td>42,906</td><td>46,567</td><td>41%</td></tr><tr><td>Otros Ingresos Operativos</td><td>8,767</td><td>9,530</td><td>21,228</td><td>12,747</td><td>17,132</td><td>3,714</td><td>21,511</td><td>18,146</td><td>22,507</td><td>31%</td></tr><tr><td>Total ingresos operativos</td><td>35,251</td><td>41,496</td><td>62,845</td><td>57,631</td><td>64,771</td><td>66,664</td><td>95,359</td><td>92,596</td><td>98,956</td><td>53%</td></tr><tr><td>Total gastos operativos</td><td>9,284</td><td>10,649</td><td>12,804</td><td>13,593</td><td>16,354</td><td>17,220</td><td>22,452</td><td>20,468</td><td>27,259</td><td>67%</td></tr><tr><td>EBITDA</td><td>25,967</td><td>30,847</td><td>50,042</td><td>44,038</td><td>48,417</td><td>49,444</td><td>72,908</td><td>72,128</td><td>71,697</td><td>48%</td></tr><tr><td>EBITDA Mg.</td><td>74%</td><td>74%</td><td>80%</td><td>76%</td><td>75%</td><td>74%</td><td>76%</td><td>78%</td><td>72%</td><td>-3%</td></tr><tr><td>D&amp;A</td><td>222</td><td>268</td><td>366</td><td>360</td><td>532</td><td>482</td><td>555</td><td>646</td><td>1,064</td><td>100%</td></tr><tr><td>EBIT</td><td>25,745</td><td>30,579</td><td>49,676</td><td>43,678</td><td>47,885</td><td>48,962</td><td>72,352</td><td>71,482</td><td>70,633</td><td>48%</td></tr><tr><td>EBIT Mg.</td><td>73%</td><td>74%</td><td>79%</td><td>76%</td><td>74%</td><td>73%</td><td>76%</td><td>77%</td><td>71%</td><td>-3%</td></tr><tr><td>Ingresos financieros</td><td>30,257</td><td>31,927</td><td>54,304</td><td>23,099</td><td>43,610</td><td>25,476</td><td>60,296</td><td>15,355</td><td>40,678</td><td>-7%</td></tr><tr><td>Participación en otras compañías</td><td>-283</td><td>384</td><td>535</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1,507</td><td>n/a</td></tr><tr><td>Otros ingresos/egresos</td><td>0</td><td>254</td><td>-757</td><td>-7</td><td>-382</td><td>-14</td><td>241</td><td>-396</td><td>376</td><td>n/a</td></tr><tr><td>EBT</td><td>55,719</td><td>63,144 16,307</td><td>103,759</td><td>66,770</td><td>91,114</td><td>74,424</td><td>132,889</td><td>86,441</td><td>113,195</td><td>24%</td></tr><tr><td>Impuesto a las ganancias</td><td>2,033</td><td></td><td>5,404</td><td>15,996</td><td>12,040</td><td>17,623</td><td>33,908</td><td>18,621</td><td>16,545</td><td>37%</td></tr><tr><td>Resultado Neto</td><td>53,687</td><td>46,837</td><td>98,354</td><td>50,774</td><td>79,073</td><td>56,801</td><td>98,981</td><td>67,821</td><td>96,650</td><td>90%</td></tr></table>",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        94.0,
+        97.0,
+        922.0,
+        456.0
+      ],
+      "bbox_norm": [
+        0.1019522776572668,
+        0.21271929824561403,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 14,
+      "text": "RESUMEN\n<table><tr><td rowspan=1 colspan=1>FINANCIEROS2T26 VS. 2T25</td><td rowspan=2 colspan=1>• Ingresos: ARS 98.956 M, +53% •Gastos Totales: ARS 27.259 M +67%• Ingreso Financiero : ARS 40.678 M -7%,• EBITDA: ARS 71.697 M +48%</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>EFICIENCIA</td><td rowspan=2 colspan=1>• LTM Margen EBITDA: 75%• Margen Operativo: 67% YTD</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>DESTACADOS</td><td rowspan=4 colspan=1>• Puesta en marcha BYMA Clearing• BYMA inaugura el primer programa de Market Maker en Argentina• Pronto lanzamiento del primer ETF local• Quantex comienza a integrar los ecosistemas off y on-shore OTC de rentafija.</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PROYECTOS CLAVE</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PÁGINA IR</td><td rowspan=1 colspan=1>Series históricas actualizadas de Drivers (AuC + ADTV) y DividendosMejora en la accesibilidad de la web</td></tr></table>\n\n\nMuchas Gracias\nwww.byma.com.ar\n25 de Mayo 359 (C1002ABG) CABA Argentina\nri@byma.com.ar\nhttps://www.byma.com.ar/relacion-con-\ninversores\n+54 (011) 4316-6051",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        105.0,
+        60.0,
+        898.0,
+        510.0
+      ],
+      "bbox_norm": [
+        0.11692650334075724,
+        0.11764705882352941,
+        1.0,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 15,
+      "text": "RESUMEN\n<table><tr><td rowspan=1 colspan=1>FINANCIEROS2T26 VS. 2T25</td><td rowspan=2 colspan=1>• Ingresos: ARS 98.956 M, +53% •Gastos Totales: ARS 27.259 M +67%• Ingreso Financiero : ARS 40.678 M -7%,• EBITDA: ARS 71.697 M +48%</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>EFICIENCIA</td><td rowspan=2 colspan=1>• LTM Margen EBITDA: 75%• Margen Operativo: 67% YTD</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>DESTACADOS</td><td rowspan=4 colspan=1>• Puesta en marcha BYMA Clearing• BYMA inaugura el primer programa de Market Maker en Argentina• Pronto lanzamiento del primer ETF local• Quantex comienza a integrar los ecosistemas off y on-shore OTC de rentafija.</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PROYECTOS CLAVE</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PÁGINA IR</td><td rowspan=1 colspan=1>Series históricas actualizadas de Drivers (AuC + ADTV) y DividendosMejora en la accesibilidad de la web</td></tr></table>\n\n\nMuchas Gracias\nwww.byma.com.ar\n25 de Mayo 359 (C1002ABG) CABA Argentina\nri@byma.com.ar\nhttps://www.byma.com.ar/relacion-con-\ninversores\n+54 (011) 4316-6051",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        334.0,
+        278.0,
+        1127.0,
+        303.0
+      ],
+      "bbox_norm": [
+        0.29557522123893804,
+        0.6984924623115578,
+        0.9973451327433628,
+        0.7613065326633166
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 15,
+      "text": "RESUMEN\n<table><tr><td rowspan=1 colspan=1>FINANCIEROS2T26 VS. 2T25</td><td rowspan=2 colspan=1>• Ingresos: ARS 98.956 M, +53% •Gastos Totales: ARS 27.259 M +67%• Ingreso Financiero : ARS 40.678 M -7%,• EBITDA: ARS 71.697 M +48%</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>EFICIENCIA</td><td rowspan=2 colspan=1>• LTM Margen EBITDA: 75%• Margen Operativo: 67% YTD</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>DESTACADOS</td><td rowspan=4 colspan=1>• Puesta en marcha BYMA Clearing• BYMA inaugura el primer programa de Market Maker en Argentina• Pronto lanzamiento del primer ETF local• Quantex comienza a integrar los ecosistemas off y on-shore OTC de rentafija.</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PROYECTOS CLAVE</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PÁGINA IR</td><td rowspan=1 colspan=1>Series históricas actualizadas de Drivers (AuC + ADTV) y DividendosMejora en la accesibilidad de la web</td></tr></table>\n\n\nMuchas Gracias\nwww.byma.com.ar\n25 de Mayo 359 (C1002ABG) CABA Argentina\nri@byma.com.ar\nhttps://www.byma.com.ar/relacion-con-\ninversores\n+54 (011) 4316-6051",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        337.0,
+        303.0,
+        1130.0,
+        326.0
+      ],
+      "bbox_norm": [
+        0.2982300884955752,
+        0.7613065326633166,
+        1.0,
+        0.8190954773869347
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 15,
+      "text": "RESUMEN\n<table><tr><td rowspan=1 colspan=1>FINANCIEROS2T26 VS. 2T25</td><td rowspan=2 colspan=1>• Ingresos: ARS 98.956 M, +53% •Gastos Totales: ARS 27.259 M +67%• Ingreso Financiero : ARS 40.678 M -7%,• EBITDA: ARS 71.697 M +48%</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>EFICIENCIA</td><td rowspan=2 colspan=1>• LTM Margen EBITDA: 75%• Margen Operativo: 67% YTD</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>DESTACADOS</td><td rowspan=4 colspan=1>• Puesta en marcha BYMA Clearing• BYMA inaugura el primer programa de Market Maker en Argentina• Pronto lanzamiento del primer ETF local• Quantex comienza a integrar los ecosistemas off y on-shore OTC de rentafija.</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PROYECTOS CLAVE</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PÁGINA IR</td><td rowspan=1 colspan=1>Series históricas actualizadas de Drivers (AuC + ADTV) y DividendosMejora en la accesibilidad de la web</td></tr></table>\n\n\nMuchas Gracias\nwww.byma.com.ar\n25 de Mayo 359 (C1002ABG) CABA Argentina\nri@byma.com.ar\nhttps://www.byma.com.ar/relacion-con-\ninversores\n+54 (011) 4316-6051",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        336.0,
+        326.0,
+        1129.0,
+        351.0
+      ],
+      "bbox_norm": [
+        0.2973451327433628,
+        0.8190954773869347,
+        0.9991150442477876,
+        0.8819095477386935
+      ],
+      "bbox_space": "ragflow_page"
+    },
+    {
+      "page": 15,
+      "text": "RESUMEN\n<table><tr><td rowspan=1 colspan=1>FINANCIEROS2T26 VS. 2T25</td><td rowspan=2 colspan=1>• Ingresos: ARS 98.956 M, +53% •Gastos Totales: ARS 27.259 M +67%• Ingreso Financiero : ARS 40.678 M -7%,• EBITDA: ARS 71.697 M +48%</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>EFICIENCIA</td><td rowspan=2 colspan=1>• LTM Margen EBITDA: 75%• Margen Operativo: 67% YTD</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>DESTACADOS</td><td rowspan=4 colspan=1>• Puesta en marcha BYMA Clearing• BYMA inaugura el primer programa de Market Maker en Argentina• Pronto lanzamiento del primer ETF local• Quantex comienza a integrar los ecosistemas off y on-shore OTC de rentafija.</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PROYECTOS CLAVE</td></tr><tr><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>PÁGINA IR</td><td rowspan=1 colspan=1>Series históricas actualizadas de Drivers (AuC + ADTV) y DividendosMejora en la accesibilidad de la web</td></tr></table>\n\n\nMuchas Gracias\nwww.byma.com.ar\n25 de Mayo 359 (C1002ABG) CABA Argentina\nri@byma.com.ar\nhttps://www.byma.com.ar/relacion-con-\ninversores\n+54 (011) 4316-6051",
+      "type": "ragflow_chunk",
+      "bbox_raw": [
+        336.0,
+        374.0,
+        1129.0,
+        398.0
+      ],
+      "bbox_norm": [
+        0.2973451327433628,
+        0.9396984924623115,
+        0.9991150442477876,
+        1.0
+      ],
+      "bbox_space": "ragflow_page"
+    }
+  ]
+}

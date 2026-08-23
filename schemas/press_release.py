@@ -19,14 +19,12 @@ from schemas.claim import (
 from schemas.classify import UNKNOWN, classify_artifact
 from schemas.extract import DATE_RE, MONTHS, _issuer_from_text, fold, select_page
 from schemas.parse_artifact import load_parse, page_text
+from schemas.period_resolve import resolve_quarter_period
 
 LTM_RE = re.compile(
     r"EBITDA\s*\((?:LTM|[uú]ltimos 12 meses)\)[^\d]{0,60}(\d{2})\s*%",
     re.IGNORECASE,
 )
-
-PERIOD_1T26 = "2026-03-31"
-PERIOD_2T26 = "2026-06-30"
 
 
 class PressRelease(BaseModel):
@@ -46,21 +44,13 @@ def _iso_from_date_match(match: object) -> str:
     return f"{year}-{MONTHS[fold(month)]}-{int(day):02d}"
 
 
-def _period_from_text_and_name(text: str, filename: str) -> tuple[str, str] | None:
-    name = fold(filename)
-    blob = fold(text)
-    if "1t26" in name:
-        return PERIOD_1T26, "1T26"
-    if "2t26" in name:
-        return PERIOD_2T26, "2T26"
-    has_1 = "1t26" in blob
-    has_2 = "2t26" in blob
-    if has_1 and not has_2:
-        return PERIOD_1T26, "1T26"
-    if has_2 and not has_1:
-        return PERIOD_2T26, "2T26"
-    return None
-
+def _period_from_text_and_name(
+    text: str,
+    filename: str,
+    *,
+    front_matter: str = "",
+) -> tuple[str, str] | None:
+    return resolve_quarter_period(front_matter=front_matter, filename=filename, body=text)
 
 
 def _ltm_from_pages(pages: tuple[tuple[int, str], ...]) -> tuple[str, int, str] | None:
@@ -77,11 +67,12 @@ def fill_press_release(
     source_page: int,
     filename: str,
     pages: tuple[tuple[int, str], ...] | None = None,
+    front_matter: str = "",
 ) -> PressRelease | None:
     match = DATE_RE.search(text)
     if match is None:
         return None
-    period_row = _period_from_text_and_name(text, filename)
+    period_row = _period_from_text_and_name(text, filename, front_matter=front_matter)
     if period_row is None:
         return None
     period, period_label = period_row
@@ -166,4 +157,5 @@ def extract_press_release(pdf: Path, recipes: dict[str, Recipe] | None = None) -
         source_page=page,
         filename=pdf.name,
         pages=artifact.pages,
+        front_matter=artifact.front_matter,
     )

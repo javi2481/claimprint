@@ -16,12 +16,10 @@ from schemas.claim import (
     identity_key,
 )
 from schemas.classify import UNKNOWN, classify_artifact
-from schemas.extract import _issuer_from_text, fold, select_page
+from schemas.extract import _issuer_from_text, select_page
 from schemas.money import digits_ars
 from schemas.parse_artifact import load_parse, page_text
-
-PERIOD_1T26 = "2026-03-31"
-PERIOD_2T26 = "2026-06-30"
+from schemas.period_resolve import resolve_quarter_period
 
 
 class ResultsPresentation(BaseModel):
@@ -34,25 +32,24 @@ class ResultsPresentation(BaseModel):
     source_text_margin: str | None = None
 
 
-def _period_from_text_and_name(text: str, filename: str) -> str | None:
-    name = fold(filename)
-    blob = fold(text)
-    if "1t26" in name:
-        return PERIOD_1T26
-    if "2t26" in name:
-        return PERIOD_2T26
-    has_1 = "1t26" in blob
-    has_2 = "2t26" in blob
-    if has_1 and not has_2:
-        return PERIOD_1T26
-    if has_2 and not has_1:
-        return PERIOD_2T26
-    return None
+def _period_from_text_and_name(
+    text: str,
+    filename: str,
+    *,
+    front_matter: str = "",
+) -> str | None:
+    row = resolve_quarter_period(front_matter=front_matter, filename=filename, body=text)
+    return row[0] if row else None
 
 
-
-def fill_results_presentation(text: str, *, source_page: int, filename: str) -> ResultsPresentation | None:
-    period = _period_from_text_and_name(text, filename)
+def fill_results_presentation(
+    text: str,
+    *,
+    source_page: int,
+    filename: str,
+    front_matter: str = "",
+) -> ResultsPresentation | None:
+    period = _period_from_text_and_name(text, filename, front_matter=front_matter)
     if period is None:
         return None
     raw_ebitda = re.search(
@@ -133,4 +130,9 @@ def extract_results_presentation(
     if page is None:
         return None
     text = page_text(artifact, page)
-    return fill_results_presentation(text, source_page=page, filename=pdf.name)
+    return fill_results_presentation(
+        text,
+        source_page=page,
+        filename=pdf.name,
+        front_matter=artifact.front_matter,
+    )
