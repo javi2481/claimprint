@@ -17,7 +17,7 @@ Missing target → non-zero exit. No other dataset/chat is mutated.
 | retrieval | evidence_doc_match | cited expected PDF (not Recall@page) |
 | answer | answer_value_match | exact-value containment |
 | citation | citation_doc_match | expected doc, not sidecar |
-| abstention | abstention_correct | expected_abstain == actual |
+| abstention | abstention_correct | abstained == expected_abstain (symmetric; leaks in answer_value_match) |
 
 ## ADR: retrieval hits without page
 

@@ -99,7 +99,7 @@ def test_corrupt_json_is_a_miss(tmp_path: Path) -> None:
     assert claims == (SAMPLE,)
     assert calls["n"] == 1
     payload = json.loads(store.read_text(encoding="utf-8"))
-    assert payload["version"] == 4
+    assert payload["version"] == 5
     assert payload["claims"][0]["value"] == "21262335"
 
 
@@ -120,6 +120,30 @@ def test_stale_parse_reextracts(tmp_path: Path) -> None:
 
     load_claims(folder, store_path=store, extract=extract, fixtures=fixtures)
     parse.write_text("<!-- page: 1 -->\nnew\n", encoding="utf-8")
+    _, cached = load_claims(folder, store_path=store, extract=extract, fixtures=fixtures)
+    assert cached is False
+    assert calls["n"] == 2
+
+
+def test_stale_content_sidecar_reextracts(tmp_path: Path) -> None:
+    folder = tmp_path / "pdfs"
+    folder.mkdir()
+    _touch_pdf(folder, "a.pdf")
+    fixtures = tmp_path / "mineru"
+    fixtures.mkdir()
+    parse = fixtures / "a.md"
+    parse.write_text("<!-- page: 1 -->\nbody\n", encoding="utf-8")
+    content = fixtures / "a.content.json"
+    content.write_text('{"version":"content_v1","spans":[]}', encoding="utf-8")
+    store = tmp_path / "claims.json"
+    calls = {"n": 0}
+
+    def extract(directory: Path) -> tuple[Claim, ...]:
+        calls["n"] += 1
+        return (SAMPLE,)
+
+    load_claims(folder, store_path=store, extract=extract, fixtures=fixtures)
+    content.write_text('{"version":"content_v1","spans":[{"page":1,"text":"x"}]}', encoding="utf-8")
     _, cached = load_claims(folder, store_path=store, extract=extract, fixtures=fixtures)
     assert cached is False
     assert calls["n"] == 2

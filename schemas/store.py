@@ -9,11 +9,12 @@ from pathlib import Path
 
 from schemas.claim import Claim
 from schemas.corpus import SAMPLES, extract_claims_from_dir
+from schemas.mineru_artifact import content_sha256
 from schemas.parse_artifact import parse_sha256
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_STORE = ROOT / "outputs" / "claims.json"
-STORE_VERSION = 4
+STORE_VERSION = 5
 
 ExtractFn = Callable[[Path], tuple[Claim, ...]]
 
@@ -29,6 +30,7 @@ def pdf_fingerprint(directory: Path, fixtures: Path | None = None) -> dict:
                 "size": stat.st_size,
                 "mtime_ns": stat.st_mtime_ns,
                 "parse_sha256": parse_sha256(pdf, fixtures),
+                "content_sha256": content_sha256(pdf, fixtures),
             }
         )
     return {"directory": str(folder), "sources": sources}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import dataclass
 from pathlib import Path
@@ -17,6 +18,18 @@ BBOX_RAGFLOW_PAGE = "ragflow_page"
 def content_path(pdf: Path, fixtures: Path | None = None) -> Path:
     folder = fixtures or FIXTURES
     return folder / f"{pdf.stem}.content.json"
+
+
+def content_sha256(pdf: Path, fixtures: Path | None = None) -> str | None:
+    """SHA-256 of the sidecar ``*.content.json`` when present."""
+    path = content_path(pdf, fixtures)
+    if not path.is_file():
+        return None
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 @dataclass(frozen=True)

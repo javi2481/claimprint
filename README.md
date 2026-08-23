@@ -42,7 +42,9 @@ Details: [`docs/architecture.md`](docs/architecture.md)
 
 ### Why retrieval alone is not enough
 
-Retrieval-only search (PDF+page, **no claim inject**) ties at Recall@5 **0.35** and MRR **0.2042** (n=20). Claims-first chat after `push_claims` scores **1.0** on n=10 task-specific cases. The underlying issue is the **identity trap**: retrieval can return evidence for a correct number attached to the wrong figure.
+Retrieval-only search (PDF+page, **no claim inject**) ties at Recall@5 **0.35** and MRR **0.2042** (n=20). Claims-first chat after `push_claims` scores **1.0** on n=10 task-specific cases. These are **frozen live-pilot results** from a manual run on a local RAGFlow stack — CI runs `./scripts/check.sh` and pytest only; it does not reproduce these scores.
+
+The underlying issue is the **identity trap**: retrieval can return evidence for a correct number attached to the wrong figure.
 
 ![Retrieval-only vs claims-first — identity trap](docs/assets/claimprint-retrieval-vs-chat.svg)
 
@@ -65,7 +67,7 @@ python scripts/idp_ask.py "¿Cuál es el EBITDA de la presentación 1T26?"
 # → 72128
 python scripts/idp_ask.py "¿Cuál es el margen EBITDA LTM del comunicado de prensa 1T26?"
 # → 76
-python scripts/review_pack.py   # outputs/review.html (HITL)
+python scripts/review_pack.py   # outputs/review/index.html (HITL)
 python scripts/informe.py       # outputs/dossier.html
 ```
 
@@ -134,8 +136,7 @@ docker compose --env-file .env \
 |-----|----------|
 | [`docs/architecture.md`](docs/architecture.md) | Identity, provenance, claim contract, inject lifecycle |
 | [`docs/evaluation.md`](docs/evaluation.md) | Gate 3 numbers, Gate 4 ablation, scoring |
-| [`docs/testing.md`](docs/testing.md) | Test layers |
-| [`docs/handoff-linux.md`](docs/handoff-linux.md) | Linux host notes |
+| [`docs/archivos_muestra/README.md`](docs/archivos_muestra/README.md) | BYMA sample PDFs |
 
 ## License
 

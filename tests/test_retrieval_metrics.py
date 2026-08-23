@@ -84,6 +84,25 @@ def test_abstain_chat_score() -> None:
     assert leak["answer_value_match"] == 0.0
 
 
+def test_abstain_with_leak_still_scores_abstention_symmetric() -> None:
+    case = {
+        "partition": "abstention",
+        "expected_value": None,
+        "expected_docs": [],
+        "forbid_values": ["21262335"],
+        "expected_abstain": True,
+    }
+    scored = score_chat_case(
+        case,
+        {
+            "answer": "No hay evidencia suficiente. 21262335",
+            "cited_docs": [],
+        },
+    )
+    assert scored["abstention_correct"] == 1.0
+    assert scored["answer_value_match"] == 0.0
+
+
 def test_false_abstain_fails_identity_and_narrative() -> None:
     identity = {
         "partition": "identity",

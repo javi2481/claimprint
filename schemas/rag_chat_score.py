@@ -36,8 +36,8 @@ def score_chat_case(case: dict, run: dict) -> dict:
       identity/comparison, pass if ``expected_value`` appears in the answer
       digits/compact text, no ``forbid_values`` leak, and the model did not
       abstain. Narrative has no gold number (retrieval + no abstain + no leak).
-    - ``abstention_correct``: 1 iff the model did what gold requires on abstain vs
-      answer (abstain when ``expected_abstain``, otherwise must not abstain).
+    - ``abstention_correct``: 1 iff ``abstained == expected_abstain`` (symmetric;
+      leak/value checks live in ``answer_value_match``).
     - ``evidence_doc_match`` / ``citation_doc_match``: scored only when the case expects docs;
       abstain-only cases return ``None`` so they do not inflate averages.
     """
@@ -52,14 +52,15 @@ def score_chat_case(case: dict, run: dict) -> dict:
     compact = answer.replace(".", "").replace(",", "").replace(" ", "")
     digit_blob = _digits(answer)
     leaked = any(val and (val in compact or val in digit_blob) for val in forbid)
+    abstention_correct = 1.0 if abstained == want_abstain else 0.0
 
     if want_abstain:
-        ok = abstained and not leaked
+        value_ok = abstained and not leaked
         return {
             "evidence_doc_match": None,
-            "answer_value_match": 1.0 if ok else 0.0,
+            "answer_value_match": 1.0 if value_ok else 0.0,
             "citation_doc_match": None,
-            "abstention_correct": 1.0 if ok else 0.0,
+            "abstention_correct": abstention_correct,
         }
 
     retrieval = cited_ok(cited, expected_docs)
@@ -68,16 +69,13 @@ def score_chat_case(case: dict, run: dict) -> dict:
         retrieval = all(cited_ok(cited, [doc]) for doc in expected_docs) if expected_docs else True
         citation = retrieval
 
-    # False abstain fails abstention; answering when required passes it.
-    abstention = 0.0 if abstained else 1.0
-
     if partition == "narrative":
         ok = (not abstained) and not leaked and retrieval
         return {
             "evidence_doc_match": 1.0 if retrieval else 0.0,
             "answer_value_match": 1.0 if ok else 0.0,
             "citation_doc_match": 1.0 if citation else 0.0,
-            "abstention_correct": abstention,
+            "abstention_correct": abstention_correct,
         }
 
     # Exact-value containment (pilot-sized; not full-answer accuracy).
@@ -87,7 +85,7 @@ def score_chat_case(case: dict, run: dict) -> dict:
         "evidence_doc_match": 1.0 if retrieval else 0.0,
         "answer_value_match": 1.0 if ok else 0.0,
         "citation_doc_match": 1.0 if citation else 0.0,
-        "abstention_correct": abstention,
+        "abstention_correct": abstention_correct,
     }
 
 
