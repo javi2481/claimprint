@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
   <title id="t">Claimprint — LinkedIn post card</title>
-  <desc id="d">Portfolio post: claims intelligence kernel, typed claims before RAG, no claim no answer.</desc>
+  <desc id="d">Portfolio post: claims intelligence kernel, typed claims before RAG, no claim no answer. v1.0 BYMA pilot metrics frozen at Gate 3.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
@@ -31,9 +31,23 @@
   <text x="60" y="72" font-family="Inter, system-ui, Segoe UI, sans-serif" font-size="48" font-weight="800" fill="#F8FAFC" letter-spacing="-2">CLAIMPRINT</text>
   <text x="60" y="108" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" fill="#818CF8">Claims Intelligence kernel</text>
   <text x="60" y="142" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#94A3B8">Not a RAG wrapper — documents become verified claims first</text>
+  <text x="1140" y="72" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#6366F1" letter-spacing="1">v1.0</text>
+
+  <!-- Identity trap — README numbers -->
+  <g transform="translate(60, 158)">
+    <rect x="0" y="0" width="1080" height="52" rx="10" fill="#131B2E" stroke="#1E293B" stroke-width="1"/>
+    <text x="24" y="22" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#FB923C">IDENTITY TRAP</text>
+    <text x="24" y="40" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8">net income 1T26 without scope → neighbor row</text>
+    <text x="430" y="32" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="13" font-weight="700" fill="#2DD4BF">21.262.335</text>
+    <text x="430" y="46" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#64748B">consolidado</text>
+    <text x="540" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#475569">≠</text>
+    <text x="650" y="32" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="13" font-weight="700" fill="#F8FAFC">21.259.769</text>
+    <text x="650" y="46" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#FB923C">controlante</text>
+    <text x="900" y="32" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#818CF8">kernel picks identity</text>
+  </g>
 
   <!-- ═══ MAIN SPINE — 4 beats, large labels ═══ -->
-  <g transform="translate(0, 248)">
+  <g transform="translate(0, 228)">
 
     <!-- DOCUMENT -->
     <g transform="translate(40, 12)">
@@ -78,11 +92,24 @@
   </g>
 
   <!-- RAG — minimal secondary -->
-  <path d="M580 392 L580 420 L720 420" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" fill="none" marker-end="url(#arr)"/>
-  <text x="740" y="426" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748B">RAG · optional · consumes claims</text>
+  <path d="M580 372 L580 400 L720 400" stroke="#334155" stroke-width="2" stroke-dasharray="7 5" fill="none" marker-end="url(#arr)"/>
+  <text x="740" y="406" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748B">RAG · optional · consumes claims</text>
+
+  <!-- Pilot metrics — Gate 3 frozen, honest small-n -->
+  <g transform="translate(60, 418)">
+    <rect x="0" y="0" width="1080" height="44" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="18" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748B" letter-spacing="1">BYMA PILOT · SMALL-N · NOT PAPER IR</text>
+    <text x="24" y="34" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8">Retrieval Recall@5</text>
+    <text x="148" y="34" font-family="ui-monospace, Consolas, monospace" font-size="12" font-weight="700" fill="#64748B">0.35</text>
+    <text x="210" y="34" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#475569">MRR</text>
+    <text x="250" y="34" font-family="ui-monospace, Consolas, monospace" font-size="12" font-weight="700" fill="#64748B">0.2042</text>
+    <text x="340" y="34" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94A3B8">Claims-first chat (n=10)</text>
+    <text x="520" y="34" font-family="ui-monospace, Consolas, monospace" font-size="12" font-weight="700" fill="#818CF8">1.0</text>
+    <text x="560" y="34" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#475569">answer · citation · evidence · abstention</text>
+  </g>
 
   <!-- Tagline -->
-  <g transform="translate(60, 468)">
+  <g transform="translate(60, 478)">
     <rect x="0" y="0" width="1080" height="72" rx="14" fill="#1C1410" stroke="#FB923C" stroke-width="2"/>
     <text x="540" y="36" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="800" fill="#FB923C" letter-spacing="1.5">NO CLAIM · NO ANSWER</text>
     <text x="540" y="58" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#A8A29E">without verified identity the kernel abstains</text>

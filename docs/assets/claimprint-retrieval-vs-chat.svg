@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
   <title id="t">Retrieval vs Claims-first — identity trap</title>
-  <desc id="d">Retrieval Recall@5 0.35 tied. Claims-first grounded chat: answer/citation/retrieval/abstention 1.0 after push_claims (Mistral, thr 0.2).</desc>
+  <desc id="d">Retrieval Recall@5 0.35 tied. Claims-first chat: answer_value_match / citation_doc_match / evidence_doc_match / abstention_correct 1.0 after push_claims (Mistral, thr 0.2).</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
@@ -88,10 +88,10 @@
     <text x="260" y="140" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#818CF8">grounded answer · push_claims</text>
 
     <!-- Metrics zone -->
-    <text x="32" y="178" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#64748B">answer · citation · n=10</text>
+    <text x="32" y="178" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748B">answer_value_match · citation_doc_match · n=10</text>
     <text x="32" y="244" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="800" fill="#818CF8" letter-spacing="-2">1.0</text>
 
-    <text x="32" y="288" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#64748B">retrieval · abstention · n=10</text>
+    <text x="32" y="288" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#64748B">evidence_doc_match · abstention_correct · n=10</text>
     <text x="32" y="340" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#2DD4BF" letter-spacing="-1">1.0</text>
 
     <text x="32" y="372" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#475569">Post-inject · Mistral · thr 0.2 — small-n pilot, not paper IR</text>
