@@ -43,7 +43,7 @@ Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la p�
 
 - **¿Mejor RAG / búsqueda híbrida?** La trampa de identidad es estructural — misma página, dos filas vecinas. En el piloto BYMA, keyword, vector e híbrido **empatan** en Recall@5 **0.35** / MRR **0.2042** (n=20).
 - **¿GPT-4 + prompt engineering?** Afinar prompts no garantiza abstención estructural. Claimprint abstiene cuando no hay claim verificado.
-- **¿Extractores batch (Unstract, Nanonets, …)?** Fuertes en campos; débiles en desambiguación de scope (*consolidado* vs *controlante*) sin identidad tipada.
+- **¿Extractores batch (Unstract, Nanonets, …)?** Suelen estar orientados a extracción de campos, no a identidad de scope — distinguir *consolidado* de *controlante* en la misma página es otro problema de diseño; este repo no los benchmarkea.
 - **¿Embeddings fine-tuned?** Filas P&L vecinas comparten contexto semántico; los embeddings no codifican scope contable.
 
 Metodología y scores congelados: [`docs/evaluation.es.md`](docs/evaluation.es.md).

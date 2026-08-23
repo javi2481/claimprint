@@ -43,7 +43,7 @@ This architecture was born from a specific failure: a RAG stack retrieving the c
 
 - **Better RAG / hybrid search?** The identity trap is structural — same page, two neighboring rows. In the BYMA pilot, keyword, vector, and hybrid retrieval **tie** at Recall@5 **0.35** / MRR **0.2042** (n=20).
 - **GPT-4 + prompt engineering?** Prompt tuning does not guarantee structural abstention. Claimprint abstains when no verified claim exists.
-- **Batch extractors (Unstract, Nanonets, …)?** Strong on field extraction; weak on scope disambiguation (*consolidado* vs *controlante*) without typed identity.
+- **Batch extractors (Unstract, Nanonets, …)?** They tend to be built for field extraction, not scope identity — distinguishing *consolidado* from *controlante* on the same page is a different design problem, not one this repo benchmarks against those tools.
 - **Fine-tuned embeddings?** Neighboring P&L rows share semantic context; embeddings do not encode accounting scope.
 
 Methodology and frozen scores: [`docs/evaluation.md`](docs/evaluation.md).
