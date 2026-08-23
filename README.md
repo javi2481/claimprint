@@ -19,7 +19,7 @@ In a BYMA quarterly filing, "resultado neto 1T26" has two neighboring P&L rows. 
 
 This isn't a rounding error. It's row identity — attributing the *controlante* figure when the question asked for *consolidado*. For an analyst, an auditor, or a compliance team automating extraction over filings, that mismatch means every model built on top of the answer is wrong in a way that looks right.
 
-Claimprint resolves identity — issuer, period, scope, metric — before any answer is generated.
+Claimprint resolves **claim identity** — the composite key `issuer · period · scope · metric` — before any answer is generated.
 
 This architecture was born from a specific failure: a RAG stack retrieving the correct BYMA page but confidently outputting the *controlante* row instead of the *consolidado* row. Claimprint formalizes the fix: resolve identity as a typed claim before generation.
 
@@ -36,7 +36,7 @@ This architecture was born from a specific failure: a RAG stack retrieving the c
 
 ## How Claimprint works
 
-Claimprint is a **claims-first IDP layer**, not a RAG wrapper. A document enters Document Intelligence (parse with MinerU, classify, extract) and becomes a **typed claim**: a structured figure with **identity** (which line item it is), **value**, and **provenance** (page, row, filing). Identity is resolved and verified before any answer is emitted. The primary path is **exact lookup** → verified answer. RAG chat is an **optional** layer that consumes verified claims; it is not the source of truth. If no claim passes verification, Claimprint **abstains** — no claim, no answer.
+Claimprint is a **claims-first IDP layer**, not a RAG wrapper. A document enters Document Intelligence (parse with MinerU, classify, extract) and becomes a **typed claim**: a structured figure with **identity** (`issuer · period · scope · metric`), **value**, and **provenance** (page, row, filing). The composite identity is resolved and verified before any answer is emitted. The primary path is **exact lookup** → verified answer. RAG chat is an **optional** layer that consumes verified claims; it is not the source of truth. If no claim passes verification, Claimprint **abstains** — no claim, no answer.
 
 ![Claimprint architecture — document to verified claim](docs/assets/claimprint-architecture.svg)
 
@@ -50,7 +50,7 @@ Claimprint is a **claims-first IDP layer**, not a RAG wrapper. A document enters
 | RAG chunk | derived input for chat |
 | Chat | consumer |
 
-**Core concepts:** a **typed claim** is the verified figure (identity + value + provenance). A **recipe** is the extraction contract for a document class (e.g. [`recipes/financial_statement.json`](recipes/financial_statement.json)). A **projector** maps extracted rows onto that schema — resolving scope (consolidado vs controlante) along the way.
+**Core concepts:** a **typed claim** is the verified figure (composite identity + value + provenance). A **recipe** is the extraction contract for a document class (e.g. [`recipes/financial_statement.json`](recipes/financial_statement.json)). A **projector** maps extracted rows onto that schema — resolving **scope** (consolidado vs controlante) along the way.
 
 Details: [`docs/architecture.md`](docs/architecture.md)
 

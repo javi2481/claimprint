@@ -19,11 +19,11 @@ En un EEFF trimestral de BYMA, "resultado neto 1T26" tiene dos filas vecinas en 
 
 No es un error de redondeo. Es identidad de fila — atribuir la cifra *controlante* cuando la pregunta pedía *consolidado*. Para un analista, un auditor o un equipo de compliance que automatiza extracción sobre filings, ese desajuste invalida cualquier modelo construido encima de una respuesta que parece correcta.
 
-Claimprint resuelve identidad — emisor, período, scope, métrica — antes de generar cualquier respuesta.
+Claimprint resuelve la **identidad del claim** — clave compuesta `emisor · período · scope · métrica` — antes de generar cualquier respuesta.
 
 Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la página correcta de BYMA pero respondía con confianza la fila *controlante* en lugar de la *consolidado*. Claimprint formaliza la solución: resolver identidad como claim tipado antes de generar.
 
-[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver [Inicio rápido](#inicio-rápido).
+[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver [Inicio rápido](#inicio-rapido).
 
 ## Para quién es
 
@@ -32,11 +32,13 @@ Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la p�
 | Analista de research / equity | Modelos sobre EEFF, comunicados, presentaciones | Cifras con identidad verificada (consolidado vs controlante) |
 | Auditor / controller | Revisión de extracción automatizada | Abstención cuando la pregunta no tiene claim |
 | Ingeniero IDP / RAG | Pipeline documento → respuesta | Separación clara: claim = fuente de verdad, chunk = derivado para chat |
-| Compliance / riesgo | Automatización sobre filings regulados | Provenance (página, fila, PDF) en cada respuesta |
+| Compliance / riesgo | Automatización sobre filings regulados | Provenance (página, fila, filing) en cada respuesta |
 
 ## Cómo funciona Claimprint
 
-Claimprint es una **capa IDP claims-first**, no un wrapper de RAG. Un documento entra a Document Intelligence (parse con MinerU, classify, extract) y se convierte en un **claim tipado**: cifra estructurada con **identidad** (qué rubro es), **valor** y **provenance** (página, fila, filing). La identidad se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint **abstiene** — no claim, no answer.
+Claimprint es una **capa IDP claims-first**, no un wrapper de RAG. Un documento entra a Document Intelligence (parse con MinerU, classify, extract) y se convierte en un **claim tipado**: cifra estructurada con **identidad** (`emisor · período · scope · métrica`), **valor** y **provenance** (página, fila, filing). La clave compuesta se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint **abstiene** — no claim, no answer.
+
+*Términos técnicos en inglés a propósito (como en el código): claim, recipe, scope, provenance, filing.*
 
 ![Claimprint architecture — document to verified claim](docs/assets/claimprint-architecture.svg)
 
@@ -50,7 +52,7 @@ Claimprint es una **capa IDP claims-first**, no un wrapper de RAG. Un documento 
 | Chunk RAG | entrada derivada para chat |
 | Chat | consumidor |
 
-**Conceptos clave:** un **claim tipado** es la cifra verificada (identidad + valor + provenance). Una **recipe** es el contrato de extracción para una clase de documento (ej. [`recipes/financial_statement.json`](recipes/financial_statement.json)). Un **projector** mapea filas extraídas al schema — resolviendo scope (consolidado vs controlante) en el camino.
+**Conceptos clave:** un **claim tipado** es la cifra verificada (identidad compuesta + valor + provenance). Una **recipe** es el contrato de extracción para una clase de documento (ej. [`recipes/financial_statement.json`](recipes/financial_statement.json)). Un **projector** mapea filas extraídas al schema — resolviendo **scope** (consolidado vs controlante) en el camino.
 
 Detalle: [`docs/architecture.md`](docs/architecture.md)
 
@@ -76,6 +78,8 @@ Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=1
 | HITL [`scripts/review_pack.py`](scripts/review_pack.py), dossier [`scripts/informe.py`](scripts/informe.py) | API keys en `.env` (Mistral + Voyage; gitignored) |
 
 Si querés el piloto de chat, calculá **x86_64**, **≥16 GB RAM** y tiempo para parsear e indexar `demo_4` vos mismo.
+
+<a id="inicio-rapido"></a>
 
 ## Inicio rápido
 
