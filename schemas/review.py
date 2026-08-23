@@ -69,6 +69,12 @@ def _esc(text: str) -> str:
     )
 
 
+def _format_bbox(bbox: tuple[float, float, float, float] | None) -> str:
+    if bbox is None:
+        return ""
+    return ",".join(f"{v:.4f}" for v in bbox)
+
+
 def render_review_html(
     claims: tuple[Claim, ...] | list[Claim],
     *,
@@ -80,16 +86,22 @@ def render_review_html(
         mark = verdict_for(claim.identity_key, table)
         page = "" if claim.source_page is None else str(claim.source_page)
         snippet = claim.source_text or ""
+        doc_id = claim.document_id or ""
+        if len(doc_id) > 12:
+            doc_id = doc_id[:12] + "…"
+        bbox = _format_bbox(claim.source_bbox)
         rows.append(
             "<tr>"
             f"<td>{_esc(claim.identity_key)}</td>"
             f"<td>{_esc(claim.value)}</td>"
             f"<td>{_esc(page)}</td>"
             f"<td>{_esc(snippet)}</td>"
+            f"<td>{_esc(doc_id)}</td>"
+            f"<td>{_esc(bbox)}</td>"
             f"<td>{_esc(mark)}</td>"
             "</tr>"
         )
-    body = "\n".join(rows) if rows else "<tr><td colspan='5'>Sin claims</td></tr>"
+    body = "\n".join(rows) if rows else "<tr><td colspan='7'>Sin claims</td></tr>"
     return (
         "<!DOCTYPE html><html lang='es'><head><meta charset='utf-8'>"
         "<title>Revisión HITL Claimprint</title>"
@@ -100,6 +112,6 @@ def render_review_html(
         "<p>Marcá accept / reject / flag en el JSON de veredictos. "
         "Sin archivo, todo cuenta como accept.</p>"
         "<table><thead><tr><th>identity_key</th><th>valor</th><th>página</th>"
-        "<th>source_text</th><th>veredicto</th></tr></thead><tbody>"
+        "<th>source_text</th><th>document_id</th><th>source_bbox</th><th>veredicto</th></tr></thead><tbody>"
         f"{body}</tbody></table></body></html>"
     )

@@ -56,6 +56,8 @@ class Claim:
     issuer: str | None = None
     scope: str | None = None
     metric: str | None = None
+    document_id: str | None = None
+    source_bbox: tuple[float, float, float, float] | None = None
 
     def __post_init__(self) -> None:
         if self.source_page is not None and self.source_page <= 0:

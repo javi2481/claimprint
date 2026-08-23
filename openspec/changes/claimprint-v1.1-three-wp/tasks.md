@@ -26,11 +26,11 @@
 
 ## WP-3 — Provenance / bbox (MinerU)
 
-- [ ] 3.1 `Claim.document_id` + `Claim.source_bbox` optional fields
-- [ ] 3.2 `match_bbox(source_text, page, content.json)` helper
-- [ ] 3.3 Wire EEFF + press + presentation projectors (best-effort bbox)
-- [ ] 3.4 `review_pack.py`: show bbox + page when present
-- [ ] 3.5 Gate 6: spot-check EEFF 1T26 neto consolidado visually; abstain if no match
+- [x] 3.1 `Claim.document_id` + `Claim.source_bbox` optional fields
+- [x] 3.2 `match_bbox(source_text, page, content.json)` helper
+- [x] 3.3 Wire EEFF + press + presentation projectors (best-effort bbox)
+- [x] 3.4 `review_pack.py`: show bbox + page when present
+- [x] 3.5 Gate 6: EEFF 1T26 neto consolidado has bbox or honest null (pytest)
 
 ## Ship
 

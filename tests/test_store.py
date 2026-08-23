@@ -99,7 +99,7 @@ def test_corrupt_json_is_a_miss(tmp_path: Path) -> None:
     assert claims == (SAMPLE,)
     assert calls["n"] == 1
     payload = json.loads(store.read_text(encoding="utf-8"))
-    assert payload["version"] == 2
+    assert payload["version"] == 3
     assert payload["claims"][0]["value"] == "21262335"
 
 
