@@ -91,7 +91,7 @@ def render_review_html(
         doc_id = claim.document_id or ""
         if len(doc_id) > 12:
             doc_id = doc_id[:12] + "…"
-        src_hash = claim.source_hash or ""
+        src_hash = claim.parse_artifact_hash or ""
         if len(src_hash) > 12:
             src_hash = src_hash[:12] + "…"
         bbox = _format_bbox(claim.source_bbox)
@@ -128,7 +128,7 @@ def render_review_html(
         "Sin archivo, todo cuenta como accept. "
         "Rectángulo rojo = <code>source_bbox</code> normalizado sobre la página del PDF.</p>"
         "<table><thead><tr><th>identity_key</th><th>valor</th><th>página</th>"
-        "<th>source_text</th><th>document_id</th><th>source_hash</th><th>source_bbox</th>"
+        "<th>source_text</th><th>document_id</th><th>parse_artifact_hash</th><th>source_bbox</th>"
         "<th></th><th>veredicto</th></tr></thead><tbody>"
         f"{body}</tbody></table>{highlights}</body></html>"
     )

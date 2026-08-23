@@ -41,6 +41,7 @@ def select_page(
     max_pages: int = 24,
     artifact: ParseArtifact | None = None,
 ) -> int | None:
+    """First page whose folded text contains any keyword — deterministic routing, not layout ranking."""
     parsed = artifact if artifact is not None else load_parse(pdf)
     if parsed is None:
         return None

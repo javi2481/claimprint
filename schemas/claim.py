@@ -29,6 +29,14 @@ class ClaimError(ValueError):
     """Claim failed integrity checks."""
 
 
+def _validate_bbox(bbox: tuple[float, float, float, float] | None) -> None:
+    if bbox is None:
+        return
+    x0, y0, x1, y1 = bbox
+    if not (0.0 <= x0 <= x1 <= 1.0 and 0.0 <= y0 <= y1 <= 1.0):
+        raise ClaimError("source_bbox must be normalized 0-1 with x0<=x1 and y0<=y1")
+
+
 def validate_claim(claim: "Claim") -> None:
     if not (claim.value or "").strip():
         raise ClaimError("empty value")
@@ -40,6 +48,7 @@ def validate_claim(claim: "Claim") -> None:
         expected = identity_key(claim.issuer, claim.period, claim.scope, claim.metric)
         if claim.identity_key != expected:
             raise ClaimError("identity_key inconsistent with issuer|period|scope|metric")
+    _validate_bbox(claim.source_bbox)
 
 
 def identity_key(issuer: str, period: str, scope: str, metric: str) -> str:
@@ -57,22 +66,11 @@ class Claim:
     scope: str | None = None
     metric: str | None = None
     document_id: str | None = None
-    source_hash: str | None = None
+    parse_artifact_hash: str | None = None
     source_bbox: tuple[float, float, float, float] | None = None
 
     def __post_init__(self) -> None:
-        if self.source_page is not None and self.source_page <= 0:
-            raise ClaimError("source_page must be > 0 when set")
-        if (
-            (self.value or "").strip()
-            and (self.period or "").strip()
-            and self.issuer
-            and self.scope
-            and self.metric
-        ):
-            expected = identity_key(self.issuer, self.period, self.scope, self.metric)
-            if self.identity_key != expected:
-                raise ClaimError("identity_key inconsistent with issuer|period|scope|metric")
+        validate_claim(self)
 
 
 def claims_from_financial_statement(row: object) -> tuple[Claim, ...]:

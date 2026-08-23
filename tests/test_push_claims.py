@@ -99,6 +99,14 @@ def _claims() -> tuple[Claim, ...]:
     )
 
 
+def test_push_claims_posts_before_delete() -> None:
+    fake = FakeApi()
+    assert _run_inject("tok", _claims(), fake) == 0
+    post_idx = next(i for i, (m, _) in enumerate(fake.calls) if m == "POST")
+    delete_idx = next(i for i, (m, p) in enumerate(fake.calls) if m == "DELETE" and "eeff1/chunks" in p)
+    assert post_idx < delete_idx
+
+
 def test_push_claims_posts_only_eeff_chunk() -> None:
     fake = FakeApi()
     assert _run_inject("tok", _claims(), fake) == 0

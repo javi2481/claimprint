@@ -64,8 +64,8 @@ def test_eeff_neto_consolidado_has_bbox_or_honest_null() -> None:
         if c.scope == SCOPE_CONSOLIDADO and c.metric == METRIC_NETO and c.period == "2026-03-31"
     )
     assert neto.document_id == pdf_document_id(pdf)
-    assert neto.source_hash
-    assert len(neto.source_hash) == 64
+    assert neto.parse_artifact_hash
+    assert len(neto.parse_artifact_hash) == 64
     assert neto.source_bbox is not None
     assert len(neto.source_bbox) == 4
     assert all(0.0 <= v <= 1.0 for v in neto.source_bbox)

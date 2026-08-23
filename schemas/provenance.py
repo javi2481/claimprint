@@ -1,4 +1,4 @@
-"""PDF document_id and bbox match from MinerU content sidecars."""
+"""PDF document_id and best-effort evidence bbox from MinerU / RAGFlow sidecars."""
 
 from __future__ import annotations
 
@@ -96,7 +96,7 @@ def match_bbox(
     page: int | None,
     value: str | None = None,
 ) -> Bbox | None:
-    """Return normalized bbox when a sidecar span contains source_text or value."""
+    """Return best-effort evidence bbox when a sidecar span contains source_text or value."""
     loaded: ContentSidecar | None
     if isinstance(sidecar, Path):
         raw = json.loads(sidecar.read_text(encoding="utf-8"))
@@ -146,6 +146,6 @@ def enrich_claim_provenance(
     return replace(
         claim,
         document_id=doc_id,
-        source_hash=src_hash,
+        parse_artifact_hash=src_hash,
         source_bbox=bbox,
     )

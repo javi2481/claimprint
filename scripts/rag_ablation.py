@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Three-arm chat ablation over evals/rag_chat_v1.json (Gate 4).
 
+Live sequential ablation over the same demo_4 / chat_demo_4 stack — not a fully
+isolated experimental design. Arms run in order; chat state is shared.
+
 Arms:
   A off    — no IDP chunks, no IDP prompt rules
   B chunks — EEFF IDP chunk only, no prompt rules

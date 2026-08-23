@@ -3,6 +3,10 @@
 
 Does not reparse MinerU. Not called by scripts/up.sh. After merge, run once on
 the UI host and open a new chat.
+
+Mutates only dataset ``demo_4`` and chat ``chat_demo_4``. Chunk replace is
+best-effort: POST the new IDP chunk first, then DELETE prior inject chunks by
+ID snapshot so a failed POST leaves existing chunks in place.
 """
 
 from __future__ import annotations
@@ -102,7 +106,7 @@ def attach_plan(docs: list[dict], claims: tuple) -> list[tuple[dict, str, list[s
     return planned
 
 
-def _delete_inject_chunks(api_fn, token: str, ds_id: str, doc: dict) -> int:
+def _list_inject_chunk_ids(api_fn, token: str, ds_id: str, doc: dict) -> list[str]:
     chunks: list = []
     page = 1
     while page <= 20:
@@ -116,20 +120,25 @@ def _delete_inject_chunks(api_fn, token: str, ds_id: str, doc: dict) -> int:
         if len(batch) < 100:
             break
         page += 1
-    ids = []
+    ids: list[str] = []
     for chunk in chunks:
         chunk_text = chunk.get("content") or chunk.get("content_with_weight") or ""
         if is_inject_chunk(chunk_text):
             cid = chunk.get("id") or chunk.get("chunk_id")
             if cid:
                 ids.append(cid)
-    if ids:
-        api_fn(
-            "DELETE",
-            f"/datasets/{ds_id}/documents/{doc['id']}/chunks",
-            token,
-            json.dumps({"chunk_ids": ids}).encode(),
-        )
+    return ids
+
+
+def _delete_chunk_ids(api_fn, token: str, ds_id: str, doc_id: str, ids: list[str]) -> int:
+    if not ids:
+        return 0
+    api_fn(
+        "DELETE",
+        f"/datasets/{ds_id}/documents/{doc_id}/chunks",
+        token,
+        json.dumps({"chunk_ids": ids}).encode(),
+    )
     return len(ids)
 
 
@@ -182,13 +191,14 @@ def _run_inject(
     eeff_docs = [doc for doc in docs if dedicated_financial_statement(doc.get("name") or "")]
     if inject_mode == "off":
         for doc in eeff_docs:
-            removed = _delete_inject_chunks(api_fn, token, ds_id, doc)
+            old_ids = _list_inject_chunk_ids(api_fn, token, ds_id, doc)
+            removed = _delete_chunk_ids(api_fn, token, ds_id, doc["id"], old_ids)
             name = doc.get("name") or ""
             if removed:
                 print(f"ok: {ds_name}/{name} removed {removed} IDP chunk(s)")
     for doc, content, keywords, questions in planned:
         name = doc.get("name") or ""
-        removed = _delete_inject_chunks(api_fn, token, ds_id, doc)
+        old_ids = _list_inject_chunk_ids(api_fn, token, ds_id, doc)
         api_fn(
             "POST",
             f"/datasets/{ds_id}/documents/{doc['id']}/chunks",
@@ -201,6 +211,7 @@ def _run_inject(
                 }
             ).encode(),
         )
+        removed = _delete_chunk_ids(api_fn, token, ds_id, doc["id"], old_ids)
         extra = f" (replaced {removed})" if removed else ""
         print(f"ok: {ds_name}/{name} IDP chunk{extra}")
 

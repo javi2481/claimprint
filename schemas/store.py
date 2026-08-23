@@ -60,7 +60,7 @@ def _claims_from_payload(raw: list[object]) -> tuple[Claim, ...] | None:
                     scope=row.get("scope"),
                     metric=row.get("metric"),
                     document_id=row.get("document_id"),
-                    source_hash=row.get("source_hash"),
+                    parse_artifact_hash=row.get("parse_artifact_hash") or row.get("source_hash"),
                     source_bbox=_bbox_from_row(row.get("source_bbox")),
                 )
             )

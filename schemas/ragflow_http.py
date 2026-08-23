@@ -16,7 +16,10 @@ MYSQL_CONTAINER = "claimprint-mysql-1"
 
 
 def token_from_mysql(container: str = MYSQL_CONTAINER) -> str:
-    """Read the first api_token from the Compose MySQL container."""
+    """Read the first api_token from the Compose MySQL container.
+
+    Local demo convenience only — not a public integration contract.
+    """
     cmd = (
         'mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -N rag_flow '
         '-e "SELECT token FROM api_token LIMIT 1;"'

@@ -50,7 +50,7 @@ def resolve_quarter_period(
     filename: str,
     body: str = "",
 ) -> tuple[str, str] | None:
-    """Return (iso_period, label). Content-first, filename fallback."""
+    """Return (iso_period, label). front_matter → body → filename; first unambiguous match wins."""
     for blob in (front_matter, body):
         if not blob.strip():
             continue
