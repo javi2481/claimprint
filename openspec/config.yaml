@@ -5,7 +5,7 @@ persistence: hybrid
 strict_tdd: false
 
 context: |
-  Product: Claimprint is a claims intelligence kernel; the shipped plugin is finance IDP over docs/archivos_muestra/ (BYMA). MinerU parse feeds typed claims and RAGFlow chat. Active OpenSpec change: claimprint-v1.1-three-wp (post-v1: content-first period, ablation, MinerU provenance). Closed: claimprint-v1-close (v1.0.0). Gate 3 metrics frozen: Recall@5 0.35, MRR 0.2042, chat 1.0/10 — do not edit without new gate. Parse SoT is fixtures/mineru/*.md plus committed *.content.json sidecars (MinerU API preferred at export; RAGFlow positions fallback in CI).
+  Product: Claimprint is a claims intelligence kernel; the shipped plugin is finance IDP over docs/archivos_muestra/ (BYMA). MinerU parse feeds typed claims and RAGFlow chat. No active product OpenSpec change — v1.0.0 shipped; archived: claimprint-v1.1-three-wp (content-first period, ablation, MinerU provenance). Closed: claimprint-v1-close (v1.0.0 release gate). Gate 3 metrics frozen: Recall@5 0.35, MRR 0.2042, chat 1.0/10 — do not edit without new gate. Parse SoT is fixtures/mineru/*.md plus committed *.content.json sidecars (MinerU API preferred at export; RAGFlow positions fallback in CI).
   UI/stack pin (do not inflate with IDP work): RAGFlow v0.26.4 + Infinity + MinerU pipeline sidecar + Mistral mistral-small-latest + Voyage (openspec change claimprint-ragflow; live SoT = README / v1.0.0). Chat inject is scripts/push_claims.py from kernel claims — not a second gold JSON.
   Runtime IDP: ./scripts/check.sh (pytest) on any host with MinerU fixtures. Runtime UI: Docker Compose, x86_64, ≥16 GB. Do not introduce a custom product UI; the UI is pinned RAGFlow.
   Persistence: hybrid (openspec files + Engram observations, project claimprint).
