@@ -23,7 +23,7 @@ Claimprint resuelve la **identidad del claim** — clave compuesta `emisor · pe
 
 Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la página correcta de BYMA pero respondía con confianza la fila *controlante* en lugar de la *consolidado*. Claimprint formaliza la solución: resolver identidad como claim tipado antes de generar.
 
-[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver [Inicio rápido](#inicio-rapido).
+[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver la sección **Inicio rápido** más abajo.
 
 ## Para quién es
 
@@ -78,8 +78,6 @@ Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=1
 | HITL [`scripts/review_pack.py`](scripts/review_pack.py), dossier [`scripts/informe.py`](scripts/informe.py) | API keys en `.env` (Mistral + Voyage; gitignored) |
 
 Si querés el piloto de chat, calculá **x86_64**, **≥16 GB RAM** y tiempo para parsear e indexar `demo_4` vos mismo.
-
-<a id="inicio-rapido"></a>
 
 ## Inicio rápido
 
