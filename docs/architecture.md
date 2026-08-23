@@ -1,5 +1,7 @@
 # Architecture
 
+For the problem, origin story, and pilot results, see the [README](../README.md). This document is the **technical contract**: claim shape, inject lifecycle, provenance, and evaluation hooks. "Kernel" below is internal terminology for the claims layer — not the product hook.
+
 Claimprint is a **claims intelligence kernel**, not a RAG wrapper. A document enters Document Intelligence (parse, classify, extract) and becomes a **typed claim**: structured figure with **identity**, **value**, and **provenance**. Identity is resolved and verified before any answer is emitted.
 
 ## Source-of-truth layers

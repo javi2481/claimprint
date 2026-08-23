@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
-  <title id="t">Claimprint — Claims Intelligence kernel</title>
+  <title id="t">Claimprint — claims-first IDP layer</title>
   <desc id="d">Documents become typed verified claims before RAG answers. No claim, no answer.</desc>
 
   <defs>
@@ -35,7 +35,7 @@
 
   <!-- Header -->
   <text x="60" y="48" font-family="Inter, system-ui, Segoe UI, sans-serif" font-size="32" font-weight="800" fill="#F8FAFC" letter-spacing="-1">CLAIMPRINT</text>
-  <text x="60" y="74" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">Claims Intelligence kernel · First instance: Finance / BYMA</text>
+  <text x="60" y="74" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#64748B">Claims-first IDP layer · First instance: Finance / BYMA</text>
   <text x="60" y="98" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#475569">Documents become verifiable claims before RAG is allowed to answer</text>
 
   <!-- Main spine -->
@@ -109,7 +109,7 @@
   <g transform="translate(60, 496)">
     <rect x="0" y="0" width="1080" height="64" rx="12" fill="#1C1410" stroke="#FB923C" stroke-width="1.5"/>
     <text x="540" y="30" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#FB923C" letter-spacing="1">NO CLAIM · NO ANSWER</text>
-    <text x="540" y="52" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#78716C">without a verified claim the kernel abstains — chat is not the source of truth</text>
+    <text x="540" y="52" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#78716C">without a verified claim Claimprint abstains — chat is not the source of truth</text>
   </g>
 
   <!-- Footer -->

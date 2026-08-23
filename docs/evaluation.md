@@ -28,7 +28,7 @@ Retrieval-only (n=20; no claim inject):
 | vector | 0.35 | 0.35 | 0.2042 |
 | hybrid | 0.35 | 0.35 | 0.2042 |
 
-The three arms **tie**: this pilot does not show hybrid winning. Recall@5 equals Recall@10 — no gold hit appears between ranks 6–10 in this n=20 set. The limiting factor is not simply top-k depth; it is the **identity trap** (correct number, wrong P&L row).
+The three arms **tie**: this pilot does not show hybrid winning. Recall@5 equals Recall@10 — no gold hit appears between ranks 6–10 in this n=20 set. The limiting factor is not simply top-k depth; it is the **identity trap** (correct number, wrong P&L row) — the same **21.262.335 vs 21.259.769** case that motivated Claimprint.
 
 Claims-first chat (n=10, post-`push_claims`):
 
