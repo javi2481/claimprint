@@ -213,11 +213,13 @@ The gap between retrieval-only and claims-first chat is the argument, not a numb
 
 Separates **EEFF chunk inject** from **IDP prompt rules** on the same n=10 gold (`evals/rag_chat_v1.json`). Does not replace the frozen Gate-3 row above.
 
-| Arm | `--inject-mode` | IDP chunk | IDP prompt rules |
-|-----|-----------------|-----------|------------------|
-| A | `off` | off | off |
-| B | `chunks` | on | off |
-| C | `full` | on | on (pilot default) |
+| Arm | `--inject-mode` | IDP chunk | IDP prompt | answer_value_match | citation / evidence | abstention_correct |
+|-----|-----------------|-----------|------------|--------------------|---------------------|--------------------|
+| A | `off` | off | off | **0.5** | 0.75 / 0.75 | 0.8 |
+| B | `chunks` | on | off | **0.7** | 1.0 / 1.0 | 0.8 |
+| C | `full` | on | on (pilot) | **1.0** | 1.0 / 1.0 | 1.0 |
+
+Live remesa on `demo_4` / `chat_demo_4` (n=10 per arm). Chunk inject alone lifts value match; prompt rules close the rest (and abstention). Dump: `outputs/rag_ablation.json` (does not overwrite Gate 3).
 
 ```bash
 python scripts/push_claims.py --inject-mode full   # restore pilot default
