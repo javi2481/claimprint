@@ -207,6 +207,24 @@ The three arms tie: this pilot does **not** show hybrid winning. That tie is evi
 
 The gap between retrieval-only and claims-first chat is the argument, not a number to hide. Small-n pilot — honest, not a paper IR claim. Dumps live in `outputs/` (gitignored).
 
+### Gate 4 — inject ablation (chunk vs prompt)
+
+Separates **EEFF chunk inject** from **IDP prompt rules** on the same n=10 gold (`evals/rag_chat_v1.json`). Does not replace the frozen Gate-3 row above.
+
+| Arm | `--inject-mode` | IDP chunk | IDP prompt rules |
+|-----|-----------------|-----------|------------------|
+| A | `off` | off | off |
+| B | `chunks` | on | off |
+| C | `full` | on | on (pilot default) |
+
+```bash
+python scripts/push_claims.py --inject-mode full   # restore pilot default
+python scripts/rag_ablation.py                   # → outputs/rag_ablation.json
+python scripts/clear_chat_sessions.py              # optional: drop UI sessions after long runs
+```
+
+`rag_ablation.py` re-applies each arm via `push_claims`, runs the ten gold questions (35 s spacing), restores `full`, and writes a separate dump. Run only on a live `demo_4` + `chat_demo_4` stack.
+
 ```bash
 docker compose --env-file .env \
   -f vendor/ragflow-docker/docker-compose.yml \

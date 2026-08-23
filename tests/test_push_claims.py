@@ -18,7 +18,8 @@ from schemas.claim import (  # noqa: E402
     Claim,
     identity_key,
 )
-from push_claims import _run_inject  # noqa: E402
+from schemas.inject import IDP_START  # noqa: E402
+from push_claims import INJECT_MODES, _run_inject  # noqa: E402
 
 EEFF = "BYMA_-_EEFF_31-03-2026_VF.pdf"
 PRESS = "BYMA_Comunicado_de_Prensa-Resultados-1T26.pdf"
@@ -28,6 +29,7 @@ class FakeApi:
     def __init__(self) -> None:
         self.calls: list[tuple[str, str]] = []
         self.posted: list[str] = []
+        self.put_bodies: list[dict] = []
 
     def __call__(self, method: str, path: str, token: str, data: bytes | None = None) -> dict:
         self.calls.append((method, path))
@@ -62,6 +64,10 @@ class FakeApi:
             payload = json.loads(data.decode()) if data else {}
             self.posted.append(path)
             assert "Ficha IDP" in payload.get("content", "")
+            return {"code": 0}
+        if method == "PUT" and path.startswith("/chats/"):
+            payload = json.loads(data.decode()) if data else {}
+            self.put_bodies.append(payload)
             return {"code": 0}
         if method in {"DELETE", "PUT"}:
             return {"code": 0}
@@ -101,6 +107,29 @@ def test_push_claims_posts_only_eeff_chunk() -> None:
     assert not any("pr1" in path and method == "POST" for method, path in fake.calls)
     assert any(method == "DELETE" and "eeff1/chunks" in path for method, path in fake.calls)
     assert any(method == "PUT" and path == "/chats/chat1" for method, path in fake.calls)
+    system = fake.put_bodies[-1]["prompt_config"]["system"]
+    assert IDP_START in system
+
+
+def test_push_claims_off_removes_chunks_without_post() -> None:
+    fake = FakeApi()
+    assert _run_inject("tok", _claims(), fake, inject_mode="off") == 0
+    assert fake.posted == []
+    assert any(method == "DELETE" and "eeff1/chunks" in path for method, path in fake.calls)
+    system = fake.put_bodies[-1]["prompt_config"]["system"]
+    assert IDP_START not in system
+
+
+def test_push_claims_chunks_posts_without_idp_prompt() -> None:
+    fake = FakeApi()
+    assert _run_inject("tok", _claims(), fake, inject_mode="chunks") == 0
+    assert fake.posted == ["/datasets/ds1/documents/eeff1/chunks"]
+    system = fake.put_bodies[-1]["prompt_config"]["system"]
+    assert IDP_START not in system
+
+
+def test_inject_modes_tuple() -> None:
+    assert INJECT_MODES == ("off", "chunks", "full")
 
 
 

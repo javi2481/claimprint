@@ -218,6 +218,29 @@ def prompt_lines(claims: tuple[Claim, ...] | list[Claim]) -> str:
     return "\n".join(lines)
 
 
+def strip_idp_prompt(system: str) -> str:
+    text = system or ""
+    text = re.sub(
+        re.escape(IDP_START) + r".*?" + re.escape(IDP_END) + r"\n?",
+        "",
+        text,
+        flags=re.S,
+    )
+    text = re.sub(
+        re.escape(GRAPH_START) + r".*?" + re.escape(GRAPH_END) + r"\n?",
+        "",
+        text,
+        flags=re.S,
+    )
+    text = re.sub(
+        r"FICHAS GRAPH \(identidad.*?(?=\nEres un asistente|\nAquí está la base)",
+        "",
+        text,
+        flags=re.S,
+    )
+    return text.strip()
+
+
 def upsert_idp_prompt(system: str, block: str) -> str:
     wrapped = f"{IDP_START}\n{block}\n{IDP_END}"
     text = system or ""

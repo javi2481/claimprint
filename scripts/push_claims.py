@@ -27,6 +27,7 @@ from schemas.inject import (  # noqa: E402
     eeff_chunk,
     is_inject_chunk,
     prompt_lines,
+    strip_idp_prompt,
     upsert_idp_prompt,
 )
 from schemas.ragflow_http import load_env, token_from_mysql  # noqa: E402
@@ -36,6 +37,7 @@ API = os.environ.get("RAGFLOW_URL", "http://127.0.0.1/api/v1").rstrip("/")
 
 DEFAULT_DATASET = os.environ.get("CLAIMPRINT_DATASET", "demo_4")
 DEFAULT_CHAT = os.environ.get("CLAIMPRINT_CHAT", "chat_demo_4")
+INJECT_MODES = ("off", "chunks", "full")
 
 def _pick_named(rows: list, name: str) -> dict | None:
     for row in rows:
@@ -100,6 +102,37 @@ def attach_plan(docs: list[dict], claims: tuple) -> list[tuple[dict, str, list[s
     return planned
 
 
+def _delete_inject_chunks(api_fn, token: str, ds_id: str, doc: dict) -> int:
+    chunks: list = []
+    page = 1
+    while page <= 20:
+        body = api_fn(
+            "GET",
+            f"/datasets/{ds_id}/documents/{doc['id']}/chunks?page={page}&page_size=100",
+            token,
+        )
+        batch = rows_of(body, "chunks")
+        chunks.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+    ids = []
+    for chunk in chunks:
+        chunk_text = chunk.get("content") or chunk.get("content_with_weight") or ""
+        if is_inject_chunk(chunk_text):
+            cid = chunk.get("id") or chunk.get("chunk_id")
+            if cid:
+                ids.append(cid)
+    if ids:
+        api_fn(
+            "DELETE",
+            f"/datasets/{ds_id}/documents/{doc['id']}/chunks",
+            token,
+            json.dumps({"chunk_ids": ids}).encode(),
+        )
+    return len(ids)
+
+
 def _run_inject(
     token: str,
     claims: tuple,
@@ -107,7 +140,11 @@ def _run_inject(
     *,
     dataset_name: str = DEFAULT_DATASET,
     chat_name: str = DEFAULT_CHAT,
+    inject_mode: str = "full",
 ) -> int:
+    if inject_mode not in INJECT_MODES:
+        print(f"error: inject_mode must be one of {INJECT_MODES}", file=sys.stderr)
+        return 1
     datasets = rows_of(api_fn("GET", "/datasets?page_size=100", token), "datasets", "kbs")
     if not datasets:
         print("error: no datasets via API", file=sys.stderr)
@@ -141,38 +178,17 @@ def _run_inject(
             )
             print(f"ok: {ds_name}: removed {name}")
 
-    planned = attach_plan(docs, claims)
+    planned = attach_plan(docs, claims) if inject_mode in ("chunks", "full") else []
+    eeff_docs = [doc for doc in docs if dedicated_financial_statement(doc.get("name") or "")]
+    if inject_mode == "off":
+        for doc in eeff_docs:
+            removed = _delete_inject_chunks(api_fn, token, ds_id, doc)
+            name = doc.get("name") or ""
+            if removed:
+                print(f"ok: {ds_name}/{name} removed {removed} IDP chunk(s)")
     for doc, content, keywords, questions in planned:
         name = doc.get("name") or ""
-        chunks: list = []
-        page = 1
-        while page <= 20:
-            body = api_fn(
-                "GET",
-                f"/datasets/{ds_id}/documents/{doc['id']}/chunks?page={page}&page_size=100",
-                token,
-            )
-            batch = rows_of(body, "chunks")
-            chunks.extend(batch)
-            if len(batch) < 100:
-                break
-            page += 1
-        ids = []
-        for chunk in chunks:
-            chunk_text = chunk.get("content") or chunk.get("content_with_weight") or ""
-            if is_inject_chunk(chunk_text):
-                cid = chunk.get("id") or chunk.get("chunk_id")
-                if cid:
-                    ids.append(cid)
-        removed = 0
-        if ids:
-            api_fn(
-                "DELETE",
-                f"/datasets/{ds_id}/documents/{doc['id']}/chunks",
-                token,
-                json.dumps({"chunk_ids": ids}).encode(),
-            )
-            removed = len(ids)
+        removed = _delete_inject_chunks(api_fn, token, ds_id, doc)
         api_fn(
             "POST",
             f"/datasets/{ds_id}/documents/{doc['id']}/chunks",
@@ -201,7 +217,11 @@ def _run_inject(
 
     block = prompt_lines(claims)
     prompt = dict(chat.get("prompt_config") or {})
-    prompt["system"] = upsert_idp_prompt(prompt.get("system") or "", block)
+    base = prompt.get("system") or ""
+    if inject_mode == "full":
+        prompt["system"] = upsert_idp_prompt(base, block)
+    else:
+        prompt["system"] = strip_idp_prompt(base)
     prompt["quote"] = True
     api_fn(
         "PUT",
@@ -209,7 +229,7 @@ def _run_inject(
         token,
         json.dumps({"prompt_config": prompt}).encode(),
     )
-    print(f"ok: chat {chat.get('name')} (quote on)")
+    print(f"ok: chat {chat.get('name')} (quote on, inject_mode={inject_mode})")
     return 0
 
 
@@ -218,6 +238,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", default=DEFAULT_DATASET)
     parser.add_argument("--chat", default=DEFAULT_CHAT)
+    parser.add_argument(
+        "--inject-mode",
+        choices=INJECT_MODES,
+        default="full",
+        help="off=no IDP chunks or prompt; chunks=EEFF chunk only; full=chunk+IDP rules (default)",
+    )
     args = parser.parse_args()
     load_env(ROOT / ".env")
     token = os.environ.get("RAGFLOW_API_KEY") or token_from_mysql()
@@ -231,6 +257,7 @@ def main() -> int:
         api,
         dataset_name=args.dataset,
         chat_name=args.chat,
+        inject_mode=args.inject_mode,
     )
 
 

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_scripts_do_not_use_shell_true() -> None:
-    for name in ("retrieval_bench.py", "rag_eval.py", "clear_chat_sessions.py"):
+    for name in ("retrieval_bench.py", "rag_eval.py", "rag_ablation.py", "clear_chat_sessions.py"):
         text = (ROOT / "scripts" / name).read_text(encoding="utf-8")
         assert "shell=True" not in text
 
@@ -23,7 +23,7 @@ def test_bench_and_eval_skip_without_ragflow(monkeypatch) -> None:
     env["RAGFLOW_URL"] = "http://127.0.0.1:9"
     env.pop("RAGFLOW_API_KEY", None)
     py = sys.executable
-    for script in ("retrieval_bench.py", "rag_eval.py", "clear_chat_sessions.py"):
+    for script in ("retrieval_bench.py", "rag_eval.py", "rag_ablation.py", "clear_chat_sessions.py"):
         proc = subprocess.run(
             [py, str(ROOT / "scripts" / script)],
             cwd=str(ROOT),

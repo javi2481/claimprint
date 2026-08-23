@@ -77,8 +77,10 @@ git check-ignore -q .env || fail ".env must be gitignored"
 [[ -f schemas/retrieval_metrics.py ]] || fail "missing schemas/retrieval_metrics.py"
 [[ -f scripts/retrieval_bench.py ]] || fail "missing scripts/retrieval_bench.py"
 [[ -f scripts/rag_eval.py ]] || fail "missing scripts/rag_eval.py"
+[[ -f scripts/rag_ablation.py ]] || fail "missing scripts/rag_ablation.py"
 [[ -f examples/retrieval_run.example.json ]] || fail "missing examples/retrieval_run.example.json"
 [[ -f examples/rag_chat_run.example.json ]] || fail "missing examples/rag_chat_run.example.json"
+[[ -f examples/rag_ablation.example.json ]] || fail "missing examples/rag_ablation.example.json"
 if [[ -e recipes/UNKNOWN.json ]] || [[ -e recipes/unknown.json ]]; then
   fail "UNKNOWN is a classifier class, not a recipe file"
 fi

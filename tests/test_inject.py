@@ -15,11 +15,13 @@ from schemas.claim import (
     identity_key,
 )
 from schemas.inject import (
+    IDP_START,
     MARKER,
     MARKER_GRAPH,
     eeff_chunk,
     is_inject_chunk,
     prompt_lines,
+    strip_idp_prompt,
     upsert_idp_prompt,
 )
 from schemas.money import format_display_ars
@@ -75,6 +77,19 @@ def test_upsert_replaces_graph_block() -> None:
     text = upsert_idp_prompt(old, "NEW RULES")
     assert "OLD" not in text
     assert "Fichas IDP" in text
+    assert "{knowledge}" in text
+
+
+def test_strip_idp_prompt_removes_idp_and_graph() -> None:
+    mixed = (
+        f"{IDP_START}\nrules\n--- Fin fichas IDP ---\n"
+        "--- Fichas Graph (claimprint) ---\nOLD\n--- Fin fichas Graph ---\n"
+        "Eres un asistente.\n{knowledge}"
+    )
+    text = strip_idp_prompt(mixed)
+    assert IDP_START not in text
+    assert "Fichas Graph" not in text
+    assert "Eres un asistente." in text
     assert "{knowledge}" in text
 
 

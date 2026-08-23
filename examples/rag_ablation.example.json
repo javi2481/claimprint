@@ -1,0 +1,36 @@
+{
+  "notes": "Shape of outputs/rag_ablation.json after Gate-4 ablation. Scores are placeholders.",
+  "skipped": false,
+  "reason": null,
+  "assistant": "chat_demo_4",
+  "dataset": "demo_4",
+  "restored_inject_mode": "full",
+  "arms": [
+    {
+      "id": "A",
+      "inject_mode": "off",
+      "label": "no IDP chunk, no IDP prompt",
+      "summary": {
+        "answer_value_match": 0.0,
+        "citation_doc_match": 0.0,
+        "evidence_doc_match": 0.0,
+        "abstention_correct": 0.0
+      },
+      "cases": []
+    },
+    {
+      "id": "B",
+      "inject_mode": "chunks",
+      "label": "IDP chunk only, no prompt rules",
+      "summary": {},
+      "cases": []
+    },
+    {
+      "id": "C",
+      "inject_mode": "full",
+      "label": "IDP chunk + prompt rules (pilot default)",
+      "summary": {},
+      "cases": []
+    }
+  ]
+}

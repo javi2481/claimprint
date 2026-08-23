@@ -18,11 +18,11 @@
 
 ## WP-2 — Ablation prompt vs claim
 
-- [ ] 2.1 `push_claims.py` flags: `--chunks-only`, `--no-prompt`, `--off` (names TBD)
-- [ ] 2.2 Optional: clone chats `chat_demo_4_a/b/c` or documented restore procedure
-- [ ] 2.3 `scripts/rag_ablation.py`: run gold × 3 arms → `outputs/rag_ablation.json`
-- [ ] 2.4 README table A/B/C (new section); **do not** change Gate 3 frozen lines
-- [ ] 2.5 Gate 4: one command + Docker; `clear_chat_sessions.py` documented in flow
+- [x] 2.1 `push_claims.py`: `--inject-mode {off,chunks,full}`
+- [x] 2.2 Restore procedure: ablation ends with `inject_mode=full` (no clone chats)
+- [x] 2.3 `scripts/rag_ablation.py`: gold × 3 arms → `outputs/rag_ablation.json`
+- [x] 2.4 README table A/B/C (Gate 4 section); Gate 3 frozen lines untouched
+- [x] 2.5 Gate 4: `rag_ablation.py` + `clear_chat_sessions.py` documented in README
 
 ## WP-3 — Provenance / bbox (MinerU)
 
@@ -34,5 +34,5 @@
 
 ## Ship
 
-- [ ] Tag `v1.1.0` when WP-1 + Phase 0 done (bbox/ablation may follow in v1.2)
-- [ ] Or single tag `v1.1.0` when all three gates pass — decide at Gate 5 review
+- [x] Tag `v1.0.0` when WP-1 + Phase 0 done (WP-2 ablation + WP-3 bbox may follow in same minor line)
+- [ ] WP-3 bbox gate before calling v1.0.0 "complete" on provenance — or ship ablation-only tag now
