@@ -1,11 +1,9 @@
 # Claimprint
 
-[![CI](https://github.com/javi2481/claimprint/actions/workflows/ci.yml/badge.svg)](https://github.com/javi2481/claimprint/actions/workflows/ci.yml)
-
 [Español](README.es.md) · **English** ([README.md](README.md))
 
-**IDP claims-first — primera instancia: finanzas (BYMA).**  
-**Regla: no claim, no answer** (sin claim verificado, no hay respuesta).
+**Motor de claims verificados para estados financieros — primera instancia: BYMA.**  
+**Sin claim, sin respuesta.**
 
 ## El problema
 
@@ -17,7 +15,14 @@ En un EEFF trimestral de BYMA, "resultado neto 1T26" tiene dos filas vecinas en 
 | Vecino incorrecto (controlante) | 21259769 |
 | Claimprint (consolidado) | **21262335** |
 
-No es un error de redondeo. Es identidad de fila — atribuir la cifra *controlante* cuando la pregunta pedía *consolidado*. Para un analista, un auditor o un equipo de compliance que automatiza extracción sobre filings, ese desajuste invalida cualquier modelo construido encima de una respuesta que parece correcta.
+Es identidad de fila — *consolidado* vs *controlante*, dos cifras en la misma página con magnitudes similares. Para un analista, un auditor o un equipo de compliance que automatiza extracción sobre filings, ese desajuste invalida cualquier modelo construido encima de una respuesta que parece correcta.
+
+### Ejemplo: flujo de un analista
+
+1. Un analista de equity arma un modelo 1T26 y pregunta por *resultado neto 1T26*.
+2. Un RAG genérico devuelve **21.259.769** (controlante) — plausible, scope equivocado.
+3. Claimprint devuelve **21.262.335** con provenance: página 4, RESULTADO NETO DEL PERÍODO, `BYMA|2026-03-31|consolidado|resultado_neto`.
+4. El analista incorpora la cifra al modelo con nota al pie al filing.
 
 Claimprint resuelve la **identidad del claim** — clave compuesta `emisor · período · scope · métrica` — antes de generar cualquier respuesta.
 
@@ -34,13 +39,27 @@ Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la p�
 | Ingeniero IDP / RAG | Pipeline documento → respuesta | Separación clara: claim = fuente de verdad, chunk = derivado para chat |
 | Compliance / riesgo | Automatización sobre filings regulados | Provenance (página, fila, filing) en cada respuesta |
 
+## ¿Por qué no usar X?
+
+- **¿Mejor RAG / búsqueda híbrida?** La trampa de identidad es estructural — misma página, dos filas vecinas. En el piloto BYMA, keyword, vector e híbrido **empatan** en Recall@5 **0.35** / MRR **0.2042** (n=20).
+- **¿GPT-4 + prompt engineering?** Afinar prompts no garantiza abstención estructural. Claimprint abstiene cuando no hay claim verificado.
+- **¿Extractores batch (Unstract, Nanonets, …)?** Fuertes en campos; débiles en desambiguación de scope (*consolidado* vs *controlante*) sin identidad tipada.
+- **¿Embeddings fine-tuned?** Filas P&L vecinas comparten contexto semántico; los embeddings no codifican scope contable.
+
+Metodología y scores congelados: [`docs/evaluation.es.md`](docs/evaluation.es.md).
+
 ## Cómo funciona Claimprint
 
-Claimprint es una **capa IDP claims-first**, no un wrapper de RAG. Un documento entra a Document Intelligence (parse con MinerU, classify, extract) y se convierte en un **claim tipado**: cifra estructurada con **identidad** (`emisor · período · scope · métrica`), **valor** y **provenance** (página, fila, filing). La clave compuesta se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint **abstiene** — no claim, no answer.
+Claimprint es un **motor de claims verificados**, no un wrapper de RAG. Un documento entra a procesamiento de documentos (parse con MinerU, classify, extract) y se convierte en un **claim tipado**: cifra estructurada con **identidad** (`emisor · período · scope · métrica`), **valor** y **provenance** (página, fila, filing). La clave compuesta se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint **abstiene** — sin claim, sin respuesta.
 
 *Términos técnicos en inglés a propósito (como en el código): claim, recipe, scope, provenance, filing.*
 
-![Claimprint architecture — document to verified claim](docs/assets/claimprint-architecture.svg)
+![Claimprint architecture — document to verified claim](docs/assets/claimprint-architecture.png)
+
+```text
+PDF → MinerU → Recipe → Claim → [optional RAG chunk] → Chat
+                      ↑ source of truth
+```
 
 | Artefacto | Rol |
 |-----------|-----|
@@ -58,15 +77,15 @@ Detalle: [`docs/architecture.es.md`](docs/architecture.es.md)
 
 ## Qué demuestra el piloto
 
-La trampa **21.262.335 vs 21.259.769** no es anécdota — la corrimos como experimento.
+La trampa **21.262.335 vs 21.259.769** se reprodujo en un piloto BYMA controlado (n=20 retrieval / n=10 chat).
 
-Si retrieval solo — keyword, vector o híbrido — pudiera resolver la trampa de identidad, esta arquitectura no haría falta. Corrimos los tres brazos sobre el mismo corpus (n=20): **empatan** en Recall@5 **0.35** / MRR **0.2042**. Eso no es "el stack falló"; es evidencia de que recuperar PDF+página no alcanza cuando dos filas vecinas comparten contexto semántico.
+Si retrieval solo — keyword, vector o híbrido — pudiera resolver la trampa de identidad, esta arquitectura no haría falta. Sobre el mismo corpus, los tres brazos de retrieval **empatan** en Recall@5 **0.35** / MRR **0.2042** — recuperar PDF+página no alcanza cuando dos filas vecinas comparten contexto semántico.
 
-![Retrieval-only vs claims-first — identity trap](docs/assets/claimprint-retrieval-vs-chat.svg)
+![Retrieval-only vs claims-first — identity trap](docs/assets/claimprint-retrieval-vs-chat.png)
 
-Con claims inyectados (`push_claims`), el chat claims-first puntúa **1.0** en `answer_value_match`, `citation_doc_match`, `evidence_doc_match` y `abstention_correct` sobre n=10 casos task-specific. El salto no es "mejor retrieval" — es identidad resuelta antes de generar.
+Con claims inyectados (`push_claims`), el sistema respondió con el valor correcto **10/10**, citó el documento correcto **10/10**, emparejó evidencia **10/10** y se abstuvo correctamente cuando correspondía **10/10** (`answer_value_match`, `citation_doc_match`, `evidence_doc_match`, `abstention_correct` sobre n=10 casos task-specific). El salto no es mejor retrieval — es identidad resuelta antes de generar.
 
-Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=10 — piloto chico, no benchmark IR general). CI (`./scripts/check.sh` + pytest) valida contratos y lógica de scoring; no reproduce estos scores. La ablación Gate 4 en [`docs/evaluation.es.md`](docs/evaluation.es.md) muestra cómo se mueven los scores según modo de inject.
+Resultados congelados de un piloto en stack RAGFlow local. Metodología completa, ablación Gate 4 y definiciones de scoring: [`docs/evaluation.es.md`](docs/evaluation.es.md).
 
 ## Qué trae el clone
 
@@ -75,7 +94,7 @@ Son resultados congelados de un piloto manual en stack RAGFlow local (n=20 / n=1
 | PDFs BYMA + fixtures MinerU en [`fixtures/mineru/`](fixtures/mineru/) | Stack RAGFlow vía [`scripts/up.sh`](scripts/up.sh) |
 | [`scripts/idp_ask.py`](scripts/idp_ask.py) — EEFF, comunicado, presentación | Dataset **`demo_4`** indexado en la UI (no viene en git) |
 | Recipes, [`evals/`](evals/), pytest, [`scripts/check.sh`](scripts/check.sh) | Piloto de chat + métricas congeladas en [`docs/evaluation.es.md`](docs/evaluation.es.md) |
-| HITL [`scripts/review_pack.py`](scripts/review_pack.py), dossier [`scripts/informe.py`](scripts/informe.py) | API keys en `.env` (Mistral + Voyage; gitignored) |
+| Revisión humana (HITL) [`scripts/review_pack.py`](scripts/review_pack.py), dossier [`scripts/informe.py`](scripts/informe.py) | API keys en `.env` (Mistral + Voyage; gitignored) |
 
 Si querés el piloto de chat, calculá **x86_64**, **≥16 GB RAM** y tiempo para parsear e indexar `demo_4` vos mismo.
 
@@ -94,7 +113,7 @@ python scripts/idp_ask.py "¿Cuál es el EBITDA de la presentación 1T26?"
 # → 72128
 python scripts/idp_ask.py "¿Cuál es el margen EBITDA LTM del comunicado de prensa 1T26?"
 # → 76
-python scripts/review_pack.py   # outputs/review/index.html (HITL)
+python scripts/review_pack.py   # outputs/review/index.html (revisión humana / HITL)
 python scripts/informe.py       # outputs/dossier.html
 ```
 
@@ -137,7 +156,7 @@ La extracción sigue la misma regla: si el emisor no se puede determinar desde t
 | Primera instancia: PDFs BYMA en [`docs/archivos_muestra/`](docs/archivos_muestra/) | Volúmenes Docker |
 | Texto parseado en [`fixtures/mineru/`](fixtures/mineru/) | Índices vectoriales pre-armados o datasets externos grandes |
 | Recipes, `evals/`, pytest | API keys (Mistral, Voyage, …) |
-| `scripts/idp_ask.py`, HITL, dossier | Chunks RAG o chat pre-armados |
+| `scripts/idp_ask.py`, revisión humana (HITL), dossier | Chunks RAG o chat pre-armados |
 
 ## UI opcional RAGFlow
 
@@ -165,11 +184,26 @@ docker compose --env-file .env \
 | [`docs/evaluation.es.md`](docs/evaluation.es.md) | Gate 3, ablación Gate 4, scoring |
 | [`docs/archivos_muestra/README.es.md`](docs/archivos_muestra/README.es.md) | PDFs de muestra BYMA |
 
-## Qué demuestra esto, qué sigue
+**Estado:** v1.0 — kernel validado sobre estados financieros BYMA. Todavía no generalizable a otros emisores ni tipos de documento.
 
-Claimprint muestra que el document AI sobre filings financieros falla en **identidad**, no en profundidad de retrieval ni calidad de embeddings — la misma trampa **21.262.335 vs 21.259.769** con la que empezó el proyecto. La instancia BYMA está congelada y es reproducible: recipes, evals, abstención, UI RAGFlow opcional. No es un benchmark IR general, y todavía no es una segunda vertical.
+Claimprint muestra que el document AI sobre filings financieros falla en **identidad**, no en profundidad de retrieval ni calidad de embeddings — la misma trampa **21.262.335 vs 21.259.769** que motivó este proyecto. La instancia BYMA está congelada y es reproducible: recipes, evals, abstención, UI RAGFlow opcional.
 
-Próximo: endurecer provenance (source a nivel bbox), afinar reglas de inject en chat (deck vs EEFF), y validar el patrón recipe/projector en otra clase de documento antes de generalizar más allá de finanzas.
+### Próximos hitos
+
+1. **Provenance audit-grade** — evidencia a nivel bbox para trazabilidad de compliance
+2. **Guardrails cross-document** — evitar que el chat mezcle cifras de deck con estados financieros
+3. **Segunda clase documental** — validar recipe/projector más allá de finanzas BYMA
+4. **Capa API** (exploratorio) — lookup de identidad sin setup Python local
+
+## Contribuciones
+
+Contribuciones bienvenidas — ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Salud del repositorio
+
+[![CI](https://github.com/javi2481/claimprint/actions/workflows/ci.yml/badge.svg)](https://github.com/javi2481/claimprint/actions/workflows/ci.yml)
+
+CI ejecuta `./scripts/check.sh` y pytest — contratos y lógica de scoring, no scores del piloto RAGFlow en vivo.
 
 ## Licencia
 
