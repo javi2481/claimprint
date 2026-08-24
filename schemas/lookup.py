@@ -29,6 +29,17 @@ from schemas.extract import fold
 PERIOD_1T26 = "2026-03-31"
 PERIOD_2T26 = "2026-06-30"
 
+NET_INCOME_PHRASES = (
+    "resultado neto",
+    "ganancia neta",
+    "utilidad neta",
+    "neto del",
+)
+
+
+def _asks_net_income(q: str) -> bool:
+    return any(phrase in q for phrase in NET_INCOME_PHRASES)
+
 
 @dataclass(frozen=True)
 class Intent:
@@ -56,8 +67,9 @@ def understand(question: str) -> Intent:
         return Intent("abstain", None, None, None, False, "off_corpus")
     if "memoria" in q and any(token in q for token in ("resultado", "neto", "eeff", "pl")):
         return Intent("abstain", None, None, None, False, "recipe_no_extract")
-    if "comunicado" in q and any(
-        token in q for token in ("resultado neto", "consolidado", "controlante", "resultado bruto", "impuesto")
+    if "comunicado" in q and (
+        _asks_net_income(q)
+        or any(token in q for token in ("consolidado", "controlante", "resultado bruto", "impuesto"))
     ):
         return Intent("abstain", None, None, None, False, "recipe_no_extract")
     if "comunicado" in q and "ebitda" in q:
@@ -100,15 +112,17 @@ def understand(question: str) -> Intent:
         token in q
         for token in ("presentacion", "presentación", "slides", "deck")
     )
-    if deck and any(
-        token in q
-        for token in (
-            "resultado neto",
-            "consolidado",
-            "controlante",
-            "resultado bruto",
-            "resultado operativo",
-            "impuesto",
+    if deck and (
+        _asks_net_income(q)
+        or any(
+            token in q
+            for token in (
+                "consolidado",
+                "controlante",
+                "resultado bruto",
+                "resultado operativo",
+                "impuesto",
+            )
         )
     ):
         return Intent("abstain", None, None, None, False, "recipe_no_extract")
@@ -141,7 +155,7 @@ def understand(question: str) -> Intent:
         "webcast",
         "conference call",
     )
-    if any(token in q for token in narrative_hits) and "resultado neto" not in q:
+    if any(token in q for token in narrative_hits) and not _asks_net_income(q):
         return Intent("narrative", None, None, None, False, None)
 
     compare = any(
@@ -188,11 +202,9 @@ def understand(question: str) -> Intent:
     if "impuesto a las ganancias" in q or "impuesto a las" in q:
         return Intent("identity", SCOPE_CONSOLIDADO, METRIC_IMPUESTO, period, compare, None)
 
-    identity_ask = any(
+    identity_ask = _asks_net_income(q) or any(
         token in q
         for token in (
-            "resultado neto",
-            "neto del",
             "del periodo",
             "del período",
             "trimestre",

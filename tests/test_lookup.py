@@ -35,6 +35,33 @@ def test_default_consolidado_trap(claims) -> None:
     assert row.source_text
 
 
+def test_ganancia_neta_routes_to_consolidado(claims) -> None:
+    result = lookup("¿Cuál es la ganancia neta del 1T26?", claims)
+    assert result.route == "identity"
+    assert result.claims[0].scope == SCOPE_CONSOLIDADO
+    assert result.claims[0].value == "21262335"
+
+
+def test_utilidad_neta_routes_to_consolidado(claims) -> None:
+    result = lookup("¿Cuál es la utilidad neta del 1T26?", claims)
+    assert result.route == "identity"
+    assert result.claims[0].scope == SCOPE_CONSOLIDADO
+    assert result.claims[0].value == "21262335"
+
+
+def test_ganancia_neta_on_comunicado_abstains(claims) -> None:
+    result = lookup("¿Cuál es la ganancia neta consolidada del comunicado de prensa?", claims)
+    assert result.route == "abstain"
+    assert result.claims == ()
+
+
+def test_understand_ganancia_neta_not_narrative() -> None:
+    intent = understand("Explicá la ganancia neta del 1T26")
+    assert intent.route == "identity"
+    assert intent.scope == SCOPE_CONSOLIDADO
+    assert intent.metric == "resultado_neto"
+
+
 def test_explicit_controlante(claims) -> None:
     result = lookup("Resultado atribuible a la participación controlante 1T26", claims)
     assert result.route == "identity"

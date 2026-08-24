@@ -18,8 +18,14 @@ Claimprint es un **claims intelligence kernel**, no un wrapper de RAG. Un docume
 | Chunk RAG | Inject derivado para chat |
 | Chat | Consumidor (no fuente de verdad) |
 
-```text
-PDF → MinerU fixture → recipe → eval gold → Claim → RAG chunk → chat
+```mermaid
+flowchart LR
+  PDF[PDF] --> MinerUFixture[Fixture MinerU]
+  MinerUFixture --> Recipe[Recipe]
+  Recipe --> EvalGold[Eval gold]
+  EvalGold --> Claim[Claim]
+  Claim --> RAGChunk[Chunk RAG]
+  RAGChunk --> Chat[Chat]
 ```
 
 ## Forma del claim

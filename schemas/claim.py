@@ -88,24 +88,33 @@ def claims_from_financial_statement(row: object) -> tuple[Claim, ...]:
         return ()
     period = row.period
     page = row.source_page
-    consolidado = Claim(
-        identity_key=identity_key(issuer, period, SCOPE_CONSOLIDADO, METRIC_NETO),
-        value=row.net_income_consolidated or "",
-        period=period,
-        source_page=page,
-        source_text=row.source_text_consolidado,
-        issuer=issuer,
-        scope=SCOPE_CONSOLIDADO,
-        metric=METRIC_NETO,
-    )
-    controlante = Claim(
-        identity_key=identity_key(issuer, period, SCOPE_CONTROLANTE, METRIC_ATRIBUIBLE),
-        value=row.net_income_attributable_to_parent or "",
-        period=period,
-        source_page=page,
-        source_text=row.source_text_controlante,
-        issuer=issuer,
-        scope=SCOPE_CONTROLANTE,
-        metric=METRIC_ATRIBUIBLE,
-    )
-    return (consolidado, controlante)
+    out: list[Claim] = []
+    cons_value = (row.net_income_consolidated or "").strip()
+    if cons_value:
+        out.append(
+            Claim(
+                identity_key=identity_key(issuer, period, SCOPE_CONSOLIDADO, METRIC_NETO),
+                value=cons_value,
+                period=period,
+                source_page=page,
+                source_text=row.source_text_consolidado,
+                issuer=issuer,
+                scope=SCOPE_CONSOLIDADO,
+                metric=METRIC_NETO,
+            )
+        )
+    ctrl_value = (row.net_income_attributable_to_parent or "").strip()
+    if ctrl_value:
+        out.append(
+            Claim(
+                identity_key=identity_key(issuer, period, SCOPE_CONTROLANTE, METRIC_ATRIBUIBLE),
+                value=ctrl_value,
+                period=period,
+                source_page=page,
+                source_text=row.source_text_controlante,
+                issuer=issuer,
+                scope=SCOPE_CONTROLANTE,
+                metric=METRIC_ATRIBUIBLE,
+            )
+        )
+    return tuple(out)

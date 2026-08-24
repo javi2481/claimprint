@@ -60,6 +60,41 @@ def test_claims_from_valid_statement() -> None:
     assert values[cons] != values[ctrl]
 
 
+def test_claims_partial_consolidado_only() -> None:
+    row = FinancialStatement(
+        issuer="BYMA",
+        period="2026-03-31",
+        net_income_consolidated="21262335",
+        source_page=4,
+        source_text_consolidado="RESULTADO NETO DEL PERÍODO",
+    )
+    claims = claims_from_financial_statement(row)
+    assert len(claims) == 1
+    assert claims[0].scope == "consolidado"
+    assert claims[0].metric == "resultado_neto"
+    assert claims[0].value == "21262335"
+
+
+def test_claims_partial_controlante_only() -> None:
+    row = FinancialStatement(
+        issuer="BYMA",
+        period="2026-03-31",
+        net_income_attributable_to_parent="21259769",
+        source_page=4,
+        source_text_controlante="participación controlante",
+    )
+    claims = claims_from_financial_statement(row)
+    assert len(claims) == 1
+    assert claims[0].scope == "controlante"
+    assert claims[0].metric == "resultado_atribuible_controladora"
+    assert claims[0].value == "21259769"
+
+
+def test_claims_both_empty_returns_empty() -> None:
+    row = FinancialStatement(issuer="BYMA", period="2026-03-31")
+    assert claims_from_financial_statement(row) == ()
+
+
 def test_reject_before_claims() -> None:
     row = FinancialStatement(
         period="2026-03-31",
