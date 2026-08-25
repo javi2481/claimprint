@@ -2,42 +2,26 @@
 
 **English** · [Español](README.es.md)
 
-**Verified-claims engine for financial filings — first instance: BYMA.**  
-**Rule: no claim, no answer.**
+Claimprint is a financial statement claims verification engine. It sits in front of your RAG stack and makes sure each numeric answer is tied to the right claim identity — issuer, period, scope — before you ever hit the LLM.
 
-## The problem
-
-In a BYMA quarterly filing, "resultado neto 1T26" has two neighboring P&L rows. A RAG stack can retrieve the correct page and still answer with the wrong one.
+In the 1Q26 BYMA report, the question “What is the net income for 1Q26?” has two valid neighbors on the same page: consolidated net income and net income attributable to the parent. Most RAG systems will happily retrieve the right paragraph and still pick the wrong number.
 
 | | Value |
 |--|--|
-| Question | ¿Cuál es el resultado neto del período 1T26? |
-| Wrong neighbor (controlante) | 21259769 |
-| Claimprint (consolidado) | **21262335** |
+| Question | What is the net income for 1Q26? |
+| Wrong neighbor (attributable to parent) | 21259769 |
+| Claimprint (consolidated) | **21262335** |
 
-It is row identity — *consolidado* vs *controlante*, two figures on the same page with similar magnitudes. For an analyst, an auditor, or a compliance team automating extraction over filings, that mismatch invalidates every model built on top of an answer that looks right.
-
-### Example: one analyst workflow
-
-1. An equity analyst building a 1T26 model asks for *resultado neto 1T26*.
-2. A generic RAG stack returns **21.259.769** (controlante) — plausible, wrong scope.
-3. Claimprint returns **21.262.335** with provenance: page 4, RESULTADO NETO DEL PERÍODO, `BYMA|2026-03-31|consolidado|resultado_neto`.
-4. The analyst drops the figure into the model with a footnote tied to the filing.
-
-Claimprint resolves **claim identity** — the composite key `issuer · period · scope · metric` — before any answer is generated.
-
-This architecture was born from a specific failure: a RAG stack retrieving the correct BYMA page but confidently outputting the *controlante* row instead of the *consolidado* row. Claimprint formalizes the fix: resolve identity as a typed claim before generation.
+Claimprint fixes that by turning each figure into a typed claim with explicit identity and provenance, and only answering when it can verify the match. **No claim, no answer.**
 
 [`scripts/idp_ask.py`](scripts/idp_ask.py) answers the consolidated row from committed fixtures — no Docker, no API keys. See [Quick start](#quick-start).
 
 ## Who this is for
 
-| Role | Context | What they get |
-|------|---------|----------------|
-| Research / equity analyst | Building models on financial statements, press releases, presentations | Figures with verified identity (consolidado vs controlante) |
-| Auditor / controller | Reviewing automated extraction | Abstention when a question has no claim (no claim, no answer) |
-| IDP / RAG engineer | Designing document → answer pipelines | Clear separation: claim = source of truth, chunk = derived input for chat |
-| Compliance / risk | Automating over regulated filings | Provenance (page, row, filing) on every answer |
+- **Research analysts** — figures with explicit issuer · period · scope identity, and a hard no-answer when the claim cannot be verified.
+- **RAG engineers** — a pre-RAG layer that separates document intelligence and claims verification from retrieval and generation, so you can debug each part instead of witch-hunting prompts.
+- **Auditors / controllers** — abstention when a question has no verified claim, instead of a plausible wrong figure.
+- **Compliance / risk** — provenance (page, row, filing) on every answer over regulated filings.
 
 ## Why not just use X?
 

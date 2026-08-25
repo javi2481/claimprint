@@ -2,12 +2,9 @@
 
 [Español](README.es.md) · **English** ([README.md](README.md))
 
-**Motor de claims verificados para estados financieros — primera instancia: BYMA.**  
-**Sin claim, sin respuesta.**
+Claimprint es un motor de verificación de claims sobre estados financieros. Se coloca delante de tu stack RAG y asegura que cada respuesta numérica esté atada a la identidad correcta del claim — emisor, período, scope — antes de llegar al LLM.
 
-## El problema
-
-En un EEFF trimestral de BYMA, "resultado neto 1T26" tiene dos filas vecinas en el estado de resultados. Un stack RAG puede recuperar la página correcta y aun así responder con la fila equivocada.
+En el informe BYMA del 1T26, la pregunta “¿Cuál es el resultado neto del 1T26?” tiene dos vecinos válidos en la misma página: resultado neto consolidado y resultado neto atribuible a la controlante. La mayoría de los sistemas RAG recuperan el párrafo correcto y aun así eligen el número equivocado.
 
 | | Valor |
 |--|--|
@@ -15,29 +12,16 @@ En un EEFF trimestral de BYMA, "resultado neto 1T26" tiene dos filas vecinas en 
 | Vecino incorrecto (controlante) | 21259769 |
 | Claimprint (consolidado) | **21262335** |
 
-Es identidad de fila — *consolidado* vs *controlante*, dos cifras en la misma página con magnitudes similares. Para un analista, un auditor o un equipo de compliance que automatiza extracción sobre filings, ese desajuste invalida cualquier modelo construido encima de una respuesta que parece correcta.
+Claimprint lo resuelve convirtiendo cada cifra en un claim tipado, con identidad y provenance explícitos, y solo responde cuando puede verificar el match. **Sin claim, sin respuesta.**
 
-### Ejemplo: flujo de un analista
-
-1. Un analista de equity arma un modelo 1T26 y pregunta por *resultado neto 1T26*.
-2. Un RAG genérico devuelve **21.259.769** (controlante) — plausible, scope equivocado.
-3. Claimprint devuelve **21.262.335** con provenance: página 4, RESULTADO NETO DEL PERÍODO, `BYMA|2026-03-31|consolidado|resultado_neto`.
-4. El analista incorpora la cifra al modelo con nota al pie al filing.
-
-Claimprint resuelve la **identidad del claim** — clave compuesta `emisor · período · scope · métrica` — antes de generar cualquier respuesta.
-
-Esta arquitectura nació de un fallo concreto: un stack RAG que recuperaba la página correcta de BYMA pero respondía con confianza la fila *controlante* en lugar de la *consolidado*. Claimprint formaliza la solución: resolver identidad como claim tipado antes de generar.
-
-[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver la sección **Inicio rápido** más abajo.
+[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver [Inicio rápido](#inicio-rápido).
 
 ## Para quién es
 
-| Rol | Contexto | Qué obtiene |
-|-----|----------|-------------|
-| Analista de research / equity | Modelos sobre EEFF, comunicados, presentaciones | Cifras con identidad verificada (consolidado vs controlante) |
-| Auditor / controller | Revisión de extracción automatizada | Abstención cuando la pregunta no tiene claim |
-| Ingeniero IDP / RAG | Pipeline documento → respuesta | Separación clara: claim = fuente de verdad, chunk = derivado para chat |
-| Compliance / riesgo | Automatización sobre filings regulados | Provenance (página, fila, filing) en cada respuesta |
+- **Analistas de research** — cifras con identidad explícita emisor · período · scope, y un “no hay respuesta” duro cuando el claim no se puede verificar.
+- **Ingenieros RAG** — una capa pre-RAG que separa inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte en lugar de cazar prompts.
+- **Auditores / controllers** — abstención cuando la pregunta no tiene claim verificado, en lugar de una cifra plausible pero equivocada.
+- **Compliance / riesgo** — provenance (página, fila, filing) en cada respuesta sobre filings regulados.
 
 ## ¿Por qué no usar X?
 
