@@ -2,26 +2,36 @@
 
 **English** · [Español](README.es.md)
 
-Claimprint is a financial statement claims verification engine. It sits in front of your RAG stack and makes sure every numeric answer is tied to the right claim identity — issuer, period, scope — before you ever hit the LLM.
+In the BYMA 1Q26 filing, the question
 
-In the BYMA 1Q26 filing, the question “What is the net income for 1Q26?” has two valid neighbors on the same page: consolidated net income and net income attributable to the parent. Most RAG systems will happily retrieve the right paragraph and still pick the wrong number.
+> What is the net income for 1Q26?
 
-| | Value |
-|--|--|
-| Question | What is the net income for 1Q26? |
-| Wrong neighbor (attributable to parent) | 21259769 |
-| Claimprint (consolidated) | **21262335** |
+has two valid neighbors on the same page:
 
-Claimprint fixes this by turning each figure into a typed claim with explicit identity and provenance, and only answering when it can verify the match. **No verified claim, no answer.**
+- consolidated net income, **21262335**
+- net income attributable to the parent, *21259769*
+
+A generic RAG system will often pick the wrong neighbor even if retrieval was correct.
+
+Claimprint sits in front of your RAG stack and turns each figure into a typed financial claim with explicit identity and provenance. It then either returns a verified answer tied to the right claim, or abstains.
+
+**No verified claim, no answer.**
 
 You can reproduce the BYMA example with [`scripts/idp_ask.py`](scripts/idp_ask.py), which returns the consolidated net income row without Docker or API keys. See [Quick start](#quick-start) for details.
 
 ## Who this is for
 
-- **Research analysts** — figures with explicit issuer · period · scope identity, and a hard no-answer when the claim cannot be verified.
-- **RAG engineers** — a pre-RAG layer that separates document intelligence and claims verification from retrieval and generation, so you can debug each part instead of witch-hunting prompts.
-- **Auditors / controllers** — abstention when a question has no verified claim, instead of a plausible wrong figure.
-- **Compliance / risk** — provenance (page, row, filing) on every answer over regulated filings.
+- **Research analysts**  
+  Need figures with explicit issuer / period / scope identity, and a clear “no answer” when a claim cannot be verified.
+
+- **RAG engineers**  
+  Want a pre-RAG layer that separates document intelligence and claims verification from retrieval and generation, so each part can be debugged independently.
+
+- **Auditors / controllers**  
+  Prefer abstaining over silently returning a potentially wrong figure when no verified claim exists.
+
+- **Compliance / risk**  
+  Require provenance — document, page, row — attached to every answer over regulated documents.
 
 ## Why not just use X?
 

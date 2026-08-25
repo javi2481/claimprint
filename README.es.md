@@ -2,26 +2,36 @@
 
 [Español](README.es.md) · **English** ([README.md](README.md))
 
-Claimprint es un motor de verificación de claims sobre estados financieros. Se coloca delante de tu stack RAG y asegura que cada respuesta numérica esté atada a la identidad correcta del claim — emisor, período, scope — antes de llegar al LLM.
+En el filing BYMA del 1T26, la pregunta
 
-En el filing BYMA del 1T26, la pregunta “¿Cuál es el resultado neto del 1T26?” tiene dos vecinos válidos en la misma página: resultado neto consolidado y resultado neto atribuible a la controlante. La mayoría de los sistemas RAG recuperan el párrafo correcto y aun así eligen el número equivocado.
+> ¿Cuál es el resultado neto del 1T26?
 
-| | Valor |
-|--|--|
-| Pregunta | ¿Cuál es el resultado neto del período 1T26? |
-| Vecino incorrecto (controlante) | 21259769 |
-| Claimprint (consolidado) | **21262335** |
+tiene dos vecinos válidos en la misma página:
 
-Claimprint lo resuelve convirtiendo cada cifra en un claim tipado, con identidad y provenance explícitos, y solo responde cuando puede verificar el match. **Sin claim verificado, sin respuesta.**
+- resultado neto consolidado, **21262335**
+- resultado neto atribuible a la controlante, *21259769*
+
+Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido correcto.
+
+Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos. Después o bien devuelve una respuesta verificada atada al claim correcto, o se abstiene.
+
+**Sin claim verificado, sin respuesta.**
 
 Podés reproducir el ejemplo BYMA con [`scripts/idp_ask.py`](scripts/idp_ask.py), que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver [Inicio rápido](#inicio-rápido) para el detalle.
 
 ## Para quién es
 
-- **Analistas de research** — cifras con identidad explícita emisor · período · scope, y un “no hay respuesta” duro cuando el claim no se puede verificar.
-- **Ingenieros RAG** — una capa pre-RAG que separa inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte en lugar de cazar prompts.
-- **Auditores / controllers** — abstención cuando la pregunta no tiene claim verificado, en lugar de una cifra plausible pero equivocada.
-- **Compliance / riesgo** — provenance (página, fila, filing) en cada respuesta sobre filings regulados.
+- **Analistas de research**  
+  Necesitan cifras con identidad explícita emisor / período / scope, y un “no hay respuesta” claro cuando el claim no se puede verificar.
+
+- **Ingenieros RAG**  
+  Quieren una capa pre-RAG que separe inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte de forma independiente.
+
+- **Auditores / controllers**  
+  Prefieren abstenerse a devolver en silencio una cifra potencialmente equivocada cuando no hay claim verificado.
+
+- **Compliance / riesgo**  
+  Requieren provenance — documento, página, fila — en cada respuesta sobre documentos regulados.
 
 ## ¿Por qué no usar X?
 
