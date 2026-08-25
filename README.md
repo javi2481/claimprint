@@ -2,9 +2,9 @@
 
 **English** · [Español](README.es.md)
 
-Claimprint is a financial statement claims verification engine. It sits in front of your RAG stack and makes sure each numeric answer is tied to the right claim identity — issuer, period, scope — before you ever hit the LLM.
+Claimprint is a financial statement claims verification engine. It sits in front of your RAG stack and makes sure every numeric answer is tied to the right claim identity — issuer, period, scope — before you ever hit the LLM.
 
-In the 1Q26 BYMA report, the question “What is the net income for 1Q26?” has two valid neighbors on the same page: consolidated net income and net income attributable to the parent. Most RAG systems will happily retrieve the right paragraph and still pick the wrong number.
+In the BYMA 1Q26 filing, the question “What is the net income for 1Q26?” has two valid neighbors on the same page: consolidated net income and net income attributable to the parent. Most RAG systems will happily retrieve the right paragraph and still pick the wrong number.
 
 | | Value |
 |--|--|
@@ -12,9 +12,9 @@ In the 1Q26 BYMA report, the question “What is the net income for 1Q26?” has
 | Wrong neighbor (attributable to parent) | 21259769 |
 | Claimprint (consolidated) | **21262335** |
 
-Claimprint fixes that by turning each figure into a typed claim with explicit identity and provenance, and only answering when it can verify the match. **No claim, no answer.**
+Claimprint fixes this by turning each figure into a typed claim with explicit identity and provenance, and only answering when it can verify the match. **No verified claim, no answer.**
 
-[`scripts/idp_ask.py`](scripts/idp_ask.py) answers the consolidated row from committed fixtures — no Docker, no API keys. See [Quick start](#quick-start).
+You can reproduce the BYMA example with [`scripts/idp_ask.py`](scripts/idp_ask.py), which returns the consolidated net income row without Docker or API keys. See [Quick start](#quick-start) for details.
 
 ## Who this is for
 

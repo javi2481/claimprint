@@ -4,7 +4,7 @@
 
 Claimprint es un motor de verificación de claims sobre estados financieros. Se coloca delante de tu stack RAG y asegura que cada respuesta numérica esté atada a la identidad correcta del claim — emisor, período, scope — antes de llegar al LLM.
 
-En el informe BYMA del 1T26, la pregunta “¿Cuál es el resultado neto del 1T26?” tiene dos vecinos válidos en la misma página: resultado neto consolidado y resultado neto atribuible a la controlante. La mayoría de los sistemas RAG recuperan el párrafo correcto y aun así eligen el número equivocado.
+En el filing BYMA del 1T26, la pregunta “¿Cuál es el resultado neto del 1T26?” tiene dos vecinos válidos en la misma página: resultado neto consolidado y resultado neto atribuible a la controlante. La mayoría de los sistemas RAG recuperan el párrafo correcto y aun así eligen el número equivocado.
 
 | | Valor |
 |--|--|
@@ -12,9 +12,9 @@ En el informe BYMA del 1T26, la pregunta “¿Cuál es el resultado neto del 1T2
 | Vecino incorrecto (controlante) | 21259769 |
 | Claimprint (consolidado) | **21262335** |
 
-Claimprint lo resuelve convirtiendo cada cifra en un claim tipado, con identidad y provenance explícitos, y solo responde cuando puede verificar el match. **Sin claim, sin respuesta.**
+Claimprint lo resuelve convirtiendo cada cifra en un claim tipado, con identidad y provenance explícitos, y solo responde cuando puede verificar el match. **Sin claim verificado, sin respuesta.**
 
-[`scripts/idp_ask.py`](scripts/idp_ask.py) responde la fila consolidada desde fixtures commiteados — sin Docker, sin API keys. Ver [Inicio rápido](#inicio-rápido).
+Podés reproducir el ejemplo BYMA con [`scripts/idp_ask.py`](scripts/idp_ask.py), que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver [Inicio rápido](#inicio-rápido) para el detalle.
 
 ## Para quién es
 
