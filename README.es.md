@@ -1,12 +1,12 @@
 # Claimprint
 
-[Español](README.es.md) · **English** ([README.md](README.md))
+*Español* · [English](README.md)
 
-Motor de verificación de claims sobre estados financieros para sistemas RAG.
+Motor de verificación de claims sobre estados financieros para sistemas RAG
 
 ## Por qué existe
 
-La mayoría de los setups RAG pueden recuperar el párrafo correcto en un informe trimestral o anual y aun así responder con el número equivocado, porque no modelan la identidad del claim emisor, período, scope
+La mayoría de los setups RAG pueden recuperar el párrafo correcto en un informe trimestral o anual y aun así responder con el número equivocado, porque no modelan la identidad del claim, emisor, período, scope
 En el filing BYMA del 1T26, la pregunta
 
 ¿Cuál es el resultado neto del 1T26?
@@ -14,12 +14,16 @@ En el filing BYMA del 1T26, la pregunta
 
 tiene dos vecinos válidos en la misma página
 
-- resultado neto consolidado, *21262335*
-- resultado neto atribuible a la controlante, *21259769*
-Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido correcto
-Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos. Después o bien devuelve una respuesta verificada atada al claim correcto, o se abstiene
+- resultado neto consolidado: *21262335*
+- resultado neto atribuible a la controlante: *21259769*
+Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido “correcto”
+Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos
+Después, o bien
+
+- devuelve una respuesta verificada atada al claim correcto, o
+- se abstiene
 Sin claim verificado, sin respuesta
-Podés reproducir el ejemplo BYMA con scripts/idp_ask.py, que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver Inicio rápido para el detalle
+Podés reproducir el ejemplo BYMA con scripts/idp_ask.py, que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver Inicio rápido
 
 ## Para quién es
 

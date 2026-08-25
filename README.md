@@ -1,12 +1,12 @@
 # Claimprint
 
-**English** · [Español](README.es.md)
+*English* · [Español](README.es.md)
 
-Financial statement claims verification engine for RAG systems.
+Financial statement claims verification engine for RAG systems
 
 ## Why it exists
 
-Most RAG setups can retrieve the right paragraph in a quarterly or annual report and still answer with the wrong number, because they don’t model claim identity issuer, period, scope
+Most RAG setups can retrieve the right paragraph in a quarterly or annual report and still answer with the wrong number, because they don’t model claim identity, issuer, period, scope
 In the BYMA 1Q26 filing, the question
 
 What is the net income for 1Q26?
@@ -14,12 +14,16 @@ What is the net income for 1Q26?
 
 has two valid neighbors on the same page
 
-- consolidated net income, *21262335*
-- net income attributable to the parent, *21259769*
-A generic RAG system will often pick the wrong neighbor even if retrieval was correct
-Claimprint sits in front of your RAG stack and turns each figure into a typed financial claim with explicit identity and provenance. It then either returns a verified answer tied to the right claim, or abstains
+- consolidated net income: *21262335*
+- net income attributable to the parent: *21259769*
+A generic RAG system will often pick the wrong neighbor even if retrieval was “correct”
+Claimprint sits in front of your RAG stack and turns each figure into a typed financial claim with explicit identity and provenance
+It then either
+
+- returns a verified answer tied to the right claim, or
+- abstains
 No verified claim, no answer
-You can reproduce the BYMA example with scripts/idp_ask.py, which returns the consolidated net income row without Docker or API keys. See Quickstart for details
+You can reproduce the BYMA example with scripts/idp_ask.py, which returns the consolidated net income row without Docker or API keys. See Quickstart
 
 ## Who this is for
 
