@@ -4,34 +4,33 @@
 
 En el filing BYMA del 1T26, la pregunta
 
-> ¿Cuál es el resultado neto del 1T26?
+¿Cuál es el resultado neto del 1T26?
 
-tiene dos vecinos válidos en la misma página:
+tiene dos vecinos válidos en la misma página
 
-- resultado neto consolidado, **21262335**
+- resultado neto consolidado, *21262335*
 - resultado neto atribuible a la controlante, *21259769*
 
-Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido correcto.
+Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido correcto
 
-Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos. Después o bien devuelve una respuesta verificada atada al claim correcto, o se abstiene.
+Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos. Después o bien devuelve una respuesta verificada atada al claim correcto, o se abstiene
 
-**Sin claim verificado, sin respuesta.**
+Sin claim verificado, sin respuesta
 
-Podés reproducir el ejemplo BYMA con [`scripts/idp_ask.py`](scripts/idp_ask.py), que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver [Inicio rápido](#inicio-rápido) para el detalle.
+Podés reproducir el ejemplo BYMA con scripts/idp_ask.py, que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver Inicio rápido para el detalle
 
 ## Para quién es
 
-- **Analistas de research**  
-  Necesitan cifras con identidad explícita emisor / período / scope, y un “no hay respuesta” claro cuando el claim no se puede verificar.
+- *Analistas de research*  
+  Necesitan cifras con identidad explícita emisor/período/scope, y un “no hay respuesta” claro cuando el claim no se puede verificar
+- *Ingenieros RAG*  
+  Quieren una capa pre-RAG que separe inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte de forma independiente
 
-- **Ingenieros RAG**  
-  Quieren una capa pre-RAG que separe inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte de forma independiente.
+- *Auditores / controllers*  
+  Prefieren abstenerse a devolver en silencio una cifra potencialmente equivocada cuando no hay claim verificado
 
-- **Auditores / controllers**  
-  Prefieren abstenerse a devolver en silencio una cifra potencialmente equivocada cuando no hay claim verificado.
-
-- **Compliance / riesgo**  
-  Requieren provenance — documento, página, fila — en cada respuesta sobre documentos regulados.
+- *Compliance / riesgo*  
+  Requieren provenance documento, página, fila en cada respuesta sobre documentos regulados
 
 ## ¿Por qué no usar X?
 
@@ -44,7 +43,9 @@ Metodología y scores congelados: [`docs/evaluation.es.md`](docs/evaluation.es.m
 
 ## Cómo funciona Claimprint
 
-Claimprint es un **motor de claims verificados**, no un wrapper de RAG. Un documento entra a procesamiento de documentos (parse con MinerU, classify, extract) y se convierte en un **claim tipado**: cifra estructurada con **identidad** (`emisor · período · scope · métrica`), **valor** y **provenance** (página, fila, filing). La clave compuesta se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint **abstiene** — sin claim, sin respuesta.
+Claimprint se coloca delante de tu stack RAG. Un documento entra a procesamiento de documentos (parse con MinerU, classify, extract) y se convierte en un **claim financiero tipado**: cifra estructurada con **identidad** (`emisor · período · scope · métrica`), **valor** y **provenance** (documento, página, fila). La clave compuesta se resuelve y verifica antes de emitir cualquier respuesta. El camino principal es **lookup exacto** → respuesta verificada. El chat RAG es una capa **opcional** que consume claims verificados; no es la fuente de verdad. Si ningún claim pasa verificación, Claimprint se abstiene.
+
+**Sin claim verificado, sin respuesta.**
 
 *Términos técnicos en inglés a propósito (como en el código): claim, recipe, scope, provenance, filing.*
 
@@ -65,7 +66,7 @@ PDF → MinerU → Recipe → Claim → [optional RAG chunk] → Chat
 | Chunk RAG | entrada derivada para chat |
 | Chat | consumidor |
 
-**Conceptos clave:** un **claim tipado** es la cifra verificada (identidad compuesta + valor + provenance). Una **recipe** es el contrato de extracción para una clase de documento (ej. [`recipes/financial_statement.json`](recipes/financial_statement.json)). Un **projector** mapea filas extraídas al schema — resolviendo **scope** (consolidado vs controlante) en el camino.
+**Conceptos clave:** un **claim financiero tipado** es la cifra verificada (identidad compuesta + valor + provenance). Una **recipe** es el contrato de extracción para una clase de documento (ej. [`recipes/financial_statement.json`](recipes/financial_statement.json)). Un **projector** mapea filas extraídas al schema — resolviendo **scope** (consolidado vs controlante) en el camino.
 
 Detalle: [`docs/architecture.es.md`](docs/architecture.es.md)
 
@@ -115,7 +116,7 @@ En Windows, ejecutá `./scripts/check.sh` desde Git Bash o WSL.
 
 ## Flujo en terminal
 
-Dos caminos por `idp_ask`: responder cuando existe un claim verificado, abstener cuando la pregunta está fuera de corpus o no está soportada.
+Dos caminos por `idp_ask`: devolver una respuesta verificada cuando existe un claim, o abstener cuando la pregunta está fuera de corpus o no está soportada. Sin claim verificado, sin respuesta.
 
 **Camino respuesta**
 
@@ -180,7 +181,7 @@ docker compose --env-file .env \
 
 **Estado:** v1.0 — kernel validado sobre estados financieros BYMA. Todavía no generalizable a otros emisores ni tipos de documento.
 
-Claimprint muestra que el document AI sobre filings financieros falla en **identidad**, no en profundidad de retrieval ni calidad de embeddings — la misma trampa **21.262.335 vs 21.259.769** que motivó este proyecto. La instancia BYMA está congelada y es reproducible: recipes, evals, abstención, UI RAGFlow opcional.
+Claimprint muestra que el document AI sobre filings financieros falla en **identidad**, no en profundidad de retrieval ni calidad de embeddings — la misma trampa de vecinos (*21262335* vs *21259769*) que abre este README. La instancia BYMA está congelada y es reproducible: recipes, evals, abstención, UI RAGFlow opcional.
 
 ### Próximos hitos
 

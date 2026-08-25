@@ -4,34 +4,33 @@
 
 In the BYMA 1Q26 filing, the question
 
-> What is the net income for 1Q26?
+What is the net income for 1Q26?
 
-has two valid neighbors on the same page:
+has two valid neighbors on the same page
 
-- consolidated net income, **21262335**
+- consolidated net income, *21262335*
 - net income attributable to the parent, *21259769*
 
-A generic RAG system will often pick the wrong neighbor even if retrieval was correct.
+A generic RAG system will often pick the wrong neighbor even if retrieval was correct
 
-Claimprint sits in front of your RAG stack and turns each figure into a typed financial claim with explicit identity and provenance. It then either returns a verified answer tied to the right claim, or abstains.
+Claimprint sits in front of your RAG stack and turns each figure into a typed financial claim with explicit identity and provenance. It then either returns a verified answer tied to the right claim, or abstains
 
-**No verified claim, no answer.**
+No verified claim, no answer
 
-You can reproduce the BYMA example with [`scripts/idp_ask.py`](scripts/idp_ask.py), which returns the consolidated net income row without Docker or API keys. See [Quick start](#quick-start) for details.
+You can reproduce the BYMA example with scripts/idp_ask.py, which returns the consolidated net income row without Docker or API keys. See Quickstart for details
 
 ## Who this is for
 
-- **Research analysts**  
-  Need figures with explicit issuer / period / scope identity, and a clear “no answer” when a claim cannot be verified.
+- *Research analysts*  
+  Need figures with explicit issuer/period/scope identity, and a clear “no answer” when a claim cannot be verified
+- *RAG engineers*  
+  Want a pre-RAG layer that separates document intelligence and claims verification from retrieval and generation, so each part can be debugged independently
 
-- **RAG engineers**  
-  Want a pre-RAG layer that separates document intelligence and claims verification from retrieval and generation, so each part can be debugged independently.
+- *Auditors / controllers*  
+  Prefer abstaining over silently returning a potentially wrong figure when no verified claim exists
 
-- **Auditors / controllers**  
-  Prefer abstaining over silently returning a potentially wrong figure when no verified claim exists.
-
-- **Compliance / risk**  
-  Require provenance — document, page, row — attached to every answer over regulated documents.
+- *Compliance / risk*  
+  Require provenance document, page, row attached to every answer over regulated documents
 
 ## Why not just use X?
 
@@ -44,7 +43,9 @@ Methodology and frozen scores: [`docs/evaluation.md`](docs/evaluation.md).
 
 ## How Claimprint works
 
-Claimprint is a **verified-claims engine**, not a RAG wrapper. A document enters document intelligence (parse with MinerU, classify, extract) and becomes a **typed claim**: a structured figure with **identity** (`issuer · period · scope · metric`), **value**, and **provenance** (page, row, filing). The composite identity is resolved and verified before any answer is emitted. The primary path is **exact lookup** → verified answer. RAG chat is an **optional** layer that consumes verified claims; it is not the source of truth. If no claim passes verification, Claimprint **abstains** — no claim, no answer.
+Claimprint sits in front of your RAG stack. A document enters document intelligence (parse with MinerU, classify, extract) and becomes a **typed financial claim**: a structured figure with **identity** (`issuer · period · scope · metric`), **value**, and **provenance** (document, page, row). The composite identity is resolved and verified before any answer is emitted. The primary path is **exact lookup** → verified answer. RAG chat is an **optional** layer that consumes verified claims; it is not the source of truth. If no claim passes verification, Claimprint abstains.
+
+**No verified claim, no answer.**
 
 ![Claimprint architecture — document to verified claim](docs/assets/claimprint-architecture.png)
 
@@ -63,7 +64,7 @@ PDF → MinerU → Recipe → Claim → [optional RAG chunk] → Chat
 | RAG chunk | derived input for chat |
 | Chat | consumer |
 
-**Core concepts:** a **typed claim** is the verified figure (composite identity + value + provenance). A **recipe** is the extraction contract for a document class (e.g. [`recipes/financial_statement.json`](recipes/financial_statement.json)). A **projector** maps extracted rows onto that schema — resolving **scope** (consolidado vs controlante) along the way.
+**Core concepts:** a **typed financial claim** is the verified figure (composite identity + value + provenance). A **recipe** is the extraction contract for a document class (e.g. [`recipes/financial_statement.json`](recipes/financial_statement.json)). A **projector** maps extracted rows onto that schema — resolving **scope** (consolidado vs controlante) along the way.
 
 Details: [`docs/architecture.md`](docs/architecture.md)
 
@@ -90,7 +91,7 @@ Frozen live-pilot results from a local RAGFlow stack. Full methodology, Gate 4 a
 
 If you want the chat pilot, budget **x86_64**, **≥16 GB RAM**, and time to parse and index `demo_4` yourself.
 
-## Quick start
+## Quickstart
 
 ```bash
 git clone https://github.com/javi2481/claimprint.git
@@ -113,7 +114,7 @@ On Windows, run `./scripts/check.sh` from Git Bash or WSL.
 
 ## Terminal flow
 
-Two paths through `idp_ask`: answer when a verified claim exists, abstain when the question is off-corpus or unsupported.
+Two paths through `idp_ask`: return a verified answer when a claim exists, or abstain when the question is off-corpus or unsupported. No verified claim, no answer.
 
 **Answer path**
 
@@ -178,7 +179,7 @@ docker compose --env-file .env \
 
 **Status:** v1.0 — kernel validated on BYMA financial statements. Not yet generalizable to other issuers or document types.
 
-Claimprint shows that document AI over financial filings fails at **identity**, not at retrieval depth or embedding quality — the same **21.262.335 vs 21.259.769** trap that motivated this project. The BYMA instance is frozen and reproducible: recipes, evals, abstention, optional RAGFlow UI.
+Claimprint shows that document AI over financial filings fails at **identity**, not at retrieval depth or embedding quality — the same neighbor trap (*21262335* vs *21259769*) that opens this README. The BYMA instance is frozen and reproducible: recipes, evals, abstention, optional RAGFlow UI.
 
 ### Next milestones
 
