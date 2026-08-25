@@ -2,6 +2,11 @@
 
 [Español](README.es.md) · **English** ([README.md](README.md))
 
+Motor de verificación de claims sobre estados financieros para sistemas RAG.
+
+## Por qué existe
+
+La mayoría de los setups RAG pueden recuperar el párrafo correcto en un informe trimestral o anual y aun así responder con el número equivocado, porque no modelan la identidad del claim emisor, período, scope
 En el filing BYMA del 1T26, la pregunta
 
 ¿Cuál es el resultado neto del 1T26?

@@ -2,6 +2,11 @@
 
 **English** · [Español](README.es.md)
 
+Financial statement claims verification engine for RAG systems.
+
+## Why it exists
+
+Most RAG setups can retrieve the right paragraph in a quarterly or annual report and still answer with the wrong number, because they don’t model claim identity issuer, period, scope
 In the BYMA 1Q26 filing, the question
 
 What is the net income for 1Q26?
