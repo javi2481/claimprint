@@ -6,17 +6,14 @@ En el filing BYMA del 1T26, la pregunta
 
 ¿Cuál es el resultado neto del 1T26?
 
+
 tiene dos vecinos válidos en la misma página
 
 - resultado neto consolidado, *21262335*
 - resultado neto atribuible a la controlante, *21259769*
-
 Un RAG genérico suele elegir el vecino equivocado aunque el retrieval haya sido correcto
-
 Claimprint se coloca delante de tu stack RAG y convierte cada cifra en un claim financiero tipado, con identidad y provenance explícitos. Después o bien devuelve una respuesta verificada atada al claim correcto, o se abstiene
-
 Sin claim verificado, sin respuesta
-
 Podés reproducir el ejemplo BYMA con scripts/idp_ask.py, que devuelve la fila de resultado neto consolidado sin Docker ni API keys. Ver Inicio rápido para el detalle
 
 ## Para quién es
@@ -24,7 +21,7 @@ Podés reproducir el ejemplo BYMA con scripts/idp_ask.py, que devuelve la fila d
 - *Analistas de research*  
   Necesitan cifras con identidad explícita emisor/período/scope, y un “no hay respuesta” claro cuando el claim no se puede verificar
 - *Ingenieros RAG*  
-  Quieren una capa pre-RAG que separe inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte de forma independiente
+  Quieren una capa pre‑RAG que separe inteligencia documental y verificación de claims del retrieval y la generación, para depurar cada parte de forma independiente
 
 - *Auditores / controllers*  
   Prefieren abstenerse a devolver en silencio una cifra potencialmente equivocada cuando no hay claim verificado
